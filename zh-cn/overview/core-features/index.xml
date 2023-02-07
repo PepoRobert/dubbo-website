@@ -616,7 +616,7 @@
 &lt;h1 id="指标">指标&lt;/h1>
 &lt;h2 id="指标模块简介">指标模块简介&lt;/h2>
 &lt;p>Dubbo的指标模块帮助用户从外部观察正在运行的系统的内部服务状况 ，Dubbo参考 &lt;a href="https://sre.google/sre-book/monitoring-distributed-systems/">&amp;ldquo;四大黄金信号&amp;rdquo;&lt;/a> 并结合实际企业应用场景从不同维度统计了丰富的关键指标，关注这些核心指标对于提供可用性的服务是至关重要的。&lt;/p>
-&lt;p>Dubbo的关键指标包含:&lt;strong>延迟（Latency）&lt;/strong>、&lt;strong>流量（Traffic）&lt;/strong>、**错误（Errors）&lt;strong>和&lt;/strong>饱和度（Saturation）**等内容 。同时，为了更好的监测服务运行状态，Dubbo 还提供了对核心组件状态的监控，如线程池数量、服务健康状态等。&lt;/p>
+&lt;p>Dubbo的关键指标包含：&lt;strong>延迟（Latency）&lt;/strong>、&lt;strong>流量（Traffic）&lt;/strong>、 &lt;strong>错误（Errors）&lt;/strong> 和 &lt;strong>饱和度（Saturation）&lt;/strong> 等内容 。同时，为了更好的监测服务运行状态，Dubbo 还提供了对核心组件状态的监控，如线程池数量、三大中心交互的指标数据等。&lt;/p>
 &lt;p>Dubbo目前推荐使用Prometheus来进行服务监控，Grafana来展示指标数据。接下来就通过案例来快速入门Dubbo的指标监控吧。&lt;/p>
 &lt;h2 id="快速入门">快速入门&lt;/h2>
 &lt;h3 id="环境">环境&lt;/h3>
@@ -638,6 +638,34 @@
 &lt;ul>
 &lt;li>&lt;a href="https://github.com/apache/dubbo-samples/tree/master/4-governance/dubbo-samples-metrics-spring-boot">https://github.com/apache/dubbo-samples/tree/master/4-governance/dubbo-samples-metrics-spring-boot&lt;/a>&lt;/li>
 &lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="依赖">依赖&lt;/h3>
+&lt;p>目前Dubbo的指标埋点仅支持3.2及以上版本，同时需要引入dubbo-metrics-prometheus依赖如下所示：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dependency&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;groupId&amp;gt;&lt;/span>org.apache.dubbo&lt;span style="color:#268bd2">&amp;lt;/groupId&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;artifactId&amp;gt;&lt;/span>dubbo-metrics-prometheus&lt;span style="color:#268bd2">&amp;lt;/artifactId&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;version&amp;gt;&lt;/span>3.2及以上版本&lt;span style="color:#268bd2">&amp;lt;/version&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;/dependency&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="配置">配置&lt;/h3>
+&lt;p>开启Dubbo的指标埋点只需要引入以下配置即可。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:metrics&lt;/span> protocol=&lt;span style="color:#2aa198">&amp;#34;prometheus&amp;#34;&lt;/span> enable-jvm-metrics=&lt;span style="color:#2aa198">&amp;#34;true&amp;#34;&lt;/span>&lt;span style="color:#268bd2">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;dubbo:aggregation&lt;/span> enabled=&lt;span style="color:#2aa198">&amp;#34;true&amp;#34;&lt;/span>&lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;dubbo:prometheus-exporter&lt;/span> enabled=&lt;span style="color:#2aa198">&amp;#34;true&amp;#34;&lt;/span> metrics-port=&lt;span style="color:#2aa198">&amp;#34;20888&amp;#34;&lt;/span>&lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;/dubbo:metrics&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>关于指标的配置可以参考配置项中的指标配置信息，在这里引入的配置中:&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>enable-jvm-metrics是对JVM指标的埋点， 如果不需要这些配置项可以将其删除或者设置为false，&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>aggregation配置是针对指标数据的聚合处理使监控指标更平滑，&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>prometheus-exporter配置为指标数据导出器，这里配置指标服务的端口号为20888，&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>启动服务后，普罗米修斯监控服务通过访问：&lt;a href="http://localhost:20888">http://localhost:20888&lt;/a> 即可拉取数据&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="可视化页面">可视化页面&lt;/h3>
