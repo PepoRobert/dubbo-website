@@ -17,12 +17,27 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;p>以上的协议识别完成之后，Channel已经确定了如何处理远程的客户端消息，通过对应的ServerPipeline进行处理即可（在处理的过程中也会根据配置信息决定消息的处理线程）。&lt;/p>
 &lt;/li>
 &lt;/ul>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>最常用的是用于服务发现。这允许应用程序通过网络发现服务，然后使用同一端口与它们通信，有助于降低网络通信的复杂性，并使其更易于管理。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>可以用于负载平衡。这允许应用程序在多个远程服务或服务集群之间平衡负载，有助于提高服务的可扩展性、可靠性和可用性。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>可以用于服务监控。这允许应用程序监视远程服务的运行状况，并在服务出现故障或变得不可用时发出警报，有助于确保服务的可用性并减少停机时间。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>参考用例
+&lt;a href="https://github.com/apache/dubbo-samples/tree/master/3-extensions/protocol/dubbo-samples-port-unification">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-port-unification&lt;/a>&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;p>在同一主机上部署多个服务或需要通过负载均衡器访问多个服务。&lt;/p>
-&lt;h2 id="参考用例">参考用例&lt;/h2>
-&lt;p>&lt;a href="https://github.com/apache/dubbo-samples/tree/master/3-extensions/protocol/dubbo-samples-port-unification">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-port-unification&lt;/a>&lt;/p>
-&lt;h2 id="配置方式">配置方式&lt;/h2>
-&lt;p>关于Dubbo支持的配置方式，可以参考&lt;a href="https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/reference-manual/config/">配置说明&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>关于Dubbo支持的配置方式 &lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/reference-manual/config/">配置说明&lt;/a>&lt;/p>
+&lt;/blockquote>
 &lt;h3 id="服务多协议导出">服务多协议导出&lt;/h3>
 &lt;p>ext-protocol参数支持配置多个不同的协议，协议之间通过&amp;quot;,&amp;ldquo;进行分隔。&lt;/p>
 &lt;h4 id="xml-配置">xml 配置&lt;/h4>
@@ -53,9 +68,8 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;groupId&amp;gt;&lt;/span>org.apache.dubbo&lt;span style="color:#268bd2">&amp;lt;/groupId&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;artifactId&amp;gt;&lt;/span>dubbo-qos&lt;span style="color:#268bd2">&amp;lt;/artifactId&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;/dependency&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>完成Qos模块的导入之后，相关的配置项可参考&lt;a href="https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/reference-manual/qos/overview/">Qos操作手册&lt;/a>进行配置。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>完成Qos模块的导入之后，相关的配置项可参考&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/reference-manual/qos/overview/">Qos操作手册&lt;/a>进行配置。&lt;/p>
 &lt;p>默认情况下，基于端口复用的Qos服务在模块导入后是启动的。&lt;/p>
-&lt;h2 id="使用方式-1">使用方式&lt;/h2>
 &lt;h3 id="qos使用">Qos使用&lt;/h3>
 &lt;p>将Qos协议接入到端口复用的场景下，需要在建立连接之后，客户端先向服务端发送消息，对比将Qos协议通过单个端口提供服务，端口复用版的Qos协议在处理telnet连接的情况下需要用户执行一些操作，完成协议识别（二选一）。&lt;/p>
 &lt;ol>
@@ -84,6 +98,15 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">// reference.setProtocol(CommonConstants.DUBBO);
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">// reference.setProtocol(CommonConstants.TRIPLE);
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/pu-server/reference-service.png" alt="pu-server-imgs4">&lt;/p></description></item><item><title>Docs3-V2: 分布式事务</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/transaction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/transaction/</guid><description>
+&lt;h2 id="特性说明">特性说明&lt;/h2>
+&lt;p>分布式事务提供对补偿事务的支持，能够在事务失败时回滚事务的影响，支持全局事务超时，能够指定事务完成的超时时间，对日志提供支持，能够查看分布式应用程序中所有服务中发生的事务的历史记录，能够轻松地调试和排除事务。&lt;/p>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;ol>
+&lt;li>电商：当客户在线购买商品时，提供分布式交易。可以确保订单和付款在不同的数据库和服务中保持同步，有助于防止付款丢失和订单错误。&lt;/li>
+&lt;li>银行：当客户在账户之间转账时，提供分布式交易。可以确保资金正确转移，所有数据库和服务保持同步。&lt;/li>
+&lt;li>医疗保健：用于在患者接受医疗治疗时提供分布式事务。可以确保医疗记录、账单信息和患者信息在多个系统中保持同步。&lt;/li>
+&lt;li>供应链管理：当材料从一个地点运送到另一个地点时，提供分布式事务。可以确保库存水平、订单和装运信息在多个系统中保持同步。&lt;/li>
+&lt;/ol>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;h3 id="第一步">&lt;strong>第一步&lt;/strong>&lt;/h3>
 &lt;p>首先访问: &lt;a href="https://seata.io/zh-cn/blog/download.html">https://seata.io/zh-cn/blog/download.html&lt;/a>&lt;/p>
@@ -398,7 +421,7 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;p>通过分组对结果进行聚合并返回聚合后的结果，比如菜单服务，用 group 区分同一接口的多种实现，现在消费方需从每种 group 中调用一次并返回结果，对结果进行合并之后返回，这样就可以实现聚合菜单项。&lt;/p>
 &lt;p>相关代码可以参考 &lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-merge">dubbo 项目中的示例&lt;/a>&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
-&lt;p>服务分组和多版本&lt;/p>
+&lt;p>将多个服务提供者分组作为一个提供者进行访问。应用程序能够像访问一个服务一样访问多个服务，并允许更有效地使用资源。&lt;/p>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;h3 id="搜索所有分组">搜索所有分组&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:reference&lt;/span> interface=&lt;span style="color:#2aa198">&amp;#34;com.xxx.MenuService&amp;#34;&lt;/span> group=&lt;span style="color:#2aa198">&amp;#34;*&amp;#34;&lt;/span> merger=&lt;span style="color:#2aa198">&amp;#34;true&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
@@ -440,8 +463,10 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;/ul>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
 &lt;p>当一个接口实现，出现不兼容升级时，可以用版本号过渡，版本号不同的服务相互间不引用。&lt;/p>
-&lt;h2 id="参考用例">参考用例&lt;/h2>
-&lt;p>&lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-version">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-version&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>参考用例
+&lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-version">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-version&lt;/a>&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;h3 id="服务提供者">服务提供者&lt;/h3>
 &lt;p>老版本服务提供者配置&lt;/p>
@@ -493,15 +518,16 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;h2 id="特性说明">特性说明&lt;/h2>
 &lt;p>此特性基于 Triple 协议和 Project Reactor 实现，&lt;code>3.1.0&lt;/code> 版本以上支持。用户仅需编写 IDL 文件，并指定 protobuf 插件的相应 Generator，即可生成并使用支持响应式API的 Stub 代码。&lt;/p>
 &lt;p>有四种调用模式，分别是 OneToOne、OneToMany、ManyToOne、ManyToMany，分别对应 Unary调用、服务端流、客户端流、双向流。在 Reactor 的实现中，One 对应 Mono，Many 对应 Flux。&lt;/p>
-&lt;h4 id="背景">背景&lt;/h4>
 &lt;p>Reactive Stream 提供了一套标准的异步流处理 API， 在能够让应用写出事件驱动的程序的同时，也通过 BackPressure 的方式保证了节点的稳定。Triple 协议在通信协议层面为 Dubbo 框架增加了流式场景的支持，在此基础上能够实现上层包括大文件传输和推送机制的业务需求。&lt;/p>
 &lt;p>Dubbo + Reactive Stream Stub 的组合模式可以给用户带来最方便的流式使用方式以及全链路异步性能提升。&lt;/p>
-&lt;h2 id="参考用例">参考用例&lt;/h2>
-&lt;p>&lt;a href="https://github.com/apache/dubbo-samples/tree/master/3-extensions/protocol/dubbo-samples-triple-reactor">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-triple-reactor&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>参考用例
+&lt;a href="https://github.com/apache/dubbo-samples/tree/master/3-extensions/protocol/dubbo-samples-triple-reactor">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-triple-reactor&lt;/a>&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
 &lt;p>系统需要处理大量并发请求而不会使任何服务器过载。大量用户提供实时数据的系统，希望确保系统能够处理负载而不会崩溃或变慢。&lt;/p>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
-&lt;p>Triple 使用及配置可参考 &lt;a href="https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/reference-manual/protocol/triple/idl/">IDL 方式使用 Triple&lt;/a>，并确保 Dubbo 版本 &amp;gt;= 3.1.0。&lt;/p>
+&lt;p>Triple 使用及配置可参考 &lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/reference-manual/protocol/triple/idl/">IDL 方式使用 Triple&lt;/a>，并确保 Dubbo 版本 &amp;gt;= 3.1.0。&lt;/p>
 &lt;h3 id="添加必要的依赖">添加必要的依赖&lt;/h3>
 &lt;p>若要使用 Reactor Triple，需要额外添加如下依赖。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dependency&amp;gt;&lt;/span>
@@ -703,8 +729,10 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;/dependency&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="使用场景">使用场景&lt;/h2>
 &lt;p>服务端在向外提供接口服务时，解决各种接口参数校验问题。&lt;/p>
-&lt;h2 id="参考用例">参考用例&lt;/h2>
-&lt;p>&lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-validation">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-validation&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>参考用例
+&lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-validation">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-validation&lt;/a>&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;h3 id="参数标注示例">参数标注示例&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">import&lt;/span> java.io.Serializable&lt;span style="color:#719e07">;&lt;/span>
@@ -846,8 +874,10 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;p>同一个接口针对不同的业务场景、不同的使用需求或者不同的功能模块等场景，可使用服务分组来区分不同的实现方式。同时，这些不同实现所提供的服务是可并存的，也支持互相调用。&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
 &lt;p>当一个接口有多种实现时，可以用 group 区分。&lt;/p>
-&lt;h2 id="参考用例">参考用例&lt;/h2>
-&lt;p>&lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-group">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-group&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;p>参考用例
+&lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-group">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-group&lt;/a>&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;h3 id="注解配置">注解配置&lt;/h3>
 &lt;h4 id="服务提供端注解配置">服务提供端(注解配置)&lt;/h4>
@@ -956,6 +986,7 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;blockquote>
 &lt;p>总是 &lt;strong>只调&lt;/strong> 一个可用组的实现&lt;/p>
 &lt;/blockquote></description></item><item><title>Docs3-V2: 集群容错</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/fault-tolerent-strategy/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/fault-tolerent-strategy/</guid><description>
+&lt;h2 id="特性说明">特性说明&lt;/h2>
 &lt;p>在集群调用失败时，Dubbo 提供了多种容错方案，缺省为 failover 重试。&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/user/cluster.jpg" alt="cluster">&lt;/p>
 &lt;p>各节点关系：&lt;/p>
@@ -966,8 +997,14 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;li>&lt;code>Router&lt;/code> 负责从多个 &lt;code>Invoker&lt;/code> 中按路由规则选出子集，比如读写分离，应用隔离等&lt;/li>
 &lt;li>&lt;code>LoadBalance&lt;/code> 负责从多个 &lt;code>Invoker&lt;/code> 中选出具体的一个用于本次调用，选的过程包含了负载均衡算法，调用失败后，需要重选&lt;/li>
 &lt;/ul>
-&lt;h2 id="集群容错模式">集群容错模式&lt;/h2>
-&lt;p>可以自行扩展集群容错策略，参见：&lt;a href="../../../reference-manual/spi/description/cluster/">集群扩展&lt;/a>&lt;/p>
+&lt;p>通过使用服务注册表和负载平衡，可以提高集群提供的容错能力，服务注册表用于存储有关可用服务及其位置的信息，负载平衡用于确保请求均匀分布在集群中的所有服务器上，如果一台服务器发生故障，负载将转移到其他可用服务器。&lt;/p>
+&lt;p>配置监视集群中服务器运行状况的运行状况检查，如果服务器未通过运行状况检查，则可以将其从集群中删除，并将负载转移到其余服务器，确保集群正常运行，并且用户可以使用应用程序。&lt;/p>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;p>多个服务器部署同一集群中，运行同一应用程序，如果一台服务器出现故障，其他服务器将接管负载，确保应用程序对用户仍然可用。&lt;/p>
+&lt;blockquote>
+&lt;p>可以自行扩展集群容错策略 &lt;a href="../../../reference-manual/spi/description/cluster/">集群扩展&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;h3 id="failover-cluster">Failover Cluster&lt;/h3>
 &lt;p>失败自动切换，当出现失败，重试其它服务器。通常用于读操作，但重试会带来更长延迟。可通过 &lt;code>retries=&amp;quot;2&amp;quot;&lt;/code> 来设置重试次数(不含第一次)。&lt;/p>
 &lt;p>重试次数配置如下：&lt;/p>
@@ -1028,7 +1065,7 @@ broadcast.fail.percent 只是控制的当失败后是否继续调用其他节点
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ol start="4">
 &lt;li>缺省值：选择一个可用的注册中心&lt;/li>
 &lt;/ol>
-&lt;h2 id="集群模式配置">集群模式配置&lt;/h2>
+&lt;h3 id="集群模式示例">集群模式示例&lt;/h3>
 &lt;p>按照以下示例在服务提供方和消费方配置集群模式&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:service&lt;/span> cluster=&lt;span style="color:#2aa198">&amp;#34;failsafe&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>或&lt;/p>
@@ -1095,10 +1132,12 @@ broadcast.fail.percent 只是控制的当失败后是否继续调用其他节点
 &lt;p>从 2.7.0 开始，Dubbo 的所有异步编程接口开始以 &lt;a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CompletableFuture.html">CompletableFuture&lt;/a> 为基础&lt;/p>
 &lt;p>基于 NIO 的非阻塞实现并行调用，客户端不需要启动多线程即可完成并行调用多个远程服务，相对多线程开销较小。&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/user/future.jpg" alt="/user-guide/images/future.jpg">&lt;/p>
-&lt;h2 id="参考用例">参考用例&lt;/h2>
-&lt;p>&lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-async">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-async&lt;/a>&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
 &lt;p>将用户请求内容发送到目标请求，当目标请求遇到高流量或需要长时间处理，异步调用功能将允许立即向用户返回响应，同时目标请求继续后台处理请求，当目标请求返回结果时，将内容显示给用户。&lt;/p>
+&lt;blockquote>
+&lt;p>参考用例
+&lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-async">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-async&lt;/a>&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;h3 id="使用-completablefuture-签名的接口">使用 CompletableFuture 签名的接口&lt;/h3>
 &lt;p>需要服务提供者事先定义 CompletableFuture 签名的服务，接口定义指南如下：&lt;/p>
@@ -1495,7 +1534,7 @@ broadcast.fail.percent 只是控制的当失败后是否继续调用其他节点
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;version&amp;gt;&lt;/span>${dubbo.version}&lt;span style="color:#268bd2">&amp;lt;/version&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;/dependency&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>从服务元数据中也可以比较容易构建泛化调用对象。&lt;/p>
-&lt;h2 id="注意事项">注意事项&lt;/h2>
+&lt;h3 id="注意事项">注意事项&lt;/h3>
 &lt;ol>
 &lt;li>
 &lt;p>如果参数为基本类型或者 Date,List,Map 等，则不需要转换，直接调用。&lt;/p>
@@ -1947,6 +1986,7 @@ key 为服务名，value 为服务提供者 url，此配置优先级最高，&lt
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 一致性哈希选址</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/consistent-hash/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/consistent-hash/</guid><description>
 &lt;h2 id="特性说明">特性说明&lt;/h2>
+&lt;p>在分布式系统中跨多个节点均匀分布请求的方法，使用哈希算法创建请求的哈希并根据哈希值确定哪个节点应该处理请求，算法确保每个节点处理的请求数量大致相等。如果一个节点发生故障，其他节点可以快速接管请求，保持系统高可用性，即使一个节点出现故障，系统的数据映射到系统中有限数量节点的哈希算法，在系统中添加或删除节点时，只需更改有限数量的映射，确保数据均匀分布在系统中的所有节点上提高系统的性能。&lt;/p>
 &lt;p>&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/blog/2019/05/01/dubbo-%E4%B8%80%E8%87%B4%E6%80%A7hash%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E5%AE%9E%E7%8E%B0%E5%89%96%E6%9E%90/">Dubbo 一致性Hash负载均衡实现剖析&lt;/a>&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
 &lt;p>在有多台服务端的时候根据请求参数的进行一致性哈希散列选择服务端。&lt;/p>
@@ -1996,10 +2036,12 @@ key 为服务名，value 为服务提供者 url，此配置优先级最高，&lt
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 调用触发事件通知</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/events-notify/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/events-notify/</guid><description>
 &lt;h2 id="特性说明">特性说明&lt;/h2>
 &lt;p>在调用之前、调用之后、出现异常时，会触发 &lt;code>oninvoke&lt;/code>、&lt;code>onreturn&lt;/code>、&lt;code>onthrow&lt;/code> 三个事件，可以配置当事件发生时，通知哪个类的哪个方法。&lt;/p>
-&lt;h2 id="参考用例">参考用例&lt;/h2>
-&lt;p>&lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-notify">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-notify&lt;/a>&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
 &lt;p>调用服务方法前我们可以记录开始时间，调用结束后统计整个调用耗费，发生异常时我们可以告警或打印错误日志或者调用服务前后记录请求日志、响应日志等。&lt;/p>
+&lt;blockquote>
+&lt;p>参考用例
+&lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-notify">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-notify&lt;/a>&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;h3 id="服务提供者与消费者共享服务接口">服务提供者与消费者共享服务接口&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">interface&lt;/span> &lt;span style="color:#268bd2">IDemoService&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
@@ -2297,6 +2339,12 @@ key 为服务名，value 为服务提供者 url，此配置优先级最高，&lt
 &lt;h2 id="特性说明">特性说明&lt;/h2>
 &lt;p>Dubbo 支持同一服务向多注册中心同时注册，或者不同服务分别注册到不同的注册中心上去，甚至可以同时引用注册在不同注册中心上的同名服务。另外，注册中心是支持自定义扩展的 &lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>。&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;ul>
+&lt;li>高可用：多个注册服务器确保即使其中一个注册服务器出现故障，服务仍然可用。&lt;/li>
+&lt;li>负载：同时访问大量服务，使用多个注册服务器帮助在多个服务器之间分配负载提高系统的整体性能和可扩展性。&lt;/li>
+&lt;li>区域：不同地理位置的服务，使用多个注册服务器来确保根据其位置注册和发现服务减少请求需要传输的距离来帮助提高系统的性能和可靠性。&lt;/li>
+&lt;li>安全：使用多个注册服务器。期望将一台注册服务器用于内部服务，另一台用于外部服务，以确保只有授权的客户端才能访问您的内部服务。&lt;/li>
+&lt;/ul>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;h3 id="多注册中心注册">多注册中心注册&lt;/h3>
 &lt;p>比如：中文站有些服务来不及在青岛部署，只在杭州部署，而青岛的其它应用需要引用此服务，就可以将服务同时注册到两个注册中心。&lt;/p>
@@ -2406,10 +2454,14 @@ key 为服务名，value 为服务提供者 url，此配置优先级最高，&lt
 &lt;/ol>
 &lt;/div></description></item><item><title>Docs3-V2: 回声测试</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/echo-service/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/echo-service/</guid><description>
 &lt;h2 id="特性说明">特性说明&lt;/h2>
-&lt;p>回声测试用于检测服务是否可用，回声测试按照正常请求流程执行，能够测试整个调用是否通畅，可用于监控。&lt;/p>
-&lt;h2 id="参考用例">参考用例&lt;/h2>
-&lt;p>&lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-echo">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-echo&lt;/a>&lt;/p>
+&lt;p>回声测试用于检测服务是否可用，回声测试按照正常请求流程执行，能够测试整个调用是否通畅，可用于监控。执行回声测试，客户端发送一个包含特定值（如字符串）的请求。服务器应使用相同的值进行响应，从而验证请求是否已成功接收和处理。如果响应与请求不匹配，则表示服务运行不正常，应进一步调查。要求 Dubbo 服务器正在运行，并且服务器和客户端之间具有网络连接。在客户端，必须配置 Dubbo 客户端以连接到服务器，客户端将向服务器发送请求，然后服务器应返回与请求相同的响应。&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;p>测试验证是否可以调用服务以及响应是否正确，对于在尝试在生产环境中使用服务之前验证服务特别有用。
+echo 测试是验证 Dubbo 服务基本功能的一种简单有效的方法，在将服务部署到生产环境之前执行此测试非常重要，以确保服务按预期工作。&lt;/p>
+&lt;blockquote>
+&lt;p>参考用例
+&lt;a href="https://github.com/apache/dubbo-samples/tree/master/2-advanced/dubbo-samples-echo">https://github.com/apache/dubbo-samples/tree/master/dubbo-samples-echo&lt;/a>&lt;/p>
+&lt;/blockquote>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;p>所有服务自动实现 &lt;code>EchoService&lt;/code> 接口，只需将任意服务引用强制转型为 &lt;code>EchoService&lt;/code>，即可使用。&lt;/p>
 &lt;h3 id="spring-配置">Spring 配置&lt;/h3>
@@ -2442,6 +2494,10 @@ key 为服务名，value 为服务提供者 url，此配置优先级最高，&lt
 &lt;h2 id="特性说明">特性说明&lt;/h2>
 &lt;p>泛接口实现方式主要用于服务器端没有 API 接口及模型类元的情况，参数及返回值中的所有 POJO 均用 Map 表示，通常用于框架集成，比如：实现一个通用的远程服务 Mock 框架，可通过实现 GenericService 接口处理所有服务请求。&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;p>注册服务: 服务提供者在服务注册表中注册服务，例如 Zookeeper，服务注册表存储有关服务的信息，例如其接口、实现类和地址。&lt;/p>
+&lt;p>部署服务: 服务提供商将服务部署在服务器并使其对消费者可用。&lt;/p>
+&lt;p>调用服务: 使用者使用服务注册表生成的代理调用服务，代理将请求转发给服务提供商，服务提供商执行服务并将响应发送回消费者。&lt;/p>
+&lt;p>监视服务：提供者和使用者可以使用 Dubbo 框架监视服务，允许他们查看服务的执行情况，并在必要时进行调整。&lt;/p>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;p>在 Java 代码中实现 &lt;code>GenericService&lt;/code> 接口&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">package&lt;/span> com.foo&lt;span style="color:#719e07">;&lt;/span>
@@ -2561,17 +2617,20 @@ key 为服务名，value 为服务提供者 url，此配置优先级最高，&lt
 &lt;p>从 &lt;code>2.2.0&lt;/code> 开始，每个服务默认都会在本地暴露。在引用服务的时候，默认优先引用本地服务。如果希望引用远程服务可以使用一下配置强制引用远程服务。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:reference&lt;/span> ... scope=&lt;span style="color:#2aa198">&amp;#34;remote&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 延迟暴露</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/delay-publish/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/delay-publish/</guid><description>
+&lt;h2 id="特性说明">特性说明&lt;/h2>
 &lt;p>如果你的服务需要预热时间，比如初始化缓存，等待相关资源就位等，可以使用 delay 进行延迟暴露。我们在 Dubbo 2.6.5 版本中对服务延迟暴露逻辑进行了细微的调整，将需要延迟暴露（delay &amp;gt; 0）服务的倒计时动作推迟到了 Spring 初始化完成后进行。你在使用 Dubbo 的过程中，并不会感知到此变化，因此请放心使用。&lt;/p>
-&lt;h2 id="dubbo-265-之前版本">Dubbo 2.6.5 之前版本&lt;/h2>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;h2 id="使用方式">使用方式&lt;/h2>
+&lt;h3 id="dubbo-265-之前版本">Dubbo 2.6.5 之前版本&lt;/h3>
 &lt;p>延迟到 Spring 初始化完成后，再暴露服务&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:service&lt;/span> delay=&lt;span style="color:#2aa198">&amp;#34;-1&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>延迟 5 秒暴露服务&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:service&lt;/span> delay=&lt;span style="color:#2aa198">&amp;#34;5000&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="dubbo-265-及以后版本">Dubbo 2.6.5 及以后版本&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="dubbo-265-及以后版本">Dubbo 2.6.5 及以后版本&lt;/h3>
 &lt;p>所有服务都将在 Spring 初始化完成后进行暴露，如果你不需要延迟暴露服务，无需配置 delay。&lt;/p>
 &lt;p>延迟 5 秒暴露服务&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:service&lt;/span> delay=&lt;span style="color:#2aa198">&amp;#34;5000&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="spring-2x-初始化死锁问题">Spring 2.x 初始化死锁问题&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="spring-2x-初始化死锁问题">Spring 2.x 初始化死锁问题&lt;/h3>
 &lt;h3 id="触发条件">触发条件&lt;/h3>
 &lt;p>在 Spring 解析到 &lt;code>&amp;lt;dubbo:service /&amp;gt;&lt;/code> 时，就已经向外暴露了服务，而 Spring 还在接着初始化其它 Bean。如果这时有请求进来，并且服务的实现类里有调用 &lt;code>applicationContext.getBean()&lt;/code> 的用法。&lt;/p>
 &lt;ol>
@@ -2604,6 +2663,8 @@ key 为服务名，value 为服务提供者 url，此配置优先级最高，&lt
 &lt;h2 id="特性说明">特性说明&lt;/h2>
 &lt;p>如果有两个镜像环境，两个注册中心，有一个服务只在其中一个注册中心有部署，另一个注册中心还没来得及部署，而两个注册中心的其它应用都需要依赖此服务。这个时候，可以让服务提供者方只注册服务到另一注册中心，而不从另一注册中心订阅服务。&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;p>服务互不依赖的情况或者当服务提供者端发生变化时，服务提供者不需要接收通知时。&lt;/p>
+&lt;p>该机制通常用于提供程序相对静态且不太可能更改的场景或者提供程序和使用者互不依赖的场景。&lt;/p>
 &lt;h2 id="使用方式">使用方式&lt;/h2>
 &lt;h3 id="禁用订阅配置">禁用订阅配置&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:registry&lt;/span> id=&lt;span style="color:#2aa198">&amp;#34;hzRegistry&amp;#34;&lt;/span> address=&lt;span style="color:#2aa198">&amp;#34;10.20.153.10:9090&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
@@ -2612,7 +2673,16 @@ key 为服务名，value 为服务提供者 url，此配置优先级最高，&lt
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:registry&lt;/span> id=&lt;span style="color:#2aa198">&amp;#34;hzRegistry&amp;#34;&lt;/span> address=&lt;span style="color:#2aa198">&amp;#34;10.20.153.10:9090&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:registry&lt;/span> id=&lt;span style="color:#2aa198">&amp;#34;qdRegistry&amp;#34;&lt;/span> address=&lt;span style="color:#2aa198">&amp;#34;10.20.141.150:9090?subscribe=false&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 分布式事务支持</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/distributed-transaction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/service/distributed-transaction/</guid><description>
+&lt;h2 id="特性说明">特性说明&lt;/h2>
 &lt;p>分布式事务基于 JTA/XA 规范实现。&lt;/p>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;p>支付交易：支付交易中的分布式交易支持，如在线支付、银行转账等，确保在完成多个服务调用后支付成功。&lt;/p>
+&lt;p>库存管理：支持库存管理中的分布式事务场景，确保用户购买产品时，库存得到相应更新成功和交易成功。&lt;/p>
+&lt;p>订单处理：支持订单处理中的分布式事务场景，确保当用户下订单时，在完成多个服务调用后成功下订单。&lt;/p>
+&lt;p>数据同步：支持数据同步中的分布式事务场景，确保在完成多个服务调用后，不同服务之间的数据同步成功。&lt;/p>
+&lt;h2 id="实现方式">实现方式&lt;/h2>
 &lt;p>&lt;strong>两阶段提交&lt;/strong>&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/user/jta-xa.jpg" alt="/user-guide/images/jta-xa.jpg">&lt;/p>
-&lt;p>在 Dubbo 中，可以采用 &lt;a href="http://static.dubbo.apache.org:8080/zh-cn/blog/2019/01/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8seata%E4%BF%9D%E8%AF%81dubbo%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%97%B4%E7%9A%84%E4%B8%80%E8%87%B4%E6%80%A7/">seata&lt;/a> 来完成对分布式事务的支持。&lt;/p></description></item></channel></rss>
+&lt;blockquote>
+&lt;p>在 Dubbo 中，可以采用 &lt;a href="http://static.dubbo.apache.org:8080/zh-cn/blog/2019/01/17/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8seata%E4%BF%9D%E8%AF%81dubbo%E5%BE%AE%E6%9C%8D%E5%8A%A1%E9%97%B4%E7%9A%84%E4%B8%80%E8%87%B4%E6%80%A7/">seata&lt;/a> 来完成对分布式事务的支持。&lt;/p>
+&lt;/blockquote></description></item></channel></rss>
