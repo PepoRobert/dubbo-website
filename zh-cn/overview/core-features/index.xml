@@ -603,20 +603,14 @@
 &lt;/ul></description></item><item><title>Overview: 观测服务</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/observability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/observability/</guid><description>
 &lt;p>Dubbo 内部维护了多个纬度的可观测指标，并且支持多种方式的可视化监测。可观测性指标从总体上来说分为三个度量纬度：&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>&lt;strong>Metrics。&lt;/strong> Dubbo 统计了一系列的流量指标如 QPS、RT、成功请求数、失败请求数等，还包括一系列的内部组件状态如线程池数、服务健康状态等。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Tracing。&lt;/strong> Dubbo 与业界主流的链路追踪工作做了适配，包括 Skywalking、Zipkin、Jaeger 都支持 Dubbo 服务的链路追踪。&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;strong>Logging。&lt;/strong> Dubbo 支持多种日志框架适配。以 Java 体系为例，支持包括 Slf4j、Log4j2、Log4j、Logback、Jcl 等，用户可以基于业务需要选择合适的框架；同时 Dubbo 还支持 Access Log 记录请求踪迹。&lt;/p>
-&lt;/li>
+&lt;li>&lt;strong>Metrics。&lt;/strong> Dubbo 统计了一系列的流量指标如 QPS、RT、成功请求数、失败请求数等，还包括一系列的内部组件状态如线程池数、服务健康状态等。&lt;/li>
+&lt;li>&lt;strong>Tracing。&lt;/strong> Dubbo 与业界主流的链路追踪工作做了适配，包括 Skywalking、Zipkin、Jaeger 都支持 Dubbo 服务的链路追踪。&lt;/li>
+&lt;li>&lt;strong>Logging。&lt;/strong> Dubbo 支持多种日志框架适配。以 Java 体系为例，支持包括 Slf4j、Log4j2、Log4j、Logback、Jcl 等，用户可以基于业务需要选择合适的框架；同时 Dubbo 还支持 Access Log 记录请求踪迹。&lt;/li>
 &lt;/ul>
 &lt;h1 id="指标">指标&lt;/h1>
 &lt;h2 id="指标模块简介">指标模块简介&lt;/h2>
-&lt;p>Dubbo的指标模块帮助用户从外部观察正在运行的系统的内部服务状况 ，Dubbo参考 &lt;a href="https://sre.google/sre-book/monitoring-distributed-systems/">&amp;ldquo;四大黄金信号&amp;rdquo;&lt;/a> 并结合实际企业应用场景从不同维度统计了丰富的关键指标，关注这些核心指标对于提供可用性的服务是至关重要的。&lt;/p>
-&lt;p>Dubbo的关键指标包含：&lt;strong>延迟（Latency）&lt;/strong>、&lt;strong>流量（Traffic）&lt;/strong>、 &lt;strong>错误（Errors）&lt;/strong> 和 &lt;strong>饱和度（Saturation）&lt;/strong> 等内容 。同时，为了更好的监测服务运行状态，Dubbo 还提供了对核心组件状态的监控，如线程池数量、三大中心交互的指标数据等。&lt;/p>
+&lt;p>Dubbo的指标模块帮助用户从外部观察正在运行的系统的内部服务状况 ，Dubbo参考 &lt;a href="https://sre.google/sre-book/monitoring-distributed-systems/">&amp;ldquo;四大黄金信号&amp;rdquo;&lt;/a>、&lt;em>RED方法&lt;/em>、&lt;em>USE方法&lt;/em>等理论并结合实际企业应用场景从不同维度统计了丰富的关键指标，关注这些核心指标对于提供可用性的服务是至关重要的。&lt;/p>
+&lt;p>Dubbo的关键指标包含：&lt;strong>延迟（Latency）&lt;/strong>、&lt;strong>流量（Traffic）&lt;/strong>、 &lt;strong>错误（Errors）&lt;/strong> 和 &lt;strong>饱和度（Saturation）&lt;/strong> 等内容 。同时，为了更好的监测服务运行状态，Dubbo 还提供了对核心组件状态的监控，如Dubbo应用信息、线程池信息、三大中心交互的指标数据等。&lt;/p>
 &lt;p>Dubbo目前推荐使用Prometheus来进行服务监控，Grafana来展示指标数据。接下来就通过案例来快速入门Dubbo的指标监控吧。&lt;/p>
 &lt;h2 id="快速入门">快速入门&lt;/h2>
 &lt;h3 id="环境">环境&lt;/h3>
@@ -625,6 +619,8 @@
 &lt;li>JDK 8 及以上&lt;/li>
 &lt;li>Git&lt;/li>
 &lt;li>Maven&lt;/li>
+&lt;li>Prometheus&lt;/li>
+&lt;li>Grafana&lt;/li>
 &lt;/ul>
 &lt;h3 id="参考案例">参考案例&lt;/h3>
 &lt;p>Dubbo官方案例中提供了指标埋点的示例，可以访问如下地址获取案例源码：&lt;/p>
@@ -655,26 +651,37 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;/dubbo:metrics&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>关于指标的配置可以参考配置项中的指标配置信息，在这里引入的配置中:&lt;/p>
 &lt;ul>
-&lt;li>
-&lt;p>enable-jvm-metrics是对JVM指标的埋点， 如果不需要这些配置项可以将其删除或者设置为false，&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>aggregation配置是针对指标数据的聚合处理使监控指标更平滑，&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>prometheus-exporter配置为指标数据导出器，这里配置指标服务的端口号为20888，&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>启动服务后，普罗米修斯监控服务通过访问：&lt;a href="http://localhost:20888">http://localhost:20888&lt;/a> 即可拉取数据&lt;/p>
-&lt;/li>
+&lt;li>&lt;strong>enable-jvm-metrics：&lt;/strong> 是对JVM指标的埋点， 如果不需要这些配置项可以将其删除或者设置为false。&lt;/li>
+&lt;li>&lt;strong>aggregation：&lt;/strong> 针对指标数据的聚合处理使监控指标更平滑。&lt;/li>
+&lt;li>&lt;strong>prometheus-exporter：&lt;/strong> 指标数据导出器，这里配置指标服务的端口号为20888。&lt;/li>
 &lt;/ul>
+&lt;p>配置完成后即可启动服务。&lt;/p>
+&lt;h3 id="指标获取">指标获取&lt;/h3>
+&lt;p>前面的例子中提供了指标服务，接下来我们可以通过普罗米修斯来获取数据。
+普罗米修斯监控服务通过访问：&lt;a href="http://localhost:20888">http://localhost:20888&lt;/a> 即可拉取数据
+指标数据如下所示：
+&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/advantages/metrics.png" alt="metrics.png">&lt;/p>
+&lt;p>普罗米修斯获取数据的配置参考如下：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75"># A scrape configuration containing exactly one endpoint to scrape:&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75"># Here it&amp;#39;s Prometheus itself.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">scrape_configs&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75"># The job name is added as a label `job=&amp;lt;job_name&amp;gt;` to any timeseries scraped from this config.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#268bd2">job_name&lt;/span>: &lt;span style="color:#2aa198">&amp;#39;prometheus&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75"># metrics_path defaults to &amp;#39;/metrics&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75"># scheme defaults to &amp;#39;http&amp;#39;.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#268bd2">job_name&lt;/span>: &lt;span style="color:#2aa198">&amp;#39;dubbo&amp;#39;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">static_configs&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - &lt;span style="color:#268bd2">targets&lt;/span>: [&lt;span style="color:#2aa198">&amp;#39;IP:20888&amp;#39;&lt;/span>]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>当然在实际企业应用中这个服务发现的地址并不会使用这个静态配置，需要改成动态配置。&lt;/p>
+&lt;p>也可以使用普罗米修斯的图形界面来查询指标数据如下图所示：
+&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/advantages/prometheus.png" alt="prometheus.png">&lt;/p>
 &lt;h3 id="可视化页面">可视化页面&lt;/h3>
-&lt;p>也可以使用 Grafana、Prometheus 等实现可视化指标监测，具体请参考以下可视化任务示例：&lt;/p>
-&lt;ul>
-&lt;li>&lt;a href="">Admin 任务链接&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Grafana 任务链接&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Prometheus 任务链接&lt;/a>&lt;/li>
-&lt;/ul>
+&lt;p>也可以使用 Grafana可视化指标监测，下面以Grafana可视化为例：
+Dubbo可观测性面板可以在Grafana官网的模板库中可以找到，您可以直接导入如下模版，并配置好数据源即可。
+&lt;a href="https://grafana.com/grafana/dashboards/18051">https://grafana.com/grafana/dashboards/18051&lt;/a>&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/advantages/grafana-dashboard-1.png" alt="grafana-dashboard-1.png">
+&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/advantages/grafana-dashboard-2.png" alt="grafana-dashboard-2.png">&lt;/p>
 &lt;h2 id="tracing">Tracing&lt;/h2>
 &lt;p>全链路追踪对于监测分布式系统运行状态具有非常重要的价值，Dubbo 通过 Filter 拦截器实现了请求运行时的埋点跟踪，通过将跟踪数据导出到一些主流实现如 Zipkin、Skywalking、Jaeger 等，可以实现全链路跟踪数据的分析与可视化展示。&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/advantages/observability-tracing.png" alt="Admin 效果图">&lt;/p>
