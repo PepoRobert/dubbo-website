@@ -174,6 +174,7 @@
 &lt;/h4>
 &lt;p>Dubbo 提供以下协议类型的支持：&lt;/p>
 &lt;p>&lt;a href='http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/protocol/dubbo/'>Dubbo 协议&lt;/a>&lt;/p>
+&lt;p>&lt;a href='http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/protocol/triple/'>Triple 协议&lt;/a>&lt;/p>
 &lt;p>&lt;a href='http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/protocol/grpc/'>gRPC 协议&lt;/a>&lt;/p>
 &lt;p>&lt;a href='http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/protocol/http/'>HTTP / Rest 协议&lt;/a>&lt;/p>
 &lt;p>&lt;a href='http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/protocol/thrift/'>Thrift 协议&lt;/a>&lt;/p>
