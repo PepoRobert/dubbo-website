@@ -463,7 +463,7 @@
 &lt;/ul>
 &lt;h2 id="任务项">任务项&lt;/h2>
 &lt;p>接下来，通过如下任务项分别来介绍 Dubbo 的扩展特性。&lt;/p>
-&lt;section id="section-0" style="">
+&lt;h1 id="hahahugoshortcode-s0-hbhb">&lt;section id="section-0" style="">
 &lt;div class="td-content list-page">
 &lt;div class="lead">&lt;/div>&lt;header class="article-meta">
 &lt;/header>&lt;div class="row">
@@ -512,7 +512,46 @@
 &lt;/div>
 &lt;hr>
 &lt;/div>
-&lt;/section></description></item><item><title>Overview: 服务网格</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/mesh/</guid><description>
+&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD:content/zh/overview/tasks/extensibility/_index.md
+&lt;/section>
+&lt;/h1>
+&lt;p>(2) 实现类内容&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">@Activate&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">public&lt;/span> &lt;span style="color:#268bd2">class&lt;/span> &lt;span style="color:#268bd2">TripleHttp2Protocol&lt;/span> &lt;span style="color:#268bd2">extends&lt;/span> Http2WireProtocol &lt;span style="color:#719e07">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">// ...
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span>&lt;span style="color:#719e07">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>说明下：Http2WireProtocol 实现了 WireProtocol 接口&lt;/p>
+&lt;p>(3) Dubbo 配置模块中，扩展点均有对应配置属性或标签，通过配置指定使用哪个扩展实现。比如：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>&amp;lt;dubbo:protocol name=&amp;#34;tri&amp;#34; /&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>从上面的扩展步骤可以看出，用户基本在黑盒下就完成了扩展。&lt;/p>
+&lt;h2 id="dubbo-扩展的应用">Dubbo 扩展的应用&lt;/h2>
+&lt;p>Dubbo 的扩展能力非常灵活，在自身功能的实现上无处不在。&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/concepts/extension-use.png" alt="//imgs/v3/concepts/extension-use.png">&lt;/p>
+&lt;p>Dubbo 扩展能力使得 Dubbo 项目很方便的切分成一个一个的子模块，实现热插拔特性。用户完全可以基于自身需求，替换 Dubbo 原生实现，来满足自身业务需求。&lt;/p>
+&lt;h2 id="使用场景">使用场景&lt;/h2>
+&lt;ul>
+&lt;li>如果你需要自定义负载均衡策略，你可以使用 Dubbo 扩展能力。&lt;/li>
+&lt;li>如果你需要实现自定义的注册中心，你可以使用 Dubbo 扩展能力。&lt;/li>
+&lt;li>如果你需要实现自定义的过滤器，你可以使用 Dubbo 扩展能力。&lt;/li>
+&lt;/ul>
+&lt;p>Dubbo 扩展平等的对待内部实现和第三方实现。更多使用场景，参见 &lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/reference-manual/spi/description/">SPI 扩展实现&lt;/a>&lt;/p>
+&lt;blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>master:content/zh-cn/overview/what/extensibility.md&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;/blockquote></description></item><item><title>Overview: 服务网格</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/mesh/</guid><description>
 &lt;section id="section-0" style="">
 &lt;div class="td-content list-page">
 &lt;div class="lead">&lt;/div>&lt;header class="article-meta">

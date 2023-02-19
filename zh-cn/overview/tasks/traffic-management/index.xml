@@ -18,10 +18,10 @@
 &lt;h4 id="操作步骤">操作步骤&lt;/h4>
 &lt;ol>
 &lt;li>打开 Dubbo Admin 控制台&lt;/li>
-&lt;li>在左侧导航栏选择【流量管控】&amp;gt;【超时时间】&lt;/li>
+&lt;li>在左侧导航栏选择【服务治理】&amp;gt;【动态配置】&lt;/li>
 &lt;li>点击 &amp;ldquo;创建&amp;rdquo;，输入服务 &lt;code>org.apache.dubbo.samples.UserService&lt;/code> 和新的超时时间如 &lt;code>2000&lt;/code> 即可。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="" alt="Admin 超时时间设置截图">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/timeout/timeout_admin.png" alt="Admin 超时时间设置截图">&lt;/p>
 &lt;p>保存后，再次点击 &lt;code>Timeout Login&lt;/code>，此时在经过短暂的等待后系统可以正常登录。&lt;/p>
 &lt;h4 id="规则详解">规则详解&lt;/h4>
 &lt;p>&lt;strong>规则 key&lt;/strong> ：&lt;code>org.apache.dubbo.samples.UserService&lt;/code>&lt;/p>
@@ -47,18 +47,21 @@
 &lt;h2 id="任务详情">任务详情&lt;/h2>
 &lt;p>成功登录商城项目后，商城会默认在首页展示当前登录用户的详细信息。&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/retry/retry1.png" alt="retry1.png">&lt;/p>
-&lt;p>但有些时候，提供用户详情的 Dubbo 服务也会由于网络不稳定等各种原因变的不稳定，比如我们提供用户详情的 User 服务就很大概率会调用失败，导致用户无法看到账户的详细信息。商城为了获得带来更好的使用体验，用户信息的加载过程是异步的，因此用户信息加载失败并不会影响对整个商城页面的正常访问，但如果能始终展示完整的用户信息总能给使用者留下更好的印象。&lt;/p>
+&lt;p>但有些时候，提供用户详情的 Dubbo 服务也会由于网络不稳定等各种原因变的不稳定，比如我们提供用户详情的 User 服务就很大概率会调用失败，导致用户无法看到账户的详细信息。&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/retry/retry2.png" alt="retry2.png">&lt;/p>
+&lt;p>用户账户详情查询失败后的系统界面如下：&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/retry/retry4.png" alt="retry2.png">&lt;/p>
+&lt;p>商城为了获得带来更好的使用体验，用户信息的加载过程是异步的，因此用户信息加载失败并不会影响对整个商城页面的正常访问，但如果能始终展示完整的用户信息总能给使用者留下更好的印象。&lt;/p>
 &lt;h3 id="增加重试提高成功率">增加重试提高成功率&lt;/h3>
 &lt;p>考虑到访问用户详情的过程是异步的（隐藏在页面加载背后），只要最终数据能加载出来，适当的增加等待时间并不是大的问题。因此，我们可以考虑通过对每次用户访问增加重试次数的方式，提高服务详情服务的整体访问成功率。&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/retry/retry3.png" alt="retry3.png">&lt;/p>
 &lt;h4 id="操作步骤">操作步骤&lt;/h4>
 &lt;ol>
 &lt;li>打开 Dubbo Admin 控制台&lt;/li>
-&lt;li>在左侧导航栏选择【流量管控】&amp;gt;【服务重试】&lt;/li>
+&lt;li>在左侧导航栏选择【服务治理】&amp;gt;【动态配置】&lt;/li>
 &lt;li>点击 &amp;ldquo;创建&amp;rdquo;，输入服务 &lt;code>org.apache.dubbo.samples.UserService&lt;/code> 和失败重试次数如 &lt;code>4&lt;/code> 即可。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="" alt="Admin 重试次数设置截图">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/retry/retry_admin.png" alt="Admin 重试次数设置截图">&lt;/p>
 &lt;p>保存后，尝试多次刷新页面，发现用户详情数据总是能正常显示，虽然有时由于重试的缘故加载时间会明显变长。&lt;/p>
 &lt;h4 id="规则详解">规则详解&lt;/h4>
 &lt;p>&lt;strong>规则 key&lt;/strong> ：&lt;code>org.apache.dubbo.samples.UserService&lt;/code>&lt;/p>
@@ -90,10 +93,10 @@
 &lt;h4 id="操作步骤">操作步骤&lt;/h4>
 &lt;ol>
 &lt;li>打开 Dubbo Admin 控制台&lt;/li>
-&lt;li>在左侧导航栏选择【流量管控】&amp;gt;【访问日志】&lt;/li>
+&lt;li>在左侧导航栏选择【服务治理】&amp;gt;【动态配置】&lt;/li>
 &lt;li>点击 &amp;ldquo;创建&amp;rdquo;，输入应用名 &lt;code>shop-user&lt;/code> 并勾选 &amp;ldquo;开启访问日志&amp;rdquo;（此时访问日志将和普通日志打印在一起）。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="" alt="Admin 访问日志设置截图">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/accesslog/accesslog_admin.png" alt="Admin 访问日志设置截图">&lt;/p>
 &lt;p>再次访问登录页面，登录到 &lt;code>User&lt;/code> 应用的任意一台机器，可以看到如下格式的访问日志。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>[2022-12-30 12:36:31.15900] -&amp;gt; [2022-12-30 12:36:31.16000] 192.168.0.103:60943 -&amp;gt; 192.168.0.103:20884 - org.apache.dubbo.samples.UserService login(java.lang.String,java.lang.String) [&amp;#34;test&amp;#34;,&amp;#34;&amp;#34;], dubbo version: 3.2.0-beta.4-SNAPSHOT, current host: 192.168.0.103
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>[2022-12-30 12:36:33.95900] -&amp;gt; [2022-12-30 12:36:33.95900] 192.168.0.103:60943 -&amp;gt; 192.168.0.103:20884 - org.apache.dubbo.samples.UserService getInfo(java.lang.String) [&amp;#34;test&amp;#34;], dubbo version: 3.2.0-beta.4-SNAPSHOT, current host: 192.168.0.103
@@ -150,10 +153,10 @@
 &lt;h4 id="操作步骤">操作步骤&lt;/h4>
 &lt;ol>
 &lt;li>登录 Dubbo Admin 控制台&lt;/li>
-&lt;li>在左侧导航栏选择【流量管控】 &amp;gt; 【同区域优先】。&lt;/li>
+&lt;li>在左侧导航栏选择【服务治理】 &amp;gt; 【条件路由】。&lt;/li>
 &lt;li>点击 &amp;ldquo;创建&amp;rdquo; 按钮，填入要启用同区域优先的服务如 &lt;code>org.apache.dubbo.samples.CommentService&lt;/code> 与 &lt;code>区域标识&lt;/code> 如 &lt;code>region&lt;/code> 即可。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="" alt="Admin 同区域优先设置截图">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/region/region_admin.png" alt="Admin 同区域优先设置截图">&lt;/p>
 &lt;p>同区域优先开启后，此时再尝试刷新商品详情页面，可以看到 description 与 comment 始终保持 v1 或 v2 的同步。&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/region/region4.png" alt="region4">&lt;/p>
 &lt;p>如果你将 &lt;code>hangzhou&lt;/code> 区域部署的 Comment v2 版本全部下线，则 Detail v2 会自动的跨区域访问到 &lt;code>beijing&lt;/code> 区域的 Comment v1。&lt;/p>
@@ -198,14 +201,15 @@
 &lt;h4 id="操作步骤">操作步骤&lt;/h4>
 &lt;ol>
 &lt;li>打开 Dubbo Admin 控制台&lt;/li>
-&lt;li>在左侧导航栏选择【流量管控】&amp;gt;【流量隔离】&lt;/li>
+&lt;li>在左侧导航栏选择【服务治理】&amp;gt;【标签路由】&lt;/li>
 &lt;li>点击 &amp;ldquo;创建&amp;rdquo;，输入 &lt;code>shop-detail&lt;/code> 和流量隔离条件保存即可；重复为 &lt;code>shop-comment&lt;/code>、&lt;code>shop-order&lt;/code> 创建相同的隔离规则。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="" alt="Admin 灰度隔离环境设置截图">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/gray/gray_admin.png" alt="Admin 灰度隔离环境设置截图">&lt;/p>
 &lt;p>以上规则为每个应用隔离出了一套独立的灰度环境，所有带有 &lt;code>env=gray&lt;/code> 的标签都属于灰度环境。等待一小会确保规则下发完成，接下来就可以验证灰度流量在隔离环境中运行。&lt;/p>
 &lt;p>为了模拟灰度流量，我们为商城示例首页设置了一个 &lt;code>Login To Gray&lt;/code> 的入口来模拟从灰度环境进入商城的流量，在真实环境中这可以通过在入口网关根据某些规则识别流量并自动打标实现。&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/gray/gray2.png" alt="gray2">&lt;/p>
-&lt;p>通过 &lt;code>Login To Gray&lt;/code> 登录后，之后所有请求 Detail、Comment、Order、User 服务的流量都会自动带有 &lt;code>dubbo.tag=gray&lt;/code> 的标识，Dubbo 标签路由组件会识别这个标识，并将流量路由到刚才圈定的灰度环境（即所有 &lt;code>env=gray&lt;/code> 的实例）。&lt;/p>
+&lt;p>通过 &lt;code>Login To Gray&lt;/code> 登录后，之后所有请求 Detail、Comment、Order、User 服务的流量都会自动带有 &lt;code>dubbo.tag=gray&lt;/code> 的标识，Dubbo 标签路由组件会识别这个标识，并将流量路由到刚才圈定的灰度环境（即所有 &lt;code>env=gray&lt;/code> 的实例）。系统运行效果如下：&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/gray/gray3.png" alt="Admin 灰度隔离环境设置截图">&lt;/p>
 &lt;h4 id="规则详解">规则详解&lt;/h4>
 &lt;p>我们需要通过 Admin 为 &lt;code>shop-detail&lt;/code>、&lt;code>shop-comment&lt;/code>、&lt;code>shop-order&lt;/code>、&lt;code>shop-user&lt;/code> 四个应用分别设置标签归组规则，以 &lt;code>shop-detail&lt;/code> 为例：&lt;/p>
 &lt;p>&lt;strong>规则 key&lt;/strong> ：&lt;code>shop-detail&lt;/code>&lt;/p>
@@ -259,7 +263,7 @@
 &lt;li>在左侧导航栏选择【服务治理】 &amp;gt; 【参数路由】&lt;/li>
 &lt;li>点击 &amp;ldquo;创建&amp;rdquo; 按钮，输入。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="" alt="Admin 参数路由设置截图">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/arguments/arguments_admin.png" alt="Admin 参数路由设置截图">&lt;/p>
 &lt;p>方法参数的索引从 &lt;code>0&lt;/code> 开始，我们上面填入 &lt;code>1&lt;/code> 表示根据第二个参数进行流量转发。&lt;/p>
 &lt;h4 id="规则详解">规则详解&lt;/h4>
 &lt;p>&lt;strong>规则 key&lt;/strong> ：&lt;code>org.apache.dubbo.samples.DetailService&lt;/code>&lt;/p>
@@ -271,14 +275,14 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">enabled&lt;/span>: &lt;span style="color:#cb4b16">true&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">priority&lt;/span>: &lt;span style="color:#2aa198">1&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">conditions&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - method=getItem &amp;amp; arguments[1]=dubbo =&amp;gt; orderVersion=v2
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - method=getItem &amp;amp; arguments[1]=dubbo =&amp;gt; detailVersion=v2
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>&lt;code>method=getItem &amp;amp; arguments[1]=dubbo&lt;/code> 表示流量规则匹配 &lt;code>getItem&lt;/code> 方法调用的第二个参数，当参数值为 &lt;code>dubbo&lt;/code> 时做进一步的地址子集筛选。&lt;/li>
-&lt;li>&lt;code>orderVersion=v2&lt;/code> 将过滤出所有带有 &lt;code>orderVersion=v2&lt;/code> 标识的 URL 地址子集（在示例部署中，我们所有 detail v2 的实例都已经打上了 &lt;code>orderVersion=v2&lt;/code> 标签）。&lt;/li>
+&lt;li>&lt;code>detailVersion=v2&lt;/code> 将过滤出所有带有 &lt;code>detailVersion=v2&lt;/code> 标识的 URL 地址子集（在示例部署中，我们所有 detail v2 的实例都已经打上了 &lt;code>detailVersion=v2&lt;/code> 标签）。&lt;/li>
 &lt;/ul>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">conditions&lt;/span>:
-&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - method=getItem &amp;amp; arguments[1]=dubbo =&amp;gt; orderVersion=v2
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>force: false&lt;/code> 表示如果没有 &lt;code>type=vip&lt;/code> 的地址，则随机访问所有可用地址。&lt;/p>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> - method=getItem &amp;amp; arguments[1]=dubbo =&amp;gt; detailVersion=v2
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>force: false&lt;/code> 表示如果没有 &lt;code>detailVersion=v2&lt;/code> 的地址，则随机访问所有可用地址。&lt;/p>
 &lt;h2 id="其他事项">其他事项&lt;/h2>
 &lt;p>本示例只是 Dubbo 条件路由的一种使用场景，除了根据方法名、参数匹配进行流量转发，条件路由还可以根据附加参数 Attachments、URL 中的数据等进行流量转发，同时匹配条件也支持范围、通配符等，比如：&lt;/p>
 &lt;ul>
@@ -310,10 +314,10 @@
 &lt;h4 id="操作步骤">操作步骤&lt;/h4>
 &lt;ol>
 &lt;li>打开 Dubbo Admin 控制台&lt;/li>
-&lt;li>在左侧导航栏选择【流量管控】&amp;gt;【权重比例】&lt;/li>
+&lt;li>在左侧导航栏选择【服务治理】&amp;gt;【动态配置】&lt;/li>
 &lt;li>点击 &amp;ldquo;创建&amp;rdquo;，输入要调整的 &lt;code>org.apache.dubbo.samples.OrderService&lt;/code> 、目标实例匹配条件和权重值。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="" alt="Admin 权重比例设置截图">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/weight/weight_admin.png" alt="Admin 权重比例设置截图">&lt;/p>
 &lt;p>再次疯狂点击 &amp;ldquo;Buy Now&amp;rdquo; 尝试多次创建订单，现在大概只有 20% 的机会看到 v2 版本的订单详情信息&lt;/p>
 &lt;p>在确定 v2 版本的 Order 服务稳定运行后，进一步的增加 v2 权重，直到所有老版本服务都被新版本替换掉，这样就完成了一次稳定的服务版本升级。&lt;/p>
 &lt;h4 id="规则详解">规则详解&lt;/h4>
@@ -364,9 +368,10 @@
 &lt;li>在左侧导航栏选择【流量管控】&amp;gt;【服务降级】&lt;/li>
 &lt;li>点击 &amp;ldquo;创建&amp;rdquo;，输入服务 &lt;code>org.apache.dubbo.samples.CommentService&lt;/code> 和降级规则。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="" alt="Admin 服务降级规则配置截图">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/mock/mock_admin.png" alt="Admin 服务降级规则配置截图">&lt;/p>
 &lt;p>等待降级规则推送完成之后，刷新商品详情页面，发现商品评论信息已经变为我们预先设置的 &amp;ldquo;Mock Comment&amp;rdquo;，因为商品详情页的 Comment 服务调用已经在本地短路，并没有真正的发送到后端服务提供者机器上。&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/mock/mock2.png" alt="mock2.png">&lt;/p>
+&lt;p>再次刷新页面&lt;/p>
 &lt;h4 id="规则详解">规则详解&lt;/h4>
 &lt;p>&lt;strong>规则 key&lt;/strong> ：&lt;code>org.apache.dubbo.samples.CommentService&lt;/code>&lt;/p>
 &lt;p>&lt;strong>规则体&lt;/strong>&lt;/p>
@@ -398,12 +403,13 @@
 &lt;h4 id="操作步骤">操作步骤&lt;/h4>
 &lt;ol>
 &lt;li>打开 Dubbo Admin 控制台&lt;/li>
-&lt;li>在左侧导航栏选择【流量管控】&amp;gt;【指定机器导流】&lt;/li>
+&lt;li>在左侧导航栏选择【服务治理】&amp;gt;【条件路由】&lt;/li>
 &lt;li>点击 &amp;ldquo;创建&amp;rdquo;，输入服务 &lt;code>org.apache.dubbo.samples.UserService&lt;/code> 。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="" alt="Admin 指定机器导流配置截图">&lt;/p>
-&lt;p>打开机器日志，刷新页面多触发机器用户详情服务调用，可以看到只有规则中指定实例中的日志在持续更新。&lt;/p>
-&lt;h4 id="规则详解">规则详解&lt;/h4>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/tasks/host/host_admin.png" alt="Admin 指定机器导流配置截图">&lt;/p>
+&lt;p>打开机器日志，刷新页面多触发机器用户详情服务调用，可以看到只有规则中指定的实例中在持续刷新以下日志：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>Received getInfo request......
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="规则详解">规则详解&lt;/h4>
 &lt;p>&lt;strong>规则 key&lt;/strong> ：&lt;code>org.apache.dubbo.samples.UserService&lt;/code>&lt;/p>
 &lt;p>&lt;strong>规则体&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">configVersion&lt;/span>: v3.0
