@@ -944,7 +944,7 @@ gRPC 的优势由HTTP2 和 Protobuf 继承而来。&lt;/p>
 &lt;p>适用于 SOA 标准 RPC 框架。&lt;/p>
 &lt;h2 id="使用方式---java">使用方式 - Java&lt;/h2>
 &lt;h3 id="依赖">依赖&lt;/h3>
-&lt;p>从 Dubbo 3 开始，Thrift 协议已经不再内嵌在 Dubbo 中，需要单独引入独立的&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/download/dubbo-spi-extensions/#dubbo-rpc">模块&lt;/a>。&lt;/p>
+&lt;p>从 Dubbo 3 开始，Thrift 协议已经不再内嵌在 Dubbo 中，需要单独引入独立的&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/download/spi-extensions/#dubbo-rpc">模块&lt;/a>。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dependency&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;groupId&amp;gt;&lt;/span>org.apache.dubbo.extensions&lt;span style="color:#268bd2">&amp;lt;/groupId&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;artifactId&amp;gt;&lt;/span>dubbo-rpc-native-thrift&lt;span style="color:#268bd2">&amp;lt;/artifactId&amp;gt;&lt;/span>
@@ -987,7 +987,7 @@ gRPC 的优势由HTTP2 和 Protobuf 继承而来。&lt;/p>
 &lt;p>是 Java 的一组拥护开发分布式应用程序的 API，实现了不同操作系统之间程序的方法调用。&lt;/p>
 &lt;h2 id="使用方式---java">使用方式 - Java&lt;/h2>
 &lt;h3 id="引入依赖">引入依赖&lt;/h3>
-&lt;p>从 Dubbo 3 开始，RMI 协议已经不再内嵌在 Dubbo 中，需要单独引入独立的&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/download/dubbo-spi-extensions/#dubbo-rpc">模块&lt;/a>。&lt;/p>
+&lt;p>从 Dubbo 3 开始，RMI 协议已经不再内嵌在 Dubbo 中，需要单独引入独立的&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/download/spi-extensions/#dubbo-rpc">模块&lt;/a>。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dependency&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;groupId&amp;gt;&lt;/span>org.apache.dubbo.extensions&lt;span style="color:#268bd2">&amp;lt;/groupId&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;artifactId&amp;gt;&lt;/span>dubbo-rpc-rmi&lt;span style="color:#268bd2">&amp;lt;/artifactId&amp;gt;&lt;/span>
