@@ -4,7 +4,7 @@
 &lt;p>本文将基于 Dubbo Samples 示例演示如何快速搭建并部署一个微服务应用。
 代码地址：&lt;a href="https://github.com/apache/dubbo-samples/10-task/dubbo-samples-develop">dubbo-samples-develop&lt;/a>
 代码分为三个模块，如下图：
-&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/develop/develop-project.png" alt="project">&lt;/p>
+&lt;code>![project](/imgs/v3/develop/develop-project.png)&lt;/code>&lt;/p>
 &lt;h2 id="准备">准备&lt;/h2>
 &lt;p>本示例代码基于Springboot 3.0&lt;/p>
 &lt;p>1、首先需要一个可用的注册中心Zookeeper，Nacos，Redis均可。&lt;/p>
@@ -70,7 +70,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>启动成功后，在注册中心可以看到对应的服务列表，如图：
-&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/develop/develop-service-list.png" alt="serviceList">&lt;/p>
+&lt;code>![serviceList](/imgs/v3/develop/develop-service-list.png)&lt;/code>&lt;/p>
 &lt;h2 id="调用服务">调用服务&lt;/h2>
 &lt;p>创建DemoTask类，通过@DubboReference注解对需要调用的服务进行引入。即可像调用本地方法一样调用远程服务了。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">//实现CommandLineRunner 让Springboot启动后调用run方法
@@ -256,7 +256,7 @@ Provider端异步执行将阻塞的业务从Dubbo内部线程池切换到业务�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>启动服务后，可以在注册中心看到对应的服务列表，如下：
-&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/develop/develop-service-list.png" alt="serviceList">&lt;/p>
+&lt;code>![serviceList](/imgs/v3/develop/develop-service-list.png)&lt;/code>&lt;/p>
 &lt;p>客户端接口调用：&lt;/p>
 &lt;blockquote>
 &lt;p>使用 @DubboReference 注解，添加 group 参数和 version 参数&lt;/p>
