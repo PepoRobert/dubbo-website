@@ -8,7 +8,7 @@
 &lt;h2 id="开发">开发&lt;/h2>
 &lt;p>接下来以 Java 体系 Spring Boot 项目为例讲解 Dubbo 应用开发的基本步骤，整个过程非常直观简单，其他语言开发过程类似。&lt;/p>
 &lt;h3 id="创建项目">创建项目&lt;/h3>
-&lt;p>&lt;a href="">Dubbo 微服务项目脚手架&lt;/a>（支持浏览器页面、命令行和 IDE）可用于快速创建微服务项目，只需要告诉脚手架期望包含的功能或组件，脚手架最终可以帮助开发者生成具有必要依赖的微服务工程。&lt;/p>
+&lt;p>&lt;a href="http://static.dubbo.apache.org:8080/">Dubbo 微服务项目脚手架&lt;/a>（支持浏览器页面、命令行和 IDE）可用于快速创建微服务项目，只需要告诉脚手架期望包含的功能或组件，脚手架最终可以帮助开发者生成具有必要依赖的微服务工程。&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/advantages/initializer.png" alt="脚手架示例图">&lt;/p>
 &lt;h3 id="开发服务">开发服务&lt;/h3>
 &lt;p>&lt;strong>1. 定义服务&lt;/strong>&lt;/p>
@@ -50,25 +50,24 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>以上是 Dubbo 微服务开发的流程性说明，实际开发的详细指导步骤请参见：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">Java 微服务开发入门&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Go 微服务开发入门&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Rust 微服务开发入门&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Node.js 微服务开发入门&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../quickstart/java">Java 微服务开发入门&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../quickstart/go">Go 微服务开发入门&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../quickstart/rust">Rust 微服务开发入门&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../quickstart/nodejs">Node.js 微服务开发入门&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="部署">部署&lt;/h2>
 &lt;p>Dubbo 原生服务可打包部署到 Docker 容器、Kubernetes、服务网格 等云原生基础设施和微服务架构。&lt;/p>
 &lt;p>关于不同环境的部署示例，可参考：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">部署 Dubbo 服务到 Docker 容器&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">部署 Dubbo 服务到 Kubernetes&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">部署 Dubbo 服务到 Service Mesh&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../task/deploy/deploy-on-docker">部署 Dubbo 服务到 Docker 容器&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../task/deploy/deploy-on-k8s-containerd">部署 Dubbo 服务到 Kubernetes&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="治理">治理&lt;/h2>
 &lt;p>对于服务治理，绝大多数应用只需要增加以下配置即可，Dubbo 应用将具备地址发现和负载均衡能力。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">dubbo&lt;/span>:
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">registry&lt;/span>:
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">address&lt;/span>: zookeeper://127.0.0.1:2181
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>部署并打开 &lt;a href="">Dubbo Admin 控制台&lt;/a>，可以看到集群的服务部署和调用数据&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>部署并打开 &lt;a href="../../task/deploy">Dubbo Admin 控制台&lt;/a>，可以看到集群的服务部署和调用数据&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/what/admin.png" alt="Admin">&lt;/p>
 &lt;p>除此之外，Dubbo Amin 还可以通过以下能力提升研发测试效率&lt;/p>
 &lt;ul>
@@ -103,7 +102,7 @@
 &lt;p>从注册中心视角来看，它负责以应用名 (dubbo.application.name) 对整个集群的实例地址进行聚合，每个对外提供服务的实例将自身的应用名、实例ip:port 地址信息 (通常还包含少量的实例元数据，如机器所在区域、环境等) 注册到注册中心。&lt;/p>
 &lt;blockquote>
 &lt;p>Dubbo2 版本注册中心以服务粒度聚合实例地址，比应用粒度更细，也就意味着传输的数据量更大，因此在大规模集群下也遇到一些性能问题。
-针对 Dubbo2 与 Dubbo3 跨版本数据模型不统一的问题，Dubbo3 给出了&lt;a href="">平滑迁移方案&lt;/a>，可做到模型变更对用户无感。&lt;/p>
+针对 Dubbo2 与 Dubbo3 跨版本数据模型不统一的问题，Dubbo3 给出了&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/migration-service-discovery/">平滑迁移方案&lt;/a>，可做到模型变更对用户无感。&lt;/p>
 &lt;/blockquote>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/feature/service-discovery/registry-data.png" alt="service-discovery">&lt;/p>
 &lt;br/>
@@ -124,12 +123,12 @@
 &lt;h2 id="配置方式">配置方式&lt;/h2>
 &lt;p>Dubbo 服务发现扩展了多种注册中心组件支持，如 Nacos、Zookeeper、Consul、Redis、kubernetes 等，可以通过配置切换不通实现，同时还支持鉴权、命名空间隔离等配置。具体配置方式请查看 SDK 文档&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">Java&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Golang&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Rust&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Node.js&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Java&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Golang&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Rust&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Node.js&lt;/a>&lt;/li>
 &lt;/ul>
-&lt;p>Dubbo 还支持一个应用内配置多注册中心的情形如双注册、双订阅等，这对于实现不同集群地址数据互通、集群迁移等场景非常有用处，&lt;a href="">最佳实践&lt;/a> 任务里有关于这部分的示例说明。&lt;/p>
+&lt;p>Dubbo 还支持一个应用内配置多注册中心的情形如双注册、双订阅等，这对于实现不同集群地址数据互通、集群迁移等场景非常有用处，&lt;a href="http://static.dubbo.apache.org:8080/">最佳实践&lt;/a> 任务里有关于这部分的示例说明。&lt;/p>
 &lt;h2 id="自定义扩展">自定义扩展&lt;/h2>
 &lt;p>注册中心适配支持自定义扩展实现，具体请参见 &lt;a href="../extensibility">Dubbo 可扩展性&lt;/a>&lt;/p></description></item><item><title>Overview: 负载均衡</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/load-balance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/load-balance/</guid><description>
 &lt;p>在集群负载均衡时，Dubbo 提供了多种均衡策略，缺省为 &lt;code>weighted random&lt;/code> 基于权重的随机负载均衡策略。&lt;/p>
@@ -269,10 +268,10 @@
 &lt;p>同一个应用内支持配置不同的服务使用不同的负载均衡策略，支持为同一服务的不同方法配置不同的负载均衡策略。&lt;/p>
 &lt;p>具体配置方式参加以下多语言实现&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">Java&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Golang&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Rust&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Node.js&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Java&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Golang&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Rust&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Node.js&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="自定义扩展">自定义扩展&lt;/h2>
 &lt;p>负载均衡策略支持自定义扩展实现，具体请参见 &lt;a href="../extensibility">Dubbo 可扩展性&lt;/a>&lt;/p></description></item><item><title>Overview: 流量管控</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/</guid><description>
@@ -476,22 +475,22 @@
 &lt;/ul>
 &lt;p>开发实践&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">Triple 协议使用&lt;/a> 请参见具体语言 sdk 文档&lt;/li>
-&lt;li>&lt;a href="">Triple 协议规范&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Triple 协议使用&lt;/a> 请参见具体语言 sdk 文档&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Triple 协议规范&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="dubbo2">Dubbo2&lt;/h2>
 &lt;p>Dubbo2 协议是基于 TCP 传输层协议之上构建的一套 RPC 通信协议，由于其紧凑、灵活、高性能的特点，在 Dubbo2 时代取得了非常广泛的应用，是企业构建高性能、大规模微服务集群的关键通信方案。在云原生时代，我们更推荐使用通用性、穿透性更好的 Triple 协议。&lt;/p>
-&lt;p>&lt;a href="">Dubbo2 协议规范&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://static.dubbo.apache.org:8080/">Dubbo2 协议规范&lt;/a>&lt;/p>
 &lt;h2 id="grpc">gRPC&lt;/h2>
 &lt;p>你可以用 Dubbo 开发和治理微服务，然后设置使用 gRPC 协议进行底层通信。但为什么要这么做那，与直接使用 gRPC 框架对比有什么优势？简单的答案是，这是使用 gRPC 进行微服务开发的常用模式，具体请往下看。&lt;/p>
-&lt;p>gRPC 是谷歌开源的基于 HTTP/2 的通信协议，如同我们在 &lt;a href="">产品对比&lt;/a> 文档中提到的，gRPC 的定位是通信协议与实现，是一款纯粹的 RPC 框架，而 Dubbo 定位是一款微服务框架，为微服务实践提供解决方案。因此，相比于 Dubbo，gRPC 相对欠缺了微服务编程模型、服务治理等能力的抽象。&lt;/p>
+&lt;p>gRPC 是谷歌开源的基于 HTTP/2 的通信协议，如同我们在 &lt;a href="../../what/xyz-difference">产品对比&lt;/a> 文档中提到的，gRPC 的定位是通信协议与实现，是一款纯粹的 RPC 框架，而 Dubbo 定位是一款微服务框架，为微服务实践提供解决方案。因此，相比于 Dubbo，gRPC 相对欠缺了微服务编程模型、服务治理等能力的抽象。&lt;/p>
 &lt;p>在 Dubbo 体系下使用 gRPC 协议 (gRPC over Dubbo Framework) 是一个非常高效和轻量的选择，它让你既能使用原生的 gRPC 协议通信，又避免了基于 gRPC 进行二次定制与开发的复杂度 (二次开发与定制 gRPC，是很多企业规模化实践后证实不可避免的环节，Dubbo 框架替开发者完成了这一步，让开发者可以直接以最简单的方式使用 gRPC)。&lt;/p>
-&lt;p>&lt;a href="">gRPC over Dubbo 示例&lt;/a>&lt;/p>
+&lt;p>&lt;a href="http://static.dubbo.apache.org:8080/">gRPC over Dubbo 示例&lt;/a>&lt;/p>
 &lt;h2 id="rest">REST&lt;/h2>
 &lt;p>微服务领域常用的一种通信模式是 HTTP + JSON，包括 Spring Cloud、Microprofile 等一些主流的微服务框架都默认使用的这种通信模式，Dubbo 同样提供了对基于 HTTP 的编程、通信模式的支持。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">HTTP over Dubbo 示例&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Dubbo 与 Spring Cloud 体系互通&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">HTTP over Dubbo 示例&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Dubbo 与 Spring Cloud 体系互通&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="其他通信协议">其他通信协议&lt;/h2>
 &lt;p>除了以上介绍的几种协议之外，你还可以将以下协议运行在 Dubbo 之上。对 Dubbo 而言，只需要修改一行简单的配置，就可以切换底层服务的通信协议，其他外围 API 和治理能力不受影响。&lt;/p>
@@ -505,10 +504,10 @@
 &lt;h2 id="配置方式">配置方式&lt;/h2>
 &lt;p>以上协议的配置和使用方式，包括如何配置 &lt;code>单端口多协议&lt;/code> 支持等，请参照以下 sdk 示例文档：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">Java&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Golang&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Rust&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Node.js&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Java&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Golang&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Rust&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Node.js&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="自定义扩展">自定义扩展&lt;/h2>
 &lt;p>除了以上官方版本支持的通信协议，Dubbo 支持扩展新协议支持，具体请参见 &lt;a href="../extensibility">Dubbo 可扩展性&lt;/a>&lt;/p></description></item><item><title>Overview: 扩展适配</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/extensibility/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/extensibility/</guid><description>
@@ -531,16 +530,16 @@
 &lt;h2 id="扩展示例">扩展示例&lt;/h2>
 &lt;p>以下示例演示了如何扩展 Dubbo 来解决实际问题，可以跟随示例学习。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">自定义负载均衡策略&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">自定义注册中心&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">自定义拦截器&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">自定义负载均衡策略&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">自定义注册中心&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">自定义拦截器&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="微服务生态">微服务生态&lt;/h2>
 &lt;p>通过扩展对接微服务生态的示例。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">全链路追踪&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">数据一致性&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">限流降级&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">全链路追踪&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">数据一致性&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">限流降级&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;p>Dubbo 的各语言 sdk 实现都是采用的 &amp;ldquo;微内核+插件&amp;rdquo; 的设计模式，几乎所有流程中的核心节点都被定义为扩展点，官方发布的组件也是以扩展点的实现形式发布，因此 Dubbo 可以平等的对待所有官方与第三方组件扩展。&lt;/p>
 &lt;ul>
@@ -572,7 +571,7 @@
 &lt;/ul>
 &lt;h3 id="router">Router&lt;/h3>
 &lt;p>Router 路由器是 Dubbo 中流量管控的关键组件，它将符合一定条件的流量转发到特定分组的地址子集，是 Dubbo 流量管控中一些关键能力如按比例流量转发、流量隔离等的基础。每次服务调用请求都会流经一组路由器 (路由链)，每个路由器根据预先设定好的规则、全量地址列表以及当前请求上下文计算出一个地址子集，再传给下一个路由器，重复这一过程直到最后得出一个有效的地址子集。&lt;/p>
-&lt;p>Dubbo 官方发布版本预置了丰富的流量管控规则与 router 实现，如 &lt;a href="">流量管控&lt;/a> 一文中阐述的，用户通过下发规则即可实现各种模式的流量管控。如果有其他流量管控诉求，可以通过提供自定义的 router 扩展实现。&lt;/p>
+&lt;p>Dubbo 官方发布版本预置了丰富的流量管控规则与 router 实现，如 &lt;a href="http://static.dubbo.apache.org:8080/">流量管控&lt;/a> 一文中阐述的，用户通过下发规则即可实现各种模式的流量管控。如果有其他流量管控诉求，可以通过提供自定义的 router 扩展实现。&lt;/p>
 &lt;h3 id="load-balance">Load Balance&lt;/h3>
 &lt;p>在 Dubbo 中，Load Balance 负载均衡工作在 router 之后，对于每次服务调用，负载均衡负责在 router 链输出的地址子集中选择一台机器实例进行访问，保证一段时间内的调用都均匀的分布在地址子集的所有机器上。&lt;/p>
 &lt;p>Dubbo 官方提供了加权随机、加权轮询、一致性哈希、最小活跃度优先、最短响应时间优先等负载均衡策略，还提供了根据集群负载自适应调度的负载均衡算法。&lt;/p>
@@ -582,13 +581,13 @@
 &lt;p>这里我们主要从架构、实现的视角来分析了 Dubbo 服务治理，Dubbo 很多服务治理的核心能力都是通过上图描述的几个关键组件实现的，用户通过控制面或者 Admin 下发的各种规则与配置、各类微服务集群状态的展示等都是直接与注册中心、配置中心和元数据中心交互。&lt;/p>
 &lt;p>在具体实现或者部署上，注册中心、配置中心和元数据中心可以是同一组件，比如 Zookeeper 可同时作为注册、配置和元数据中心，Nacos 也是如此。因此，三个中心只是从架构职责上的划分，你甚至可以用同一个 Zookeeper 集群来承担所有三个职责，只需要在应用里将他们设置为同一个集群地址就可以了。&lt;/p>
 &lt;blockquote>
-&lt;p>在云原生部署架构下，随着 Kubernetes、Service Mesh 架构的流行，微服务基础设施呈现下沉趋势，注册、配置和元数据中心的职责正被 Kubernetes、Istio 等组件取代，具体可参见 &lt;a href="">服务网格&lt;/a> 一节的描述。&lt;/p>
+&lt;p>在云原生部署架构下，随着 Kubernetes、Service Mesh 架构的流行，微服务基础设施呈现下沉趋势，注册、配置和元数据中心的职责正被 Kubernetes、Istio 等组件取代，具体可参见 &lt;a href="http://static.dubbo.apache.org:8080/">服务网格&lt;/a> 一节的描述。&lt;/p>
 &lt;/blockquote>
 &lt;h3 id="registry">Registry&lt;/h3>
 &lt;p>注册中心是 Dubbo 实现服务发现能力的基础，Dubbo 官方支持 Zookeeper、Nacos、Etcd、Consul、Eureka 等注册中心。&lt;/p>
 &lt;p>通过对 Consul、Eureka 的支持，Dubbo 也实现了与 Spring Cloud 体系在地址和通信层面的互通，让用户同时部署 Dubbo 与 Spring Cloud，或者从 Spring Cloud 迁移到 Dubbo 变得更容易。&lt;/p>
 &lt;h3 id="config-center">Config Center&lt;/h3>
-&lt;p>配置中心是用户实现动态控制 Dubbo 行为的关键组件，我们在 &lt;a href="">流量管控&lt;/a> 任务中下发的所有规则，都是先下发到配置中心保存起来，进而 Dubbo 实例通过监听配置中心的变化，收到路由规则并达到控制流量的行为。&lt;/p>
+&lt;p>配置中心是用户实现动态控制 Dubbo 行为的关键组件，我们在 &lt;a href="../../task/traffic-management">流量管控&lt;/a> 任务中下发的所有规则，都是先下发到配置中心保存起来，进而 Dubbo 实例通过监听配置中心的变化，收到路由规则并达到控制流量的行为。&lt;/p>
 &lt;p>Dubbo 官方支持 Zookeeper、Nacos、Etcd、Redis、Apollo 等配置中心实现。&lt;/p>
 &lt;h3 id="metadata-center">Metadata Center&lt;/h3>
 &lt;p>与配置中心相反，从用户视角来看元数据中心是只读的，元数据中心唯一的写入放是 Dubbo 进程实例，Dubbo 实例会在启动之后将一些内部状态（如服务列表、服务配置、服务定义格式等）上报到元数据中心，供一些治理能力作为数据来源，如服务测试、文档管理、服务状态展示等。&lt;/p>
@@ -596,10 +595,10 @@
 &lt;h2 id="更多扩展">更多扩展&lt;/h2>
 &lt;p>本文列出了 Dubbo 常用的一些扩展点，但还有大量的扩展点可供灵活定制，并且不同语言 sdk 的扩展定义和配置方式上也存在差异，以下是 Dubbo SDK 的扩展点手册。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">Java 扩展点手册&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Go 扩展点手册&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Rust 扩展点手册&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Node.js 扩展点手册&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Java 扩展点手册&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Go 扩展点手册&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Rust 扩展点手册&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Node.js 扩展点手册&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Overview: 观测服务</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/observability/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/observability/</guid><description>
 &lt;p>Dubbo 内部维护了多个纬度的可观测指标，并且支持多种方式的可视化监测。可观测性指标从总体上来说分为三个度量纬度：&lt;/p>
 &lt;ul>
@@ -671,22 +670,22 @@
 &lt;h3 id="可视化页面">可视化页面&lt;/h3>
 &lt;p>也可以使用 Grafana、Prometheus 等实现可视化指标监测，具体请参考以下可视化任务示例：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">Admin 任务链接&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Grafana 任务链接&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Prometheus 任务链接&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../task/deploy">Admin 任务链接&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../task/observability">Grafana 任务链接&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../task/observability">Prometheus 任务链接&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="tracing">Tracing&lt;/h2>
 &lt;p>全链路追踪对于监测分布式系统运行状态具有非常重要的价值，Dubbo 通过 Filter 拦截器实现了请求运行时的埋点跟踪，通过将跟踪数据导出到一些主流实现如 Zipkin、Skywalking、Jaeger 等，可以实现全链路跟踪数据的分析与可视化展示。&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/advantages/observability-tracing.png" alt="Admin 效果图">&lt;/p>
 &lt;p>只需要简单的一行配置即可切换链路跟踪的后端实现，并且，你可以随时通过 Dubbo Admin 等治理平台动态调整 Dubbo 的链路追踪采样率，对于问题排查都非常有价值。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">基于 Skywalking 实现全链路追踪&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">基于 Zipkin 实现全链路追踪&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">基于 Skywalking 实现全链路追踪&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">基于 Zipkin 实现全链路追踪&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="logging">Logging&lt;/h2>
 &lt;p>访问日志可以帮助分析系统的流量情况，在有些场景下，开启访问日志对于排查问题也非常有帮助。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">开启 Access Log&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../task/traffic-management/accesslog">开启 Access Log&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Overview: 认证鉴权</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/security/</guid><description>
 &lt;p>Dubbo 提供了构建安全微服务通信体系 (零信任体系) 的完善机制，这包括：&lt;/p>
 &lt;ul>
@@ -755,13 +754,13 @@
 &lt;p>不论是否使用 Istio 控制面，对于 Request Authentication，JWT token 仍需要在 Dubbo 侧编程指定。&lt;/p>
 &lt;p>每种语言实现的认证 API 定义略有差异，具体定义请参考各 SDK 文档：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">Java&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Go&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Rust&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Node.js&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Java&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Go&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Rust&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Node.js&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="示例任务">示例任务&lt;/h2>
-&lt;p>访问如下 &lt;a href="">Dubbo 任务示例&lt;/a> 进行安全策略动手实践。&lt;/p></description></item><item><title>Overview: 服务网格</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/service-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/service-mesh/</guid><description>
+&lt;p>访问如下 &lt;a href="http://static.dubbo.apache.org:8080/">Dubbo 任务示例&lt;/a> 进行安全策略动手实践。&lt;/p></description></item><item><title>Overview: 服务网格</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/service-mesh/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/service-mesh/</guid><description>
 &lt;p>Dubbo Mesh 是 Dubbo 在云原生背景的微服务整体解决方案，它帮助开发者实现 Dubbo 服务与标准的 Kubernetes Native Service 体系的打通，让 Dubbo 应用能够无缝接入 Istio 等业界主流服务网格产品。&lt;/p>
 &lt;p>以下是 Dubbo Mesh 的部署架构图&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/mesh/mix-mesh.png" alt="Dubbo-Mesh">&lt;/p>
@@ -805,14 +804,14 @@
 &lt;li>适用于几乎所有的部署环境&lt;/li>
 &lt;/ul>
 &lt;h2 id="示例任务">示例任务&lt;/h2>
-&lt;p>了解了足够多的原理知识，我们推荐你访问如下 &lt;a href="">示例&lt;/a> 进行动手实践。&lt;/p>
+&lt;p>了解了足够多的原理知识，我们推荐你访问如下 &lt;a href="../../task/mesh">示例&lt;/a> 进行动手实践。&lt;/p>
 &lt;h2 id="可视化">可视化&lt;/h2>
-&lt;p>推荐使用 &lt;a href="">Dubbo Admin&lt;/a> 作为您 Dubbo 集群的可视化控制台，它兼容所有 Kubernetes、Mesh 和非 Mesh 架构的部署。&lt;/p>
+&lt;p>推荐使用 &lt;a href="../../task/deploy">Dubbo Admin&lt;/a> 作为您 Dubbo 集群的可视化控制台，它兼容所有 Kubernetes、Mesh 和非 Mesh 架构的部署。&lt;/p>
 &lt;p>除此之外，你也可以使用 &lt;a href="https://istio.io/latest/docs/tasks/observability/kiali/">Istio 官方推荐的可视化工具&lt;/a> 来管理您的 Dubbo Mesh 集群。&lt;/p>
 &lt;h2 id="接入非-istio-控制面">接入非 Istio 控制面&lt;/h2>
 &lt;p>Dubbo Mesh 本身并不绑定任何控制面产品实现，你可以使用 Istio、Linkerd、Kuma 或者任一支持 xDS 协议的控制面产品，对于 Sidecar 亦是如此。&lt;/p>
-&lt;p>如果你已经完整的体验了 &lt;a href="">基于 Istio 的 Dubbo Mesh&lt;/a> 示例任务，并且发现 Istio 很好的满足了你的 Dubbo Mesh 治理诉求，那么采用 Istio 作为你的控制面是首选的解决方案。&lt;/p>
-&lt;p>如果你发现 Istio 模式下 Dubbo 部分能力受限，而这部分能力正好是你需要的，那么你需要考虑接入 Dubbo 控制面，用 Dubbo 控制面来替代 Istio，以获得更多 Dubbo 体系原生能力支持、更好的性能体验。具体请参见 &lt;a href="">基于 Dubbo 定制控制面的 Dubbo Mesh 示例任务&lt;/a>。&lt;/p>
+&lt;p>如果你已经完整的体验了 &lt;a href="http://static.dubbo.apache.org:8080/">基于 Istio 的 Dubbo Mesh&lt;/a> 示例任务，并且发现 Istio 很好的满足了你的 Dubbo Mesh 治理诉求，那么采用 Istio 作为你的控制面是首选的解决方案。&lt;/p>
+&lt;p>如果你发现 Istio 模式下 Dubbo 部分能力受限，而这部分能力正好是你需要的，那么你需要考虑接入 Dubbo 控制面，用 Dubbo 控制面来替代 Istio，以获得更多 Dubbo 体系原生能力支持、更好的性能体验。具体请参见 &lt;a href="http://static.dubbo.apache.org:8080/">基于 Dubbo 定制控制面的 Dubbo Mesh 示例任务&lt;/a>。&lt;/p>
 &lt;blockquote>
 &lt;p>简单来讲，这是 Dubbo 社区发布的一款基于 Istio 的定制版本控制面，Dubbo 控制面安装与能力差异请参见上面的示例任务链接。&lt;/p>
 &lt;/blockquote>
@@ -831,14 +830,14 @@
 &lt;/div>
 &lt;/section>
 &lt;!-- ![ecosystem](/imgs/v3/feature/ecosystem/ecosystem.png) -->
-&lt;p>可通过 &lt;a href="">微服务生态&lt;/a> 任务，了解更多 Dubbo 生态能力和使用方式。&lt;/p></description></item><item><title>Overview: 更多高级功能</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/more/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/more/</guid><description>
+&lt;p>可通过 &lt;a href="../../what/ecosystem">微服务生态&lt;/a> ，了解更多 Dubbo 生态能力和使用方式。&lt;/p></description></item><item><title>Overview: 更多高级功能</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/more/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/more/</guid><description>
 &lt;p>作为一款与应用开发紧密相关的微服务框架，同时旨在为微服务集群提供企业级服务治理能力，Dubbo 还提供了很多高级功能，涵盖服务调用行为控制、服务诊断与调优、服务治理等。&lt;/p>
 &lt;p>多种语言 sdk 在功能实现、配置方式上会略有差异，具体功能列表和使用方式可参考如下文档：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="">Java&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Golang&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Rust&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Node.js&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Java&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Golang&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Rust&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/">Node.js&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="控制服务调用行为">控制服务调用行为&lt;/h2>
 &lt;ul>
