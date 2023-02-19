@@ -59,15 +59,15 @@
 &lt;p>Dubbo 原生服务可打包部署到 Docker 容器、Kubernetes、服务网格 等云原生基础设施和微服务架构。&lt;/p>
 &lt;p>关于不同环境的部署示例，可参考：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="../../task/deploy/deploy-on-docker">部署 Dubbo 服务到 Docker 容器&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../task/deploy/deploy-on-k8s-containerd">部署 Dubbo 服务到 Kubernetes&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../tasks/deploy/deploy-on-docker">部署 Dubbo 服务到 Docker 容器&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../tasks/deploy/deploy-on-k8s-containerd">部署 Dubbo 服务到 Kubernetes&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="治理">治理&lt;/h2>
 &lt;p>对于服务治理，绝大多数应用只需要增加以下配置即可，Dubbo 应用将具备地址发现和负载均衡能力。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">dubbo&lt;/span>:
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">registry&lt;/span>:
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">address&lt;/span>: zookeeper://127.0.0.1:2181
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>部署并打开 &lt;a href="../../task/deploy">Dubbo Admin 控制台&lt;/a>，可以看到集群的服务部署和调用数据&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>部署并打开 &lt;a href="../../tasks/deploy">Dubbo Admin 控制台&lt;/a>，可以看到集群的服务部署和调用数据&lt;/p>
 &lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/what/admin.png" alt="Admin">&lt;/p>
 &lt;p>除此之外，Dubbo Amin 还可以通过以下能力提升研发测试效率&lt;/p>
 &lt;ul>
@@ -587,7 +587,7 @@
 &lt;p>注册中心是 Dubbo 实现服务发现能力的基础，Dubbo 官方支持 Zookeeper、Nacos、Etcd、Consul、Eureka 等注册中心。&lt;/p>
 &lt;p>通过对 Consul、Eureka 的支持，Dubbo 也实现了与 Spring Cloud 体系在地址和通信层面的互通，让用户同时部署 Dubbo 与 Spring Cloud，或者从 Spring Cloud 迁移到 Dubbo 变得更容易。&lt;/p>
 &lt;h3 id="config-center">Config Center&lt;/h3>
-&lt;p>配置中心是用户实现动态控制 Dubbo 行为的关键组件，我们在 &lt;a href="../../task/traffic-management">流量管控&lt;/a> 任务中下发的所有规则，都是先下发到配置中心保存起来，进而 Dubbo 实例通过监听配置中心的变化，收到路由规则并达到控制流量的行为。&lt;/p>
+&lt;p>配置中心是用户实现动态控制 Dubbo 行为的关键组件，我们在 &lt;a href="../../tasks/traffic-management">流量管控&lt;/a> 任务中下发的所有规则，都是先下发到配置中心保存起来，进而 Dubbo 实例通过监听配置中心的变化，收到路由规则并达到控制流量的行为。&lt;/p>
 &lt;p>Dubbo 官方支持 Zookeeper、Nacos、Etcd、Redis、Apollo 等配置中心实现。&lt;/p>
 &lt;h3 id="metadata-center">Metadata Center&lt;/h3>
 &lt;p>与配置中心相反，从用户视角来看元数据中心是只读的，元数据中心唯一的写入放是 Dubbo 进程实例，Dubbo 实例会在启动之后将一些内部状态（如服务列表、服务配置、服务定义格式等）上报到元数据中心，供一些治理能力作为数据来源，如服务测试、文档管理、服务状态展示等。&lt;/p>
@@ -670,9 +670,9 @@
 &lt;h3 id="可视化页面">可视化页面&lt;/h3>
 &lt;p>也可以使用 Grafana、Prometheus 等实现可视化指标监测，具体请参考以下可视化任务示例：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="../../task/deploy">Admin 任务链接&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../task/observability">Grafana 任务链接&lt;/a>&lt;/li>
-&lt;li>&lt;a href="../../task/observability">Prometheus 任务链接&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../tasks/deploy">Admin 任务链接&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../tasks/observability">Grafana 任务链接&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../tasks/observability">Prometheus 任务链接&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="tracing">Tracing&lt;/h2>
 &lt;p>全链路追踪对于监测分布式系统运行状态具有非常重要的价值，Dubbo 通过 Filter 拦截器实现了请求运行时的埋点跟踪，通过将跟踪数据导出到一些主流实现如 Zipkin、Skywalking、Jaeger 等，可以实现全链路跟踪数据的分析与可视化展示。&lt;/p>
@@ -685,7 +685,7 @@
 &lt;h2 id="logging">Logging&lt;/h2>
 &lt;p>访问日志可以帮助分析系统的流量情况，在有些场景下，开启访问日志对于排查问题也非常有帮助。&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="../../task/traffic-management/accesslog">开启 Access Log&lt;/a>&lt;/li>
+&lt;li>&lt;a href="../../tasks/traffic-management/accesslog">开启 Access Log&lt;/a>&lt;/li>
 &lt;/ul></description></item><item><title>Overview: 认证鉴权</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/security/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/security/</guid><description>
 &lt;p>Dubbo 提供了构建安全微服务通信体系 (零信任体系) 的完善机制，这包括：&lt;/p>
 &lt;ul>
@@ -804,9 +804,9 @@
 &lt;li>适用于几乎所有的部署环境&lt;/li>
 &lt;/ul>
 &lt;h2 id="示例任务">示例任务&lt;/h2>
-&lt;p>了解了足够多的原理知识，我们推荐你访问如下 &lt;a href="../../task/mesh">示例&lt;/a> 进行动手实践。&lt;/p>
+&lt;p>了解了足够多的原理知识，我们推荐你访问如下 &lt;a href="../../tasks/mesh">示例&lt;/a> 进行动手实践。&lt;/p>
 &lt;h2 id="可视化">可视化&lt;/h2>
-&lt;p>推荐使用 &lt;a href="../../task/deploy">Dubbo Admin&lt;/a> 作为您 Dubbo 集群的可视化控制台，它兼容所有 Kubernetes、Mesh 和非 Mesh 架构的部署。&lt;/p>
+&lt;p>推荐使用 &lt;a href="../../tasks/deploy">Dubbo Admin&lt;/a> 作为您 Dubbo 集群的可视化控制台，它兼容所有 Kubernetes、Mesh 和非 Mesh 架构的部署。&lt;/p>
 &lt;p>除此之外，你也可以使用 &lt;a href="https://istio.io/latest/docs/tasks/observability/kiali/">Istio 官方推荐的可视化工具&lt;/a> 来管理您的 Dubbo Mesh 集群。&lt;/p>
 &lt;h2 id="接入非-istio-控制面">接入非 Istio 控制面&lt;/h2>
 &lt;p>Dubbo Mesh 本身并不绑定任何控制面产品实现，你可以使用 Istio、Linkerd、Kuma 或者任一支持 xDS 协议的控制面产品，对于 Sidecar 亦是如此。&lt;/p>
