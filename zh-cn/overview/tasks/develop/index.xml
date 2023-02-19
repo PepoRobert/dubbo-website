@@ -2,7 +2,7 @@
 &lt;h2 id="发布和调用">发布和调用&lt;/h2>
 &lt;p>通过一个简单的Springboot实例代码，展示Dubbo服务的发布和调用&lt;/p>
 &lt;p>本文将基于 Dubbo Samples 示例演示如何快速搭建并部署一个微服务应用。
-代码地址：&lt;a href="https://github.com/apache/dubbo-samples/10-task/dubbo-samples-develop">dubbo-samples-develop&lt;/a>
+代码地址：&lt;a href="https://github.com/apache/dubbo-samples/tree/master/10-task/dubbo-samples-develop">dubbo-samples-develop&lt;/a>
 代码分为三个模块，如下图：
 &lt;code>![project](/imgs/v3/develop/develop-project.png)&lt;/code>&lt;/p>
 &lt;h2 id="准备">准备&lt;/h2>

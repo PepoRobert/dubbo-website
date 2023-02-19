@@ -35,7 +35,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75"># 启用Kubernetes中部署的nacos的地址&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dubbo.registry.address&lt;span style="color:#719e07">=&lt;/span>&lt;span style="color:#2aa198">nacos://${nacos.address:localhost}:8848?username=nacos&amp;amp;password=nacos&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/li>
-&lt;li>部署&lt;a href="https://github.com/apache/dubbo-samples/blob/master/10-task/dubbo-samples-extensibility/deploy/App.yml">Extensibility Filter Task&lt;/a>&lt;/li>
+&lt;li>部署&lt;code>[Extensibility Filter Task](https://github.com/apache/dubbo-samples/blob/master/10-task/dubbo-samples-extensibility/deploy/App.yml)&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;h3 id="使用本地ide">使用本地IDE&lt;/h3>
 &lt;ul>
