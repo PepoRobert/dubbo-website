@@ -664,7 +664,7 @@
 &lt;p>prometheus-exporter配置为指标数据导出器，这里配置指标服务的端口号为20888，&lt;/p>
 &lt;/li>
 &lt;li>
-&lt;p>启动服务后，普罗米修斯监控服务通过访问：&lt;a href="http://localhost:20888">http://localhost:20888&lt;/a> 即可拉取数据&lt;/p>
+&lt;p>启动服务后，普罗米修斯监控服务通过访问：&lt;code>http://localhost:20888&lt;/code> 即可拉取数据&lt;/p>
 &lt;/li>
 &lt;/ul>
 &lt;h3 id="可视化页面">可视化页面&lt;/h3>

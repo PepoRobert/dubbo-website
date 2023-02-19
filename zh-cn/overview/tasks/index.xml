@@ -154,9 +154,9 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>kubectl port-forward -n dubbo-system service/skywalking-oap-dashboard 8082:8082
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>此时，打开浏览器，即可通过以下地址访问：&lt;/p>
 &lt;ul>
-&lt;li>商城首页 &lt;a href="http://localhost:8080/">http://localhost:8080/&lt;/a>&lt;/li>
-&lt;li>Dubbo Admin 控制台 &lt;a href="http://localhost:38080/">http://localhost:38080/&lt;/a>&lt;/li>
-&lt;li>Skywalking 控制台 &lt;a href="http://localhost:8082/">http://localhost:8082/&lt;/a>&lt;/li>
+&lt;li>商城首页 &lt;code>http://localhost:8080&lt;/code>&lt;/li>
+&lt;li>Dubbo Admin 控制台 &lt;code>http://localhost:38080&lt;/code>&lt;/li>
+&lt;li>Skywalking 控制台 &lt;code>http://localhost:8082&lt;/code>&lt;/li>
 &lt;/ul>
 &lt;h2 id="任务项">任务项&lt;/h2>
 &lt;p>接下来，试着通过如下任务项给商城增加一些流量管控规则吧。&lt;/p>
