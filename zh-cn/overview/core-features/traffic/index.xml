@@ -49,7 +49,7 @@
 &lt;tr>
 &lt;td>conditions&lt;/td>
 &lt;td>string[]&lt;/td>
-&lt;td>The condition routing rule definition of this configuration. Check &lt;a href="./#Condition">Condition&lt;/a> for details&lt;/td>
+&lt;td>The condition routing rule definition of this configuration. Check &lt;a href="./#condition">Condition&lt;/a> for details&lt;/td>
 &lt;td>Yes&lt;/td>
 &lt;/tr>
 &lt;tr>
