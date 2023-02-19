@@ -1058,5 +1058,4 @@
 &lt;h3 id="1-dubbo-的-xml-配置介绍">1. Dubbo 的 XML 配置介绍&lt;/h3>
 &lt;p>Dubbo 的主要配置入口有&lt;code>dubbo:application&lt;/code> 、&lt;code>dubbo:registry&lt;/code> 、 &lt;code>dubbo:reference&lt;/code> 和 &lt;code>dubbo:service&lt;/code> 等，更多的细节可以参考 &lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/reference-manual/config/xml/">XML 配置 | Apache Dubbo&lt;/a> 一文。&lt;/p>
 &lt;h2 id="更多">更多&lt;/h2>
-&lt;p>本教程介绍了如何基于 Dubbo x Spring XML 开发一个微服务应用。至此，Dubbo 基于 API、Spring Boot、Spring XML 三种主要的启动方式都已经介绍完毕。&lt;/p>
-&lt;p>在下一节中，将介绍&lt;a href="../idl/">基于 Protobuf IDL 配置的微服务开发方式&lt;/a>。&lt;/p></description></item></channel></rss>
+&lt;p>本教程介绍了如何基于 Dubbo x Spring XML 开发一个微服务应用。至此，Dubbo 基于 API、Spring Boot、Spring XML 三种主要的启动方式都已经介绍完毕。&lt;/p></description></item></channel></rss>

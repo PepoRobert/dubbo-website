@@ -29,10 +29,10 @@
 &lt;/ul>
 &lt;p>想了解如何使用 Dubbo 微服务框架进行业务编码？从以下 SDK 开始微服务项目开发之旅吧：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="../../..docs3-v2/java-sdk/">Java&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Golang&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Rust&lt;/a>&lt;/li>
-&lt;li>&lt;a href="">Node&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/overview/quickstart/java/">Java&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/overview/quickstart/go/">Golang&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/overview/quickstart/rust/">Rust&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/overview/quickstart/nodejs/">Node&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h3 id="通信协议">通信协议&lt;/h3>
 &lt;p>&lt;strong>Dubbo 从设计上不绑定任何一款特定通信协议，HTTP/2、REST、gRPC、JsonRPC、Thrift、Hessian2 等几乎所有主流的通信协议，Dubbo 框架都可以提供支持。&lt;/strong> 这样的 Protocol 设计模式给构建微服务带来了最大的灵活性，开发者可以根据需要如性能、通用型等选择不同的通信协议，不再需要任何的代理来实现协议转换，甚至你还可以通过 Dubbo 实现不同协议间的迁移。&lt;/p>
@@ -149,7 +149,7 @@
 &lt;p>因此，gRPC 更适合作为底层的通信协议规范或编解码包，而 Dubbo 则可用作微服务整体解决方案。&lt;strong>对于 gRPC 协议，我们推荐的使用模式 Dubbo + gRPC 的组合&lt;/strong>，这个时候，gRPC 只是隐藏在底层的一个通信协议，不被微服务开发者感知，开发者基于 Dubbo 提供的 API 和配置开发服务，并基于 dubbo 的服务治理能力治理服务，在未来，开发者还能使用 Dubbo 生态还开源的 IDL 配套工具管理服务定义与发布。&lt;/p>
 &lt;p>如果我们忽略 gRPC 在应用开发框架侧的空白，只考虑如何给 gRPC 带来服务治理能力，则另一种可以采用的模式就是在 Service Mesh 架构下使用 gRPC，这就引出了我们下一小节要讨论的内容：Dubbo 与 Service Mesh 架构的关系。&lt;/p>
 &lt;h2 id="dubbo-与-istio">Dubbo 与 Istio&lt;/h2>
-&lt;p>Service Mesh 是近年来在云原生背景下诞生的一种微服务架构，在 Kubernetes 体系下，让微服务开发中的更多能力如流量拦截、服务治理等下沉并成为基础设施，让微服务开发、升级更轻量。Istio 是 Service Mesh 的开源代表实现，它从部署架构上分为数据面与控制面，从这一点上与 &lt;a href="./overview">Dubbo 总体架构&lt;/a> 是基本一致的，Istio 带来的主要变化在于：&lt;/p>
+&lt;p>Service Mesh 是近年来在云原生背景下诞生的一种微服务架构，在 Kubernetes 体系下，让微服务开发中的更多能力如流量拦截、服务治理等下沉并成为基础设施，让微服务开发、升级更轻量。Istio 是 Service Mesh 的开源代表实现，它从部署架构上分为数据面与控制面，从这一点上与 &lt;a href="../overview">Dubbo 总体架构&lt;/a> 是基本一致的，Istio 带来的主要变化在于：&lt;/p>
 &lt;ul>
 &lt;li>数据面，Istio 通过引入 Sidecar 实现了对服务流量的透明拦截，Sidecar 通常是与 Dubbo 等开发的传统微服务组件部署在一起&lt;/li>
 &lt;li>控制面，将之前抽象的服务治理中心聚合为一个具有统一实现的具体组件，并实现了与底层基础设施如 Kubernetes 无缝适配&lt;/li>
@@ -161,7 +161,7 @@
 &lt;li>Proxy 模式，Dubbo 与 Envoy 一起部署，Dubbo 作为编程框架 &amp;amp; 协议通信组件存在，流量管控由 Envoy 与 Istio 控制面交互实现。&lt;/li>
 &lt;li>Proxyless 模式，Dubbo 进程保持独立部署，Dubbo 通过标准 xDS 协议直接接入 Istio 等控制面组件。&lt;/li>
 &lt;/ul>
-&lt;p>从&lt;strong>控制面&lt;/strong>视角，Dubbo 可接入原生 Istio 标准控制面和规则体系，而对于一些 Dubbo 老版本用户，Dubbo Mesh 提供了平滑迁移方案，具体请查看 &lt;a href="">Dubbo Mesh 服务网格&lt;/a>。&lt;/p></description></item><item><title>Overview: 核心优势</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/advantages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/what/advantages/</guid><description/></item><item><title>Overview: 生态</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/</guid><description>
+&lt;p>从&lt;strong>控制面&lt;/strong>视角，Dubbo 可接入原生 Istio 标准控制面和规则体系，而对于一些 Dubbo 老版本用户，Dubbo Mesh 提供了平滑迁移方案，具体请查看 &lt;a href="../../tasks/mesh/">Dubbo Mesh 服务网格&lt;/a>。&lt;/p></description></item><item><title>Overview: 核心优势</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/advantages/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/what/advantages/</guid><description/></item><item><title>Overview: 生态</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/</guid><description>
 &lt;section id="section-0" style="">
 &lt;div class="td-content list-page">
 &lt;div class="lead">&lt;/div>&lt;header class="article-meta">
