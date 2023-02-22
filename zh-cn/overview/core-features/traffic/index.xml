@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 流量管控</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/</link><description>Recent content in 流量管控 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview: 条件路由规则</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/condition-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/condition-rule/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 流量管控</title><link>https://dubbo.apache.org/zh-cn/overview/core-features/traffic/</link><description>Recent content in 流量管控 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dubbo.apache.org/zh-cn/overview/core-features/traffic/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview: 条件路由规则</title><link>https://dubbo.apache.org/zh-cn/overview/core-features/traffic/condition-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/core-features/traffic/condition-rule/</guid><description>
 &lt;p>条件路由规则将符合特定条件的请求转发到特定的地址实例子集上。规则首先对发起流量的请求参数进行匹配，符合匹配条件的请求将被转发到包含特定实例地址列表的子集。&lt;/p>
 &lt;p>以下是一个条件路由规则示例。&lt;/p>
 &lt;p>基于以下示例规则，所有 &lt;code>org.apache.dubbo.samples.CommentService&lt;/code> 服务 &lt;code>getComment&lt;/code> 方法的调用都将被转发到有 &lt;code>region=Hangzhou&lt;/code> 标记的地址子集。&lt;/p>
@@ -99,7 +99,7 @@
 &lt;li>以美元符 $ 开头，表示引用消费者参数，如：region = $region&lt;/li>
 &lt;li>整数值范围，如：userId = 1~100、userId = 101~&lt;/li>
 &lt;li>支持开发者自定义扩展&lt;/li>
-&lt;/ul></description></item><item><title>Overview: 标签路由规则</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/tag-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/tag-rule/</guid><description>
+&lt;/ul></description></item><item><title>Overview: 标签路由规则</title><link>https://dubbo.apache.org/zh-cn/overview/core-features/traffic/tag-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/core-features/traffic/tag-rule/</guid><description>
 &lt;p>标签路由通过将某一个服务的实例划分到不同的分组，约束具有特定标签的流量只能在指定分组中流转，不同分组为不同的流量场景服务，从而达到实现流量隔离的目的，可以作为蓝绿发布、灰度发布等场景能力的基础。目前有两种方式可以对实例打标，分别是&lt;code>动态规则打标&lt;/code>和&lt;code>静态规则打标&lt;/code>。&lt;code>动态规则打标&lt;/code> 可以在运行时动态的圈住一组机器实例，而 &lt;code>静态规则打标&lt;/code> 则需要实例重启后才能生效，其中，动态规则相较于静态规则优先级更高，而当两种规则同时存在且出现冲突时，将以动态规则为准。&lt;/p>
 &lt;p>本文要讲的就是标签路由规则就是 &lt;code>动态规则打标&lt;/code>。&lt;/p>
 &lt;p>标签路由是一套严格隔离的流量体系，对于同一个应用而言，一旦打了标签则这部分地址子集就被隔离出来，只有带有对应标签的请求流量可以访问这个地址子集，这部分地址不再接收没有标签或者具有不同标签的流量。&lt;/p>
@@ -216,7 +216,7 @@
 &lt;td>Yes&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>Overview: 脚本路由规则</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/script-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/script-rule/</guid><description>
+&lt;/table></description></item><item><title>Overview: 脚本路由规则</title><link>https://dubbo.apache.org/zh-cn/overview/core-features/traffic/script-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/core-features/traffic/script-rule/</guid><description>
 &lt;p>脚本路由为流量管理提供了最大的灵活性，所有流量在执行负载均衡选址之前，都会动态的执行一遍规则脚本，根据脚本执行的结果确定可用的地址子集。&lt;/p>
 &lt;p>脚本路由只对消费者生效且只支持应用粒度管理，因此， &lt;code>key&lt;/code> 必须设置为消费者应用名；脚本语法支持多种，以 Dubbo Java SDK 为例，脚本语法支持 Javascript、Groovy、Kotlin 等，具体可参见每个语言实现的限制。&lt;/p>
 &lt;blockquote>
@@ -298,7 +298,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">return&lt;/span> result;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> } (invokers, invocation, context)); &lt;span style="color:#586e75">// 表示立即执行方法
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Overview: 动态配置规则</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/configuration-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/configuration-rule/</guid><description>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Overview: 动态配置规则</title><link>https://dubbo.apache.org/zh-cn/overview/core-features/traffic/configuration-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/core-features/traffic/configuration-rule/</guid><description>
 &lt;p>动态配置规则 (ConfigurationRule) 是 Dubbo 设计的在无需重启应用的情况下，动态调整 RPC 调用行为的一种能力，也成为动态覆盖规则，因为它是通过在运行态覆盖 Dubbo 实例或者 Dubbo 实例中 URL 地址的各种参数值，实现改变 RPC 调用行为的能力。&lt;/p>
 &lt;p>使用动态配置规则，有以下几条关键信息值得注意：&lt;/p>
 &lt;ul>
@@ -526,4 +526,4 @@
 &lt;td>No&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>Overview: 基于服务网格的路由规则</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/mesh-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/core-features/traffic/mesh-rule/</guid><description/></item></channel></rss>
+&lt;/table></description></item><item><title>Overview: 基于服务网格的路由规则</title><link>https://dubbo.apache.org/zh-cn/overview/core-features/traffic/mesh-rule/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/core-features/traffic/mesh-rule/</guid><description/></item></channel></rss>

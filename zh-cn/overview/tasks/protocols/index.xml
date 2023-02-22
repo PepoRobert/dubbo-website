@@ -1,10 +1,10 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 通信协议</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/protocols/</link><description>Recent content in 通信协议 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/protocols/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview: 使用 Dubbo 开发 gRPC 服务</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/protocols/grpc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/protocols/grpc/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 通信协议</title><link>https://dubbo.apache.org/zh-cn/overview/tasks/protocols/</link><description>Recent content in 通信协议 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dubbo.apache.org/zh-cn/overview/tasks/protocols/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview: 使用 Dubbo 开发 gRPC 服务</title><link>https://dubbo.apache.org/zh-cn/overview/tasks/protocols/grpc/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/tasks/protocols/grpc/</guid><description>
 &lt;p>服务是 Dubbo 中的核心概念，一个服务代表一组 RPC 方法的集合，服务是面向用户编程、服务发现机制等的基本单位。Dubbo 开发的基本流程是：用户定义 RPC 服务，通过约定的配置
 方式将 RPC 声明为 Dubbo 服务，然后就可以基于服务 API 进行编程了。对服务提供者来说是提供 RPC 服务的具体实现，而对服务消费者来说则是使用特定数据发起服务调用。&lt;/p>
 &lt;p>下面从定义服务、编译服务、配置并加载服务三个方面说明如何快速的开发 Dubbo 服务。&lt;/p>
 &lt;p>具体用例可以参考：&lt;a href="https://github.com/apache/dubbo-samples/tree/master/3-extensions/protocol/dubbo-samples-triple/src/main/java/org/apache/dubbo/sample/tri/stub">dubbo-samples-triple/stub&lt;/a>;&lt;/p>
 &lt;h2 id="定义服务">定义服务&lt;/h2>
-&lt;p>Dubbo3 推荐使用 IDL 定义跨语言服务，如您更习惯使用特定语言的服务定义方式，请移步&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/">多语言 SDK&lt;/a>查看。&lt;/p>
+&lt;p>Dubbo3 推荐使用 IDL 定义跨语言服务，如您更习惯使用特定语言的服务定义方式，请移步&lt;a href="https://dubbo.apache.org/zh-cn/docs3-v2/">多语言 SDK&lt;/a>查看。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>syntax = &amp;#34;proto3&amp;#34;;
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>option java_multiple_files = true;
@@ -185,13 +185,13 @@ IDL 格式的服务依赖 Protobuf 编译器，用来生成可以被用户调用
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> gxlog.&lt;span style="color:#268bd2">CInfo&lt;/span>(&lt;span style="color:#2aa198">&amp;#34;response result: %v\n&amp;#34;&lt;/span>, user)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Overview: 使用 Dubbo 开发 Web 应用</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/protocols/web/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/protocols/web/</guid><description/></item><item><title>Overview: 使用 Dubbo 作为消费端调用 Spring Cloud 服务</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/protocols/springcloud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/protocols/springcloud/</guid><description/></item><item><title>Overview: 发布使用不通协议的多个服务，通过单端口监听</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/protocols/multi-protocols/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/protocols/multi-protocols/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Overview: 使用 Dubbo 开发 Web 应用</title><link>https://dubbo.apache.org/zh-cn/overview/tasks/protocols/web/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/tasks/protocols/web/</guid><description/></item><item><title>Overview: 使用 Dubbo 作为消费端调用 Spring Cloud 服务</title><link>https://dubbo.apache.org/zh-cn/overview/tasks/protocols/springcloud/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/tasks/protocols/springcloud/</guid><description/></item><item><title>Overview: 发布使用不通协议的多个服务，通过单端口监听</title><link>https://dubbo.apache.org/zh-cn/overview/tasks/protocols/multi-protocols/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/tasks/protocols/multi-protocols/</guid><description>
 &lt;h2 id="特性说明">特性说明&lt;/h2>
 &lt;p>通过对protocol进行配置，dubbo3可以支持端口的协议复用。
 比如使用Triple协议启动端口复用后，可以在相同的端口上为服务增加
 Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个统一的端口复用
 服务器进行处理的，可以用于服务的协议迁移，并且可以节约端口以及相关的资源，减少运维的复杂性。&lt;/p>
-&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/pu-server/pu-server-flow.png" alt="pu-server-image1">&lt;/p>
+&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/pu-server/pu-server-flow.png" alt="pu-server-image1">&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>在服务的创建阶段，通过从Config层获取到服务导出的协议配置从而创建不同的Protocol对象进行导出。在导出的过程
@@ -249,7 +249,7 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;li>
 &lt;p>直接调用命令&lt;/p>
 &lt;p>直接调用telnet支持的命令也可以完成识别，在用户不熟悉的情况下可以调用help指令完成识别&lt;/p>
-&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/pu-server/qos-telnet-directcall.png" alt="pu-server-image2">&lt;/p>
+&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/pu-server/qos-telnet-directcall.png" alt="pu-server-image2">&lt;/p>
 &lt;/li>
 &lt;li>
 &lt;p>发送telnet命令识别&lt;/p>
@@ -259,7 +259,7 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;li>调用 &amp;ldquo;send ayt&amp;rdquo; 向服务端发送特殊识别字段(为telnet协议的一个特殊字段)&lt;/li>
 &lt;li>回车完成消息发送并进入到dubbo的交互界面&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/pu-server/qos-telnet-sendayt.png" alt="pu-server-imgs3">&lt;/p>
+&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/pu-server/qos-telnet-sendayt.png" alt="pu-server-imgs3">&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;h3 id="服务引用">服务引用&lt;/h3>
@@ -270,4 +270,4 @@ Dubbo协议支持，以及Qos协议支持。这些协议的识别都是由一个
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>reference&lt;span style="color:#719e07">.&lt;/span>setProtocol&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#719e07">this&lt;/span>&lt;span style="color:#719e07">.&lt;/span>protocol&lt;span style="color:#719e07">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">// reference.setProtocol(CommonConstants.DUBBO);
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">// reference.setProtocol(CommonConstants.TRIPLE);
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/pu-server/reference-service.png" alt="pu-server-imgs4">&lt;/p></description></item></channel></rss>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/pu-server/reference-service.png" alt="pu-server-imgs4">&lt;/p></description></item></channel></rss>

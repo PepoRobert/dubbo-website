@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 开发服务</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/</link><description>Recent content in 开发服务 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview: 通过模板生成项目脚手架</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/template/</guid><description/></item><item><title>Overview: 发布和调用 Dubbo 服务</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/service_reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/service_reference/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 开发服务</title><link>https://dubbo.apache.org/zh-cn/overview/tasks/develop/</link><description>Recent content in 开发服务 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dubbo.apache.org/zh-cn/overview/tasks/develop/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview: 通过模板生成项目脚手架</title><link>https://dubbo.apache.org/zh-cn/overview/tasks/develop/template/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/tasks/develop/template/</guid><description/></item><item><title>Overview: 发布和调用 Dubbo 服务</title><link>https://dubbo.apache.org/zh-cn/overview/tasks/develop/service_reference/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/tasks/develop/service_reference/</guid><description>
 &lt;h2 id="发布和调用">发布和调用&lt;/h2>
 &lt;p>通过一个简单的Springboot实例代码，展示Dubbo服务的发布和调用&lt;/p>
 &lt;p>本文将基于 Dubbo Samples 示例演示如何快速搭建并部署一个微服务应用。&lt;/p>
@@ -87,7 +87,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>启动服务 打印&lt;/p>
 &lt;p>&lt;code>Dubbo Remote Return ======&amp;gt; ServiceV1 param:1&lt;/code>&lt;/p>
-&lt;p>说明服务调用成功&lt;/p></description></item><item><title>Overview: 异步调用</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/async/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/async/</guid><description>
+&lt;p>说明服务调用成功&lt;/p></description></item><item><title>Overview: 异步调用</title><link>https://dubbo.apache.org/zh-cn/overview/tasks/develop/async/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/tasks/develop/async/</guid><description>
 &lt;h2 id="异步调用">异步调用&lt;/h2>
 &lt;p>Dubbo异步调用分为Provider端异步调用和Consumer端异步调用。
 Provider端异步执行将阻塞的业务从Dubbo内部线程池切换到业务自定义线程，
@@ -220,7 +220,7 @@ Provider端异步执行将阻塞的业务从Dubbo内部线程池切换到业务�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> System&lt;span style="color:#719e07">.&lt;/span>out&lt;span style="color:#719e07">.&lt;/span>println&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">&amp;#34;AsyncTask Executed before response return.&amp;#34;&lt;/span>&lt;span style="color:#719e07">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Overview: 版本与分组</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/version_group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/version_group/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Overview: 版本与分组</title><link>https://dubbo.apache.org/zh-cn/overview/tasks/develop/version_group/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/tasks/develop/version_group/</guid><description>
 &lt;h2 id="版本与分组">版本与分组&lt;/h2>
 &lt;p>Dubbo服务中，接口并不能唯一确定一个服务，只有接口+分组+版本号才能唯一确定一个服务。&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
@@ -274,7 +274,7 @@ Provider端异步执行将阻塞的业务从Dubbo内部线程池切换到业务�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">//调用DevelopService的另一个实现
 &lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75">&lt;/span> System&lt;span style="color:#719e07">.&lt;/span>out&lt;span style="color:#719e07">.&lt;/span>println&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">&amp;#34;Dubbo Remote Return ======&amp;gt; &amp;#34;&lt;/span> &lt;span style="color:#719e07">+&lt;/span> developServiceV2&lt;span style="color:#719e07">.&lt;/span>invoke&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">&amp;#34;2&amp;#34;&lt;/span>&lt;span style="color:#719e07">));&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Overview: 上下文参数传递</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/context/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/context/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Overview: 上下文参数传递</title><link>https://dubbo.apache.org/zh-cn/overview/tasks/develop/context/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/tasks/develop/context/</guid><description>
 &lt;h2 id="上下文参数传递">上下文参数传递&lt;/h2>
 &lt;p>在 Dubbo 3 中，RpcContext 被拆分为四大模块（ServerContext、ClientAttachment、ServerAttachment 和 ServiceContext）。&lt;/p>
 &lt;p>它们分别承担了不同的职责：&lt;/p>
@@ -319,7 +319,7 @@ Provider端异步执行将阻塞的业务从Dubbo内部线程池切换到业务�
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;em>&lt;font color='#FF7D00' size=4 > 注意 &lt;/font>&lt;/em>&lt;/p>
 &lt;blockquote>
 &lt;p>path, group, version, dubbo, token, timeout 几个 key 是保留字段，请使用其它值。&lt;/p>
-&lt;/blockquote></description></item><item><title>Overview: 开发服务</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/generic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/tasks/develop/generic/</guid><description>
+&lt;/blockquote></description></item><item><title>Overview: 开发服务</title><link>https://dubbo.apache.org/zh-cn/overview/tasks/develop/generic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/tasks/develop/generic/</guid><description>
 &lt;h2 id="泛化调用">泛化调用&lt;/h2>
 &lt;p>泛化调用（客户端泛化调用）是指在调用方没有服务方提供的 API（SDK）的情况下，对服务方进行调用，并且可以正常拿到调用结果。&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>

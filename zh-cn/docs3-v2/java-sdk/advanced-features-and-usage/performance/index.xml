@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 诊断与调优</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/</link><description>Recent content in 诊断与调优 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs3-V2: 请求耗时采样</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/profiler/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/profiler/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 诊断与调优</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/</link><description>Recent content in 诊断与调优 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs3-V2: 请求耗时采样</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/profiler/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/profiler/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
 &lt;p>性能采样功能可以对 Dubbo 处理链路上的各处耗时进行检测，在出现超时的时候 &lt;code>( usageTime / timeout &amp;gt; profilerWarnPercent * 100 )&lt;/code> 通过日志记录调用的耗时。&lt;/p>
 &lt;p>此功能分为 &lt;code>simple profiler&lt;/code> 和 &lt;code>detail profiler&lt;/code> 两个模式，其中 &lt;code>simple profiler&lt;/code> 模式默认开启，&lt;code>detail profiler&lt;/code> 模式默认关闭。
@@ -145,7 +145,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> +-[ Offset: 1.526632ms; Usage: 809.366553ms, 99% ] Filter org.apache.dubbo.rpc.protocol.dubbo.filter.TraceFilter invoke.
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> +-[ Offset: 1.536964ms; Usage: 809.335907ms, 99% ] Filter org.apache.dubbo.rpc.filter.ClassLoaderCallbackFilter invoke.
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> +-[ Offset: 1.558545ms; Usage: 804.276436ms, 99% ] Receive request. Server biz impl invoke begin., dubbo version: 3.0.10-SNAPSHOT, current host: xx.xx.xx.xx
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>注：由于日志框架不匹配导致的日志为空可以参考&lt;a href="../../others/logger-management/">日志框架适配及运行时管理&lt;/a>动态修改日志输出框架。&lt;/p></description></item><item><title>Docs3-V2: 线程模型</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/threading-model/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/threading-model/</guid><description/></item><item><title>Docs3-V2: 服务引用配置对象缓存</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/reference-config-cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/reference-config-cache/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>注：由于日志框架不匹配导致的日志为空可以参考&lt;a href="../../others/logger-management/">日志框架适配及运行时管理&lt;/a>动态修改日志输出框架。&lt;/p></description></item><item><title>Docs3-V2: 线程模型</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/threading-model/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/threading-model/</guid><description/></item><item><title>Docs3-V2: 服务引用配置对象缓存</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/reference-config-cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/reference-config-cache/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
 &lt;p>&lt;code>ReferenceConfig&lt;/code> 实例很重，封装了与注册中心的连接以及与提供者的连接，需要缓存。否则重复生成 &lt;code>ReferenceConfig&lt;/code> 可能造成性能问题并且会有内存和连接泄漏。在 API 方式编程时，容易忽略此问题。&lt;/p>
 &lt;p>因此，自 &lt;code>2.4.0&lt;/code> 版本开始， dubbo 提供了简单的工具类 &lt;code>ReferenceConfigCache&lt;/code>用于缓存 &lt;code>ReferenceConfig&lt;/code> 实例。&lt;/p>
@@ -171,7 +171,7 @@
 &lt;p>可以修改这个策略，在 &lt;code>ReferenceConfigCache.getCache&lt;/code> 时，传一个 &lt;code>KeyGenerator&lt;/code>。详见 &lt;code>ReferenceConfigCache&lt;/code> 类的方法。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>KeyGenerator keyGenerator &lt;span style="color:#719e07">=&lt;/span> &lt;span style="color:#719e07">new&lt;/span> &lt;span style="color:#719e07">...&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>ReferenceConfigCache cache &lt;span style="color:#719e07">=&lt;/span> ReferenceConfigCache&lt;span style="color:#719e07">.&lt;/span>getCache&lt;span style="color:#719e07">(&lt;/span>keyGenerator&lt;span style="color:#719e07">);&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 路由状态采集</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/router-snapshot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/router-snapshot/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 路由状态采集</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/router-snapshot/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/router-snapshot/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
 &lt;p>路由状态收集功能可用于识别可能影响服务性能的任何潜在问题，识别可能阻碍服务尽可能高效使用的任何潜在瓶颈或问题，确保服务平稳运行，用户在尝试访问服务时不会遇到任何问题，允许用户检查路由的状态是启用还是禁用，确保仅使用授权的服务，并且访问仅限于具有适当授权的人员。&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
@@ -223,7 +223,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dubbo&amp;gt;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="注意-1">注意：&lt;/h4>
-&lt;p>由于日志框架不匹配导致的日志为空可以参考&lt;a href="../../others/logger-management/">日志框架适配及运行时管理&lt;/a>动态修改日志输出框架。&lt;/p></description></item><item><title>Docs3-V2: 负载均衡</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/loadbalance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/loadbalance/</guid><description>
+&lt;p>由于日志框架不匹配导致的日志为空可以参考&lt;a href="../../others/logger-management/">日志框架适配及运行时管理&lt;/a>动态修改日志输出框架。&lt;/p></description></item><item><title>Docs3-V2: 负载均衡</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/loadbalance/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/loadbalance/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
 &lt;p>在集群负载均衡时，Dubbo 提供了多种均衡策略，缺省为 &lt;code>random&lt;/code> 随机调用。&lt;/p>
 &lt;p>具体实现上，Dubbo 提供的是客户端负载均衡，即由 Consumer 通过负载均衡算法得出需要将请求提交到哪个 Provider 实例。&lt;/p>
@@ -371,10 +371,10 @@
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:reference&lt;/span> interface=&lt;span style="color:#2aa198">&amp;#34;...&amp;#34;&lt;/span>&lt;span style="color:#268bd2">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;dubbo:method&lt;/span> name=&lt;span style="color:#2aa198">&amp;#34;...&amp;#34;&lt;/span> loadbalance=&lt;span style="color:#2aa198">&amp;#34;roundrobin&amp;#34;&lt;/span>&lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;/dubbo:reference&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 注册信息简化</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/simplify-registry-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/simplify-registry-data/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 注册信息简化</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/simplify-registry-data/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/simplify-registry-data/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
-&lt;p>Dubbo provider 中的服务配置项有接近 &lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs/references/xml/dubbo-parameter">30 个配置项&lt;/a>。 排除注册中心服务治理需要之外，很大一部分配置项是 provider 自己使用，不需要透传给消费者。这部分数据不需要进入注册中心，而只需要以 key-value 形式持久化存储。&lt;/p>
-&lt;p>Dubbo consumer 中的配置项也有 &lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs/references/xml/dubbo-consumer">20+个配置项&lt;/a>。在注册中心之中，服务消费者列表中只需要关注 application，version，group，ip，dubbo 版本等少量配置，其他配置也可以以 key-value 形式持久化存储。 &lt;br>
+&lt;p>Dubbo provider 中的服务配置项有接近 &lt;a href="https://dubbo.apache.org/zh-cn/docs/references/xml/dubbo-parameter">30 个配置项&lt;/a>。 排除注册中心服务治理需要之外，很大一部分配置项是 provider 自己使用，不需要透传给消费者。这部分数据不需要进入注册中心，而只需要以 key-value 形式持久化存储。&lt;/p>
+&lt;p>Dubbo consumer 中的配置项也有 &lt;a href="https://dubbo.apache.org/zh-cn/docs/references/xml/dubbo-consumer">20+个配置项&lt;/a>。在注册中心之中，服务消费者列表中只需要关注 application，version，group，ip，dubbo 版本等少量配置，其他配置也可以以 key-value 形式持久化存储。 &lt;br>
 这些数据是以服务为维度注册进入注册中心，导致了数据量的膨胀，进而引发注册中心 (如 zookeeper) 的网络开销增大，性能降低。&lt;/p>
 &lt;blockquote>
 &lt;p>设计目标和宗旨&lt;/p>
@@ -686,7 +686,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
 &lt;p>提示：本版本还保留了大量的配置项，接下来的版本中，会逐渐删除所有的配置项。&lt;/p>
-&lt;/blockquote></description></item><item><title>Docs3-V2: 调用结果缓存</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/result-cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/result-cache/</guid><description>
+&lt;/blockquote></description></item><item><title>Docs3-V2: 调用结果缓存</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/result-cache/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/result-cache/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
 &lt;p>Dubbo支持了服务端结果缓存和客户端结果缓存。&lt;/p>
 &lt;h4 id="缓存类型">缓存类型&lt;/h4>
@@ -753,7 +753,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="heading">&lt;/h2></description></item><item><title>Docs3-V2: 并发控制</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/concurrency-control/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/concurrency-control/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="heading">&lt;/h2></description></item><item><title>Docs3-V2: 并发控制</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/concurrency-control/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/concurrency-control/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
 &lt;p>多种并发控制功能，帮助用户管理其应用程序和服务。&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
@@ -800,7 +800,7 @@
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:reference&lt;/span> interface=&lt;span style="color:#2aa198">&amp;#34;com.foo.BarService&amp;#34;&lt;/span> loadbalance=&lt;span style="color:#2aa198">&amp;#34;leastactive&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>或&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:service&lt;/span> interface=&lt;span style="color:#2aa198">&amp;#34;com.foo.BarService&amp;#34;&lt;/span> loadbalance=&lt;span style="color:#2aa198">&amp;#34;leastactive&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 连接控制</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/config-connections/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/config-connections/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 连接控制</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/config-connections/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/config-connections/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
 &lt;p>连接控制功能可以使用户能够控制和管理进出服务器连接数，限制连接数并设置超时，以确保 Dubbo 系统的稳定性和性能，还允许用户根据 IP 地址、端口和协议配置不同级别的访问控制，保护系统免受恶意流量的影响，并降低服务中断的风险，此外提供了一种监视当前流量和连接状态的方法。&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
@@ -832,7 +832,7 @@
 &lt;p>如果是长连接，比如 Dubbo 协议，connections 表示该服务对每个提供者建立的长连接数&amp;#160;&lt;a href="#fnref:2" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Docs3-V2: 延迟连接</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/lazy-connect/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/lazy-connect/</guid><description>
+&lt;/div></description></item><item><title>Docs3-V2: 延迟连接</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/lazy-connect/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/lazy-connect/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
 &lt;p>当消费者请求服务时，实际使用服务时才建立真正的连接，避免不必要的连接来减少延迟并提高系统稳定性。&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
@@ -841,7 +841,7 @@
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:protocol&lt;/span> name=&lt;span style="color:#2aa198">&amp;#34;dubbo&amp;#34;&lt;/span> lazy=&lt;span style="color:#2aa198">&amp;#34;true&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;blockquote>
 &lt;p>该配置只对使用长连接的 dubbo 协议生效。&lt;/p>
-&lt;/blockquote></description></item><item><title>Docs3-V2: 粘滞连接</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/stickiness/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/stickiness/</guid><description>
+&lt;/blockquote></description></item><item><title>Docs3-V2: 粘滞连接</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/stickiness/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/stickiness/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
 &lt;p>允许消费者在提供者接收请求之前向提供者发送请求，消费者等待提供者准备就绪，然后将发送消费者者的请求，当消费者需要连接到提供者，提供者尚未准备好接受请求时，确保在正确的时间发送请求，防止消费者被速度慢或不可用的提供程序阻止。&lt;/p>
 &lt;h2 id="使用场景">使用场景&lt;/h2>
@@ -853,7 +853,7 @@
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dubbo:reference&lt;/span> id=&lt;span style="color:#2aa198">&amp;#34;xxxService&amp;#34;&lt;/span> interface=&lt;span style="color:#2aa198">&amp;#34;com.xxx.XxxService&amp;#34;&lt;/span>&lt;span style="color:#268bd2">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;dubbo:method&lt;/span> name=&lt;span style="color:#2aa198">&amp;#34;sayHello&amp;#34;&lt;/span> sticky=&lt;span style="color:#2aa198">&amp;#34;true&amp;#34;&lt;/span> &lt;span style="color:#268bd2">/&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;/dubbo:reference&amp;gt;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 支持 Graal VM</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/support-graalvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/support-graalvm/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: 支持 Graal VM</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/support-graalvm/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/support-graalvm/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
 &lt;p>Dubbo3.0 支持 Native-Image 文档, 本文档将介绍将 dubbo3.0 项目接入 GraalVM，进行 native-image 编译为二进制的流程。&lt;/p>
 &lt;p>关于 GraalVm 的更多信息可以阅读 &lt;a href="https://www.graalvm.org/docs/getting-started/container-images/">https://www.graalvm.org/docs/getting-started/container-images/&lt;/a> 此文档。&lt;/p>
@@ -870,9 +870,9 @@
 &lt;p>在编译我们的dubbo项目之前，需要确保我们正基于graalVm的环境。&lt;/p>
 &lt;h3 id="安装graalvm">安装GraalVM&lt;/h3>
 &lt;p>进入 &lt;a href="https://www.graalvm.org/">https://www.graalvm.org/&lt;/a> 官网根据自己的系统选取最新版本安装：&lt;/p>
-&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo3.0-graalvm-support/graalvmgw.jpg" alt="">&lt;/p>
+&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo3.0-graalvm-support/graalvmgw.jpg" alt="">&lt;/p>
 &lt;p>安装完成后，修改配置 JAVA_HOME 的路径，生效后查看本地 jdk 可以看到如下：&lt;/p>
-&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo3.0-graalvm-support/graalvm_env.jpg" alt="">
+&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo3.0-graalvm-support/graalvm_env.jpg" alt="">
 这里我们使用的基于jdk1.8版本的GraalVM。&lt;/p>
 &lt;ul>
 &lt;li>安装native-image，只需执行gu install native-image即可。&lt;/li>
@@ -882,7 +882,7 @@
 &lt;li>手动执行生成SPI代码。&lt;/li>
 &lt;/ol>
 &lt;p>由于目前编译native-image不支持代码动态生成编译，所以有关代码动态生成的部分需要我们手动先生成，这里提供了工具函数：&lt;/p>
-&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo3.0-graalvm-support/code_generator.jpg" alt="">
+&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo3.0-graalvm-support/code_generator.jpg" alt="">
 执行CodeGenerator即可在dubbo-native模块下生成SPI代码。&lt;/p>
 &lt;h3 id="在根目录下执行install">在根目录下执行install&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>MacdeMacBook&lt;span style="color:#719e07">-&lt;/span>pro&lt;span style="color:#719e07">-&lt;/span>&lt;span style="color:#2aa198">3&lt;/span>:incubator&lt;span style="color:#719e07">-&lt;/span>dubbo mac$ pwd
@@ -894,11 +894,11 @@
 &lt;p>这里我们提供了可直接进行编译的示例项目，dubbo-demo/dubbo-demo-native。上面步骤install完成后，先到dubbo-demo-native的provider下，执行native-image编译：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span> mvn clean &lt;span style="color:#719e07">package&lt;/span> &lt;span style="color:#719e07">-&lt;/span>P native &lt;span style="color:#719e07">-&lt;/span>Dmaven.test.skip=&lt;span style="color:#cb4b16">true&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这里由于我们在maven中引入了native-image插件，所以直接-P native即可执行该插件。&lt;/p>
-&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo3.0-graalvm-support/native_image_build.jpg" alt="">
+&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo3.0-graalvm-support/native_image_build.jpg" alt="">
 编译成功后可以在target下看到已经生成的二进制文件，本地启动一个zookeeper，直接执行该二进制，可见启动成功如下：&lt;/p>
-&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo3.0-graalvm-support/run_provider.jpg" alt="">
+&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo3.0-graalvm-support/run_provider.jpg" alt="">
 consumer端同样执行编译，在consumer的target下也会生成二进制文件：demo-native-consumer,执行该二进制可以看到调用结果如下：&lt;/p>
-&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo3.0-graalvm-support/run_consumer.jpg" alt="">&lt;/p>
+&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo3.0-graalvm-support/run_consumer.jpg" alt="">&lt;/p>
 &lt;h3 id="具体步骤">具体步骤&lt;/h3>
 &lt;p>实际上在这个demo下我们做了一些工作来确保项目可以编译执行，主要有以下几个步骤&lt;/p>
 &lt;ul>
@@ -1026,9 +1026,9 @@ consumer端同样执行编译，在consumer的target下也会生成二进制文�
 &lt;p>在启动参数中添加：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>-agentlib:native-image-agent=config-output-dir=/tmp/config/,config-write-period-secs=300,config-write-initial-delay-secs=5
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>以正常方式启动，在项目的resources下建立文件夹META-INF.native-image，把在本地目录中生成的文件粘进去：&lt;/p>
-&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo3.0-graalvm-support/resources.jpg" alt="">
+&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo3.0-graalvm-support/resources.jpg" alt="">
 （可能会有缺漏没有生成的类信息，需要根据编译或运行时的报错信息手动添加。）&lt;/p>
-&lt;p>&lt;strong>完成以上几步后就可以进行项目的编译了。&lt;/strong>&lt;/p></description></item><item><title>Docs3-V2: 导出线程堆栈</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/dump/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/dump/</guid><description>
+&lt;p>&lt;strong>完成以上几步后就可以进行项目的编译了。&lt;/strong>&lt;/p></description></item><item><title>Docs3-V2: 导出线程堆栈</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/dump/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/dump/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
 &lt;p>dubbo 通过 Jstack 自动导出线程堆栈来保留现场，方便排查问题。&lt;/p>
 &lt;p>默认策略&lt;/p>
@@ -1056,7 +1056,7 @@ consumer端同样执行编译，在consumer的target下也会生成二进制文�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">application&lt;/span>:
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">name&lt;/span>: dubbo-springboot-demo-provider
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">dump-directory&lt;/span>: /tmp
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: Kryo 和 FST 序列化</title><link>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/serialization/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/serialization/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs3-V2: Kryo 和 FST 序列化</title><link>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/serialization/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/advanced-features-and-usage/performance/serialization/</guid><description>
 &lt;h2 id="功能说明">功能说明&lt;/h2>
 &lt;h3 id="序列化漫谈">序列化漫谈&lt;/h3>
 &lt;h4 id="漫谈一">漫谈一&lt;/h4>
@@ -1084,7 +1084,7 @@ consumer端同样执行编译，在consumer的target下也会生成二进制文�
 &lt;h2 id="实现方式">实现方式&lt;/h2>
 &lt;h3 id="启用kryo和fst">启用Kryo和FST&lt;/h3>
 &lt;p>使用Kryo和FST非常简单，只需要先增加对应的依赖。
-更多插件： &lt;a href="http://static.dubbo.apache.org:8080/zh-cn/download/spi-extensions">Dubbo SPI Extensions&lt;/a>&lt;/p>
+更多插件： &lt;a href="https://dubbo.apache.org/zh-cn/download/spi-extensions">Dubbo SPI Extensions&lt;/a>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dependency&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;groupId&amp;gt;&lt;/span>org.apache.dubbo.extensions&lt;span style="color:#268bd2">&amp;lt;/groupId&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;artifactId&amp;gt;&lt;/span>dubbo-serialization-kryo&lt;span style="color:#268bd2">&amp;lt;/artifactId&amp;gt;&lt;/span>
@@ -1307,8 +1307,8 @@ consumer端同样执行编译，在consumer的target下也会生成二进制文�
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/user/rt.png" alt="rt">&lt;/p>
-&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/user/tps.png" alt="tps">&lt;/p>
+&lt;p>&lt;img src="https://dubbo.apache.org/imgs/user/rt.png" alt="rt">&lt;/p>
+&lt;p>&lt;img src="https://dubbo.apache.org/imgs/user/tps.png" alt="tps">&lt;/p>
 &lt;blockquote>
 &lt;p>测试总结: 就目前结果而言，我们可以看到不管从生成字节的大小，还是平均响应时间和平均TPS，Kryo和FST相比Dubbo RPC中原有的序列化方式都有非常显著的改进。&lt;/p>
 &lt;/blockquote>
