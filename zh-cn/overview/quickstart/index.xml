@@ -257,7 +257,8 @@
 &lt;p>执行&lt;code>./target/debug/greeter-client&lt;/code>来运行client，调用&lt;code>triple://127.0.0.1:8888/org.apache.dubbo.sample.tri.Greeter&lt;/code>下的各种方法：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-sh" data-lang="sh">&lt;span style="display:flex;">&lt;span>$ ./target/debug/greeter-client
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>Response: GreeterReply &lt;span style="color:#719e07">{&lt;/span> message: &lt;span style="color:#2aa198">&amp;#34;hello, dubbo-rust&amp;#34;&lt;/span> &lt;span style="color:#719e07">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;section id="section-0" style="">
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7-更多示例">7 更多示例&lt;/h2>
+&lt;section id="section-0" style="">
 &lt;div class="td-content list-page">
 &lt;div class="lead">&lt;/div>&lt;header class="article-meta">
 &lt;/header>&lt;div class="row">
