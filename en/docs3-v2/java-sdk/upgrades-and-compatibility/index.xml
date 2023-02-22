@@ -1,7 +1,7 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – Upgrade Compatibility</title><link>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/</link><description>Recent content in Upgrade Compatibility on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs3-V2: 2.x to 3.x Operation Guide</title><link>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/2.x-to-3.x-compatibility-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/2.x-to-3.x-compatibility-guide/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – Upgrade Compatibility</title><link>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/</link><description>Recent content in Upgrade Compatibility on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs3-V2: 2.x to 3.x Operation Guide</title><link>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/2.x-to-3.x-compatibility-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/2.x-to-3.x-compatibility-guide/</guid><description>
 &lt;h2 id="benefits-of-upgrading-to-dubbo-3x">Benefits of upgrading to Dubbo 3.X&lt;/h2>
 &lt;p>Dubbo3 still maintains the classic architecture of 2.x. Its main responsibility is to solve the communication between microservice processes, and to better manage and control microservice clusters through rich service governance (such as address discovery, traffic management, etc.); The upgrade of the framework is comprehensive, reflected in almost every aspect of the core Dubbo features, through the upgrade to achieve a comprehensive improvement in stability, performance, scalability, and ease of use.&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/v3/concepts/architecture-1.png" alt="architecture-1">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/concepts/architecture-1.png" alt="architecture-1">&lt;/p>
 &lt;ul>
 &lt;li>**Universal communication protocol. ** The new RPC protocol should abandon the private protocol stack, use the more general HTTP/2 protocol as the transport layer carrier, and use the standardized features of the HTTP protocol to solve the problems of traffic versatility and penetration, so that the protocol can better respond Scenarios such as front-end and back-end docking, gateway proxy, etc.; supports the Stream communication mode, which meets the demands of different business communication models and brings greater throughput to the cluster.&lt;/li>
 &lt;li>**For millions of cluster instances, the cluster is highly scalable. ** With the promotion of micro-service practices, the scale of micro-service cluster instances is also constantly expanding, which benefits from the characteristics of light-weight micro-services and easy horizontal expansion, but also brings a burden to the entire cluster capacity, especially It is some centralized service governance components; Dubbo3 needs to solve various resource bottlenecks caused by the expansion of instance scale, and realize truly unlimited horizontal expansion.&lt;/li>
@@ -12,21 +12,21 @@
 &lt;ul>
 &lt;li>** New address discovery model (application-level service discovery). **
 &lt;ul>
-&lt;li>See &lt;a href="https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/service-discovery-samples/">Application-Level Service Discovery Migration Samples&lt;/a>.&lt;/li>
-&lt;li>See &lt;a href="https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/migration-service-discovery/">Migration steps for application-level service discovery&lt;/a>&lt;/li>
-&lt;li>See &lt;a href="https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/service-discovery-rule/">Description of application-level service discovery address migration rules&lt;/a>&lt;/li>
+&lt;li>See &lt;a href="http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/service-discovery-samples/">Application-Level Service Discovery Migration Samples&lt;/a>.&lt;/li>
+&lt;li>See &lt;a href="http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/migration-service-discovery/">Migration steps for application-level service discovery&lt;/a>&lt;/li>
+&lt;li>See &lt;a href="http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/service-discovery-rule/">Description of application-level service discovery address migration rules&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>**The next generation of the HTTP/2-based Triple protocol. **
 &lt;ul>
-&lt;li>See &lt;a href="https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/migration-triple/">Triple Protocol Migration Steps&lt;/a>&lt;/li>
-&lt;li>See &lt;a href="https://dubbo.apache.org/en/docs3-v2/java-sdk/reference-manual/protocol/triple/guide/">Triple protocol usage&lt;/a>&lt;/li>
-&lt;li>See &lt;a href="https://dubbo.apache.org/en/docs3-v2/java-sdk/reference-manual/protocol/triple/overview/">Triple Protocol Design and Implementation&lt;/a>.&lt;/li>
+&lt;li>See &lt;a href="http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/migration-triple/">Triple Protocol Migration Steps&lt;/a>&lt;/li>
+&lt;li>See &lt;a href="http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/reference-manual/protocol/triple/guide/">Triple protocol usage&lt;/a>&lt;/li>
+&lt;li>See &lt;a href="http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/reference-manual/protocol/triple/overview/">Triple Protocol Design and Implementation&lt;/a>.&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;li>**Unified routing rules. **
 &lt;ul>
-&lt;li>See &lt;a href="https://dubbo.apache.org/en/docs3-v2/java-sdk/advanced-features-and-usage/traffic/mesh-style/">Design and Implementation of Unified Routing Rules&lt;/a>&lt;/li>
+&lt;li>See &lt;a href="http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/advanced-features-and-usage/traffic/mesh-style/">Design and Implementation of Unified Routing Rules&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -93,9 +93,9 @@ During the publishing process, we recommend that you first upgrade the downstrea
 &lt;/ul>
 &lt;h2 id="precautions">Precautions&lt;/h2>
 &lt;h3 id="1-application-level-service-discovery">1. Application-level service discovery&lt;/h3>
-&lt;p>Due to design problems in the application-level service discovery model of Dubbo 2.7, a large number of format changes have been made in Dubbo 3.x, so the application-level service discovery of 2.7.x and 3.x may not be able to subscribe to each other. sex. Although Dubbo will eliminate unrecognized instances, from the perspective of stability, if you enable the application-level service discovery feature in 2.7.x (not registered by default in 2.7.x), we recommend first Turn it off, and turn it on again after upgrading to 3.x.&lt;/p></description></item><item><title>Docs3-V2: Guide to Migrating Dubbo Protocol to Triple Protocol</title><link>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/migration-triple/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/migration-triple/</guid><description>
+&lt;p>Due to design problems in the application-level service discovery model of Dubbo 2.7, a large number of format changes have been made in Dubbo 3.x, so the application-level service discovery of 2.7.x and 3.x may not be able to subscribe to each other. sex. Although Dubbo will eliminate unrecognized instances, from the perspective of stability, if you enable the application-level service discovery feature in 2.7.x (not registered by default in 2.7.x), we recommend first Turn it off, and turn it on again after upgrading to 3.x.&lt;/p></description></item><item><title>Docs3-V2: Guide to Migrating Dubbo Protocol to Triple Protocol</title><link>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/migration-triple/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/migration-triple/</guid><description>
 &lt;h2 id="triple-introduction">Triple Introduction&lt;/h2>
-&lt;p>For the format and principle of the &lt;code>Triple&lt;/code> protocol, please refer to &lt;a href="https://dubbo.apache.org/zh-cn/docs/concepts/rpc-protocol/">RPC Communication Protocol&lt;/a>&lt;/p>
+&lt;p>For the format and principle of the &lt;code>Triple&lt;/code> protocol, please refer to &lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs/concepts/rpc-protocol/">RPC Communication Protocol&lt;/a>&lt;/p>
 &lt;p>According to the goals of Triple design, the &lt;code>Triple&lt;/code> protocol has the following advantages:&lt;/p>
 &lt;ul>
 &lt;li>Capable of cross-language interaction. Both the traditional multi-language and multi-SDK mode and the Mesh cross-language mode require a more general and scalable data transmission protocol.&lt;/li>
@@ -145,24 +145,24 @@ During the publishing process, we recommend that you first upgrade the downstrea
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="only-use-dubbo-protocol">Only use dubbo protocol&lt;/h3>
 &lt;p>To ensure compatibility, we first upgrade some providers to the &lt;code>dubbo3&lt;/code> version and use the &lt;code>dubbo&lt;/code> protocol.&lt;/p>
 &lt;p>Start a [&lt;code>Provider&lt;/code>] using the &lt;code>dubbo&lt;/code> protocol (&lt;a href="https://github.com/apache/dubbo-samples/blob/master/3-extensions/protocol/dubbo-samples-triple/src/main/java/org">https://github.com/apache/dubbo-samples/blob/master/3-extensions/protocol/dubbo-samples-triple/src/main/java/org&lt;/a> /apache/dubbo/sample/tri/migration/ApiMigrationDubboProvider.java) and &lt;a href="https://github.com/apache/dubbo-samples/blob/master/3-extensions/protocol/dubbo-samples-triple/src/main/java/org/apache/dubbo/sample/tri/migration/ApiMigrationDubboConsumer.java">&lt;code>Consumer&lt;/code>&lt;/a>, complete the call, the output is as follows:
-&lt;img src="https://dubbo.apache.org/imgs/v3/migration/tri/dubbo3-tri-migration-dubbo-dubbo-result.png" alt="result">&lt;/p>
+&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/migration/tri/dubbo3-tri-migration-dubbo-dubbo-result.png" alt="result">&lt;/p>
 &lt;h3 id="use-dubbo-and-triple-protocol-at-the-same-time">Use dubbo and triple protocol at the same time&lt;/h3>
 &lt;p>For the upgrade of online services, it is impossible to complete the provider and consumer upgrades at the same time. It needs to be operated step by step to ensure business stability.
 In the second step, the provider provides a dual-protocol way to support dubbo + tri clients at the same time.&lt;/p>
 &lt;p>The structure is shown in the figure:
-&lt;img src="https://dubbo.apache.org/imgs/v3/migration/tri/migrate-dubbo-tri-strust.png" alt="trust">&lt;/p>
+&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/migration/tri/migrate-dubbo-tri-strust.png" alt="trust">&lt;/p>
 &lt;blockquote>
 &lt;p>According to the recommended upgrade steps, the provider already supports the tri protocol, so the consumer of dubbo3 can directly use the tri protocol&lt;/p>
 &lt;/blockquote>
 &lt;p>Start [&lt;code>Provider&lt;/code>] using &lt;code>dubbo&lt;/code> protocol and &lt;code>triple&lt;/code> protocol (&lt;a href="https://github.com/apache/dubbo-samples/blob/master/3-extensions/protocol/dubbo-samples-triple/src/main">https://github.com/apache/dubbo-samples/blob/master/3-extensions/protocol/dubbo-samples-triple/src/main&lt;/a> /java/org/apache/dubbo/sample/tri/migration/ApiMigrationBothProvider.java) and [&lt;code>Consumer&lt;/code>](&lt;a href="https://github.com/apache/dubbo-samples/blob/master/3-extensions/protocol/">https://github.com/apache/dubbo-samples/blob/master/3-extensions/protocol/&lt;/a> dubbo-samples-triple/src/main/java/org/apache/dubbo/sample/tri/migration/ApiMigrationBothConsumer.java), complete the call, the output is as follows:&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/v3/migration/tri/dubbo3-tri-migration-both-dubbo-tri-result.png" alt="result">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/migration/tri/dubbo3-tri-migration-both-dubbo-tri-result.png" alt="result">&lt;/p>
 &lt;h3 id="only-use-triple-protocol">Only use triple protocol&lt;/h3>
 &lt;p>When all consuemr are upgraded to a version that supports the &lt;code>Triple&lt;/code> protocol, the provider can be switched to only use the &lt;code>Triple&lt;/code> protocol to start&lt;/p>
 &lt;p>The structure is shown in the figure:
-&lt;img src="https://dubbo.apache.org/imgs/v3/migration/tri/migrate-only-tri-strust.png" alt="trust">&lt;/p>
+&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/migration/tri/migrate-only-tri-strust.png" alt="trust">&lt;/p>
 &lt;p>[Provider](&lt;a href="https://github.com/apache/dubbo-samples/blob/master/3-extensions/protocol/dubbo-samples-triple/src/main/java/org/apache/dubbo/sample/tri/">https://github.com/apache/dubbo-samples/blob/master/3-extensions/protocol/dubbo-samples-triple/src/main/java/org/apache/dubbo/sample/tri/&lt;/a> migration/ApiMigrationTriProvider.java)
 and [Consumer](&lt;a href="https://github.com/apache/dubbo-samples/blob/master/3-extensions/protocol/dubbo-samples-triple/src/main/java/org/apache/dubbo/sample/tri">https://github.com/apache/dubbo-samples/blob/master/3-extensions/protocol/dubbo-samples-triple/src/main/java/org/apache/dubbo/sample/tri&lt;/a> /migration/ApiMigrationTriConsumer.java) to complete the call, the output is as follows:&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/v3/migration/tri/dubbo3-tri-migration-tri-tri-result.png" alt="result">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/migration/tri/dubbo3-tri-migration-tri-tri-result.png" alt="result">&lt;/p>
 &lt;h3 id="implementation-principle">Implementation principle&lt;/h3>
 &lt;p>Through the upgrade process described above, we can easily complete the upgrade by modifying the protocol type. How does the framework help us do this?&lt;/p>
 &lt;p>Through the introduction of the &lt;code>Triple&lt;/code> protocol, we know that the data type of &lt;code>Triple&lt;/code> in Dubbo3 is a &lt;code>protobuf&lt;/code> object, so why non-&lt;code>protobuf&lt;/code> java objects can also be transmitted normally.&lt;/p>
@@ -195,7 +195,7 @@ and [Consumer](&lt;a href="https://github.com/apache/dubbo-samples/blob/master/3
 &lt;/blockquote>
 &lt;p>For Dubbo3 and Triple, the main recommendation is to use &lt;code>protobuf&lt;/code> serialization, and use &lt;code>IDL&lt;/code> defined by &lt;code>proto&lt;/code> to generate related interface definitions. Using &lt;code>IDL&lt;/code> as a common interface convention in multiple languages, coupled with the natural interoperability of &lt;code>Triple&lt;/code> and &lt;code>Grpc&lt;/code>, can easily achieve cross-language interaction, such as Go language.&lt;/p>
 &lt;p>Use the &lt;code>dubbo-compiler&lt;/code> plug-in to compile the prepared &lt;code>.proto&lt;/code> file and write the implementation class to complete the method call:&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/v3/migration/tri/dubbo3-tri-migration-tri-tri-result.png" alt="result">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/migration/tri/dubbo3-tri-migration-tri-tri-result.png" alt="result">&lt;/p>
 &lt;p>From the upgrade example above, we can know that the &lt;code>Triple&lt;/code> protocol uses &lt;code>protbuf&lt;/code> objects to be serialized for transmission, so there is no other logic for methods that are themselves &lt;code>protobuf&lt;/code> objects.&lt;/p>
 &lt;p>The interface after compiling with the &lt;code>protobuf&lt;/code> plugin is as follows:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">public&lt;/span> &lt;span style="color:#268bd2">interface&lt;/span> &lt;span style="color:#268bd2">PbGreeter&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
@@ -225,11 +225,11 @@ and [Consumer](&lt;a href="https://github.com/apache/dubbo-samples/blob/master/3
 &lt;p>Stream is divided into the following three types:&lt;/p>
 &lt;ul>
 &lt;li>SERVER_STREAM (server stream)
-&lt;img src="https://dubbo.apache.org/imgs/v3/migration/tri/migrate-server-stream.png" alt="SERVER_STREAM">&lt;/li>
+&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/migration/tri/migrate-server-stream.png" alt="SERVER_STREAM">&lt;/li>
 &lt;li>CLIENT_STREAM (client stream)
-&lt;img src="https://dubbo.apache.org/imgs/v3/migration/tri/migrate-client-stream.png" alt="CLIENT_STREAM">&lt;/li>
+&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/migration/tri/migrate-client-stream.png" alt="CLIENT_STREAM">&lt;/li>
 &lt;li>BIDIRECTIONAL_STREAM (bidirectional stream)
-&lt;img src="https://dubbo.apache.org/imgs/v3/migration/tri/migrate-bi-stream.png" alt="BIDIRECTIONAL_STREAM">&lt;/li>
+&lt;img src="http://static.dubbo.apache.org:8080/imgs/v3/migration/tri/migrate-bi-stream.png" alt="BIDIRECTIONAL_STREAM">&lt;/li>
 &lt;/ul>
 &lt;blockquote>
 &lt;p>Due to the limitations of the &lt;code>java&lt;/code> language, the implementation of BIDIRECTIONAL_STREAM and CLIENT_STREAM is the same.&lt;/p>
@@ -365,8 +365,8 @@ For &lt;code>BIDIRECTIONAL_STREAM&lt;/code>, it should be noted that &lt;code>St
 &lt;h2 id="triple-and-application-level-registration-discovery">Triple and application-level registration discovery&lt;/h2>
 &lt;p>The application-level service registration and discovery of the Triple protocol is consistent with other languages, and you can learn more about it through the following content.&lt;/p>
 &lt;ul>
-&lt;li>&lt;a href="https://dubbo.apache.org/zh-cn/docs/concepts/service-discovery/">Service Discovery&lt;/a>&lt;/li>
-&lt;li>&lt;a href="https://dubbo.apache.org/zh-cn/docs/migration/migration-service-discovery/">Application-level address discovery migration guide&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs/concepts/service-discovery/">Service Discovery&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs/migration/migration-service-discovery/">Application-level address discovery migration guide&lt;/a>&lt;/li>
 &lt;/ul>
 &lt;h2 id="intercommunicate-with-grpc">Intercommunicate with GRPC&lt;/h2>
 &lt;p>Through the introduction of the protocol, we know that the &lt;code>Triple&lt;/code> protocol is based on &lt;code>HTTP2&lt;/code> and compatible with &lt;code>GRPC&lt;/code>. In order to ensure and verify the interoperability with &lt;code>GRPC&lt;/code>, Dubbo3 has also written various tests in slave scenarios. For details, you can learn more through &lt;a href="https://github.com/apache/dubbo-samples/blob/master/3-extensions/protocol/dubbo-samples-triple/README.MD">here&lt;/a>.&lt;/p>
@@ -380,7 +380,7 @@ Grpc uses &lt;code>compiler&lt;/code> to compile the written &lt;code>proto&lt;/
 -&amp;hellip;&lt;/li>
 &lt;/ul>
 &lt;p>&lt;code>stub&lt;/code> helps us shield the details of different calling methods in a unified way. However, currently &lt;code>Dubbo3&lt;/code> only supports the traditional way of defining and calling interfaces.&lt;/p>
-&lt;p>In the near future, &lt;code>Triple&lt;/code> will also implement various commonly used &lt;code>Stub&lt;/code>, allowing users to write a &lt;code>proto&lt;/code> file, which can be conveniently used in any scene through &lt;code>comipler&lt;/code>, please wait and see.&lt;/p></description></item><item><title>Docs3-V2: Application Level Service Discovery</title><link>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/</guid><description/></item><item><title>Docs3-V2: Serialization Protocol Upgrade Guide</title><link>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/serialization-upgrade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/serialization-upgrade/</guid><description>
+&lt;p>In the near future, &lt;code>Triple&lt;/code> will also implement various commonly used &lt;code>Stub&lt;/code>, allowing users to write a &lt;code>proto&lt;/code> file, which can be conveniently used in any scene through &lt;code>comipler&lt;/code>, please wait and see.&lt;/p></description></item><item><title>Docs3-V2: Application Level Service Discovery</title><link>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/service-discovery/</guid><description/></item><item><title>Docs3-V2: Serialization Protocol Upgrade Guide</title><link>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/serialization-upgrade/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/serialization-upgrade/</guid><description>
 &lt;p>In version 3.1.0, the serialization protocol supported by Dubbo by default adds support for Fastjson2. Some users may consider upgrading the serialization protocol in the existing system, but the difference between the server and client versions may cause the client to not support the serialization protocol of the server. In version 3.2.0, Dubbo&amp;rsquo;s server introduces a new configuration &lt;code>prefer-serialization&lt;/code>, which can perfectly solve the possible risks in the server-side serialization upgrade process.&lt;/p>
 &lt;h3 id="best-practices">Best Practices&lt;/h3>
 &lt;p>Serialization protocol upgrade needs to be done in two steps:&lt;/p>
@@ -396,7 +396,7 @@ Grpc uses &lt;code>compiler&lt;/code> to compile the written &lt;code>proto&lt;/
 &lt;p>The dubbo client serialization protocol is selected according to the registration configuration of the server (that is, the &lt;code>serialization&lt;/code> configuration of the server). In the request phase, dubbo will assemble the serialization protocol of the client into the request header, and the server will determine the deserialization protocol according to the request header when performing deserialization.&lt;/p>
 &lt;ul>
 &lt;li>**So, if the versions of the server and the client are inconsistent, the client may not be able to serialize. ** In order to solve this situation, 3.2.0 will use the protocol configured by &lt;code>prefer-serialization&lt;/code> first when serializing the client. If the protocol related to &lt;code>prefer-serialization&lt;/code> is not supported, the protocol configured by &lt;code>serialization&lt;/code> will be used . (You can think of &lt;code>serialization&lt;/code> as a bottom-up configuration)&lt;/li>
-&lt;/ul></description></item><item><title>Docs3-V2: Comparison of Protobuf and Interface</title><link>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/protobufinterface/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/protobufinterface/</guid><description>
+&lt;/ul></description></item><item><title>Docs3-V2: Comparison of Protobuf and Interface</title><link>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/protobufinterface/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/protobufinterface/</guid><description>
 &lt;h2 id="1-data-type">1. Data type&lt;/h2>
 &lt;h3 id="11-basic-types">1.1. Basic types&lt;/h3>
 &lt;table>
@@ -487,7 +487,7 @@ Grpc uses &lt;code>compiler&lt;/code> to compile the written &lt;code>proto&lt;/
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>Generated java code&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/docs/advanced/protobufinterface/124234531-b96c2c80-db46-11eb-8155-a77dbe059f07.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/docs/advanced/protobufinterface/124234531-b96c2c80-db46-11eb-8155-a77dbe059f07.png" alt="image">&lt;/p>
 &lt;blockquote>
 &lt;p>Enumerations are constants, so use uppercase&lt;/p>
 &lt;/blockquote>
@@ -501,7 +501,7 @@ Grpc uses &lt;code>compiler&lt;/code> to compile the written &lt;code>proto&lt;/
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>Generated java code&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/docs/advanced/protobufinterface/124234564-c4bf5800-db46-11eb-94fc-a056af6089cb.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/docs/advanced/protobufinterface/124234564-c4bf5800-db46-11eb-94fc-a056af6089cb.png" alt="image">&lt;/p>
 &lt;blockquote>
 &lt;p>The bottom layer is actually an ArrayList&lt;/p>
 &lt;/blockquote>
@@ -517,7 +517,7 @@ Grpc uses &lt;code>compiler&lt;/code> to compile the written &lt;code>proto&lt;/
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>Generated java code&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/docs/advanced/protobufinterface/124234654-e4568080-db46-11eb-9700-b30022ebee21.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/docs/advanced/protobufinterface/124234654-e4568080-db46-11eb-9700-b30022ebee21.png" alt="image">&lt;/p>
 &lt;h3 id="25-nesting">2.5. Nesting&lt;/h3>
 &lt;ul>
 &lt;li>Original pb code&lt;/li>
@@ -539,7 +539,7 @@ Grpc uses &lt;code>compiler&lt;/code> to compile the written &lt;code>proto&lt;/
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
 &lt;li>Generated java code&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/docs/advanced/protobufinterface/124234723-f89a7d80-db46-11eb-82d0-a8aee5322098.png" alt="image">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/docs/advanced/protobufinterface/124234723-f89a7d80-db46-11eb-82d0-a8aee5322098.png" alt="image">&lt;/p>
 &lt;h2 id="3-field-default-value">3. Field default value&lt;/h2>
 &lt;ul>
 &lt;li>For strings, the default is the empty string.&lt;/li>
@@ -639,7 +639,7 @@ Grpc uses &lt;code>compiler&lt;/code> to compile the written &lt;code>proto&lt;/
 &lt;li>Community homepage address: &lt;a href="https://developers.google.cn/protocol-buffers/">https://developers.google.cn/protocol-buffers/&lt;/a>&lt;/li>
 &lt;li>Community open source address: &lt;a href="https://github.com/google/protobuf">https://github.com/google/protobuf&lt;/a>&lt;/li>
 &lt;li>Maven of related jars: &lt;a href="https://search.maven.org/search?q=com.google.protobuf">https://search.maven.org/search?q=com.google.protobuf&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Docs3-V2: 3.0 to 3.1 Operation Guide</title><link>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/3.0-to-3.1-compatibility-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/3.0-to-3.1-compatibility-guide/</guid><description>
+&lt;/ul></description></item><item><title>Docs3-V2: 3.0 to 3.1 Operation Guide</title><link>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/3.0-to-3.1-compatibility-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/3.0-to-3.1-compatibility-guide/</guid><description>
 &lt;h2 id="function-modification-points">Function modification points&lt;/h2>
 &lt;h3 id="1-nacos-group-alignment-application-level-service-discovery">1. Nacos Group alignment (application-level service discovery)&lt;/h3>
 &lt;p>In Dubbo 2.7.x, the group value configured on the Nacos Registry URL is aligned with the group group in the Nacos Registry. (group can be regarded as a soft isolation similar to namespace)&lt;/p>
@@ -649,7 +649,7 @@ Grpc uses &lt;code>compiler&lt;/code> to compile the written &lt;code>proto&lt;/
 &lt;ol>
 &lt;li>Please check whether the group attribute has been configured on the URL of the registration center. If so, check whether the group of the server and the consumer are consistent. If not, please modify it to be consistent.&lt;/li>
 &lt;li>If you do not want the group to be realigned to the group grouping in the Nacos registry, you can configure the &lt;code>dubbo.nacos-service-discovery.use-default-group=false&lt;/code> global property value to ignore this function&lt;/li>
-&lt;/ol></description></item><item><title>Docs3-V2: 3.1 Upgrade to 3.2 Operation Guide</title><link>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/3.1-to-3.2-compatibility-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/3.1-to-3.2-compatibility-guide/</guid><description>
+&lt;/ol></description></item><item><title>Docs3-V2: 3.1 Upgrade to 3.2 Operation Guide</title><link>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/3.1-to-3.2-compatibility-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/3.1-to-3.2-compatibility-guide/</guid><description>
 &lt;h1 id="function-modification-points">Function modification points&lt;/h1>
 &lt;h2 id="1-transitive-dependency-changes">1. Transitive dependency changes&lt;/h2>
 &lt;ul>
@@ -663,7 +663,7 @@ Grpc uses &lt;code>compiler&lt;/code> to compile the written &lt;code>proto&lt;/
 &lt;/ul>
 &lt;h4 id="faq">FAQ&lt;/h4>
 &lt;h4 id="q1-will-it-affect-the-intercommunication-with-lower-versions-of-dubbo">Q1: Will it affect the intercommunication with lower versions of Dubbo?&lt;/h4>
-&lt;p>Won&amp;rsquo;t. Interoperability with lower versions still uses &lt;code>hessian-lite&lt;/code>. For the principle, please refer to &lt;a href="https://dubbo.apache.org/en/docs3-v2/java-sdk/upgrades-and-compatibility/serialization-upgrade/">Serialization Protocol Upgrade Guide&lt;/a>.&lt;/p>
+&lt;p>Won&amp;rsquo;t. Interoperability with lower versions still uses &lt;code>hessian-lite&lt;/code>. For the principle, please refer to &lt;a href="http://static.dubbo.apache.org:8080/en/docs3-v2/java-sdk/upgrades-and-compatibility/serialization-upgrade/">Serialization Protocol Upgrade Guide&lt;/a>.&lt;/p>
 &lt;h4 id="q2-why-switch-the-default-serialization-method">Q2: Why switch the default serialization method?&lt;/h4>
 &lt;p>&lt;code>fastjson2&lt;/code> is a high-performance serialization framework with better performance than &lt;code>hessian2&lt;/code>, natively supports JDK17, Native, etc., and is fully forward compatible with all functions of &lt;code>hessian2&lt;/code>.
 Since &lt;code>hessian-lite&lt;/code> will become more and more difficult to maintain in the future, we decided to switch the default serialization method from &lt;code>hessian2&lt;/code> to &lt;code>fastjson2&lt;/code>.&lt;/p>

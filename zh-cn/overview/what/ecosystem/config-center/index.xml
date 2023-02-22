@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 配置中心</title><link>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/config-center/</link><description>Recent content in 配置中心 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dubbo.apache.org/zh-cn/overview/what/ecosystem/config-center/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview: Zookeeper</title><link>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/config-center/zookeeper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/config-center/zookeeper/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 配置中心</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/config-center/</link><description>Recent content in 配置中心 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/config-center/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview: Zookeeper</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/config-center/zookeeper/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/config-center/zookeeper/</guid><description>
 &lt;h2 id="1-介绍">1 介绍&lt;/h2>
 &lt;p>Apache ZooKeeper是Apache软件基金会的一个软件项目，它为大型分布式计算提供开源的分布式配置服务、同步服务和命名注册。 ZooKeeper曾经是Hadoop的一个子项目，但现在是一个独立的顶级项目。&lt;/p>
 &lt;p>ZooKeeper的架构通过冗余服务实现高可用性。因此，如果第一次无应答，客户端就可以询问另一台ZooKeeper主机。ZooKeeper节点将它们的数据存储于一个分层的名字空间，非常类似于一个文件系统或一个前缀树结构。客户端可以在节点读写，从而以这种方式拥有一个共享的配置服务。更新是全序的。&lt;/p>
@@ -95,7 +95,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">address&lt;/span>: zookeeper://localhost:2181
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">timeout&lt;/span>: &lt;span style="color:#2aa198">30&lt;/span> * &lt;span style="color:#2aa198">1000&lt;/span> &lt;span style="color:#586e75"># 连接超时时间，默认 30s&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">session&lt;/span>: &lt;span style="color:#2aa198">60&lt;/span> * &lt;span style="color:#2aa198">1000&lt;/span> &lt;span style="color:#586e75"># 会话超时时间，默认 60s&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Overview: Nacos</title><link>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/config-center/nacos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/config-center/nacos/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Overview: Nacos</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/config-center/nacos/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/config-center/nacos/</guid><description>
 &lt;h2 id="1-介绍">1 介绍&lt;/h2>
 &lt;p>Nacos /nɑ:kəʊs/ 是 Dynamic Naming and Configuration Service 的首字母简称，一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。&lt;/p>
 &lt;p>Nacos 致力于帮助您发现、配置和管理微服务。Nacos 提供了一组简单易用的特性集，帮助您快速实现动态服务发现、服务配置、服务元数据及流量管理。&lt;/p>
@@ -123,7 +123,7 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>或者&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>ConfigCenterConfig configCenterConfig &lt;span style="color:#719e07">=&lt;/span> &lt;span style="color:#719e07">new&lt;/span> ConfigCenterConfig&lt;span style="color:#719e07">();&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>configCenterConfig&lt;span style="color:#719e07">.&lt;/span>setAddress&lt;span style="color:#719e07">(&lt;/span>&lt;span style="color:#2aa198">&amp;#34;nacos://127.0.0.1:8848&amp;#34;&lt;/span>&lt;span style="color:#719e07">);&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>address&lt;/code> 格式请参考 &lt;a href="../../registry/nacos/#22-%E9%85%8D%E7%BD%AE%E5%B9%B6%E5%90%AF%E7%94%A8-nacos">Nacos 注册中心 - 启用配置&lt;/a>&lt;/p></description></item><item><title>Overview: Apollo</title><link>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/config-center/apollo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/config-center/apollo/</guid><description>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>address&lt;/code> 格式请参考 &lt;a href="../../registry/nacos/#22-%E9%85%8D%E7%BD%AE%E5%B9%B6%E5%90%AF%E7%94%A8-nacos">Nacos 注册中心 - 启用配置&lt;/a>&lt;/p></description></item><item><title>Overview: Apollo</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/config-center/apollo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/config-center/apollo/</guid><description>
 &lt;h2 id="1-介绍">1 介绍&lt;/h2>
 &lt;p>Apollo（阿波罗）是一款可靠的分布式配置管理中心，诞生于携程框架研发部，能够集中化管理应用不同环境、不同集群的配置，配置修改后能够实时推送到应用端，并且具备规范的权限、流程治理等特性，适用于微服务配置管理场景。&lt;/p>
 &lt;h2 id="2-使用说明">2 使用说明&lt;/h2>
@@ -172,7 +172,7 @@
 2.2 group 值为任意值，则从对应的 namespace 读取配置，用户须将外部化配置写在该 namespace 下。&lt;/li>
 &lt;/ol>
 &lt;p>如以下示例是用的默认 group=&amp;lsquo;dubbo&amp;rsquo; 的全局外部化配置，即该配置可被所有应用读取到。
-&lt;img src="https://dubbo.apache.org/imgs/user/apollo-configcenter-dubbo.png" alt="apollo-configcenter-dubbo.png">&lt;/p>
+&lt;img src="http://static.dubbo.apache.org:8080/imgs/user/apollo-configcenter-dubbo.png" alt="apollo-configcenter-dubbo.png">&lt;/p>
 &lt;p>如果配置 group=&amp;lsquo;应用名&amp;rsquo; 则是应用特有配置，只有该应用可以读取到。&lt;/p>
 &lt;blockquote>
 &lt;p>关于外部化文件配置托管，相当于是把 &lt;code>dubbo.properties&lt;/code> 配置文件的内容存储在了 Apollo 中。每个应用都可以通过关联共享的 &lt;code>dubbo&lt;/code> namespace 继承公共配置, 进而可以单独覆盖个别配置项。&lt;/p>
@@ -186,7 +186,7 @@
 &lt;li>如果 namespace 不为空，则从对应的 namespace 值读取规则，须治理规则写在该 namespace 下。&lt;/li>
 &lt;/ol>
 &lt;p>如以下示例是通过 &lt;code>namespace='governance'&lt;/code> 将流量治理规则放在了 &lt;code>governance&lt;/code> namespace 下。
-&lt;img src="https://dubbo.apache.org/imgs/user/apollo-configcenter-governance-dubbo.png" alt="apollo-configcenter-governance-dubbo.png">&lt;/p>
+&lt;img src="http://static.dubbo.apache.org:8080/imgs/user/apollo-configcenter-governance-dubbo.png" alt="apollo-configcenter-governance-dubbo.png">&lt;/p>
 &lt;h3 id="33-更多-apollo-特有配置">3.3 更多 Apollo 特有配置&lt;/h3>
 &lt;p>当前 Dubbo 适配了 env、apollo.meta、apollo.cluster、apollo.id 等特有配置项，可通过 config-center 的扩展参数进行配置。&lt;/p>
 &lt;p>如&lt;/p>

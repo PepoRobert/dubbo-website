@@ -1,7 +1,7 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 社区动态</title><link>https://dubbo.apache.org/zh-cn/blog/news/</link><description>Recent content in 社区动态 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dubbo.apache.org/zh-cn/blog/news/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Dubbo Java 3.1.4 正式发布</title><link>https://dubbo.apache.org/zh-cn/blog/2022/12/01/dubbo-java-3.1.4-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link><pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2022/12/01/dubbo-java-3.1.4-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 社区动态</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/news/</link><description>Recent content in 社区动态 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://static.dubbo.apache.org:8080/zh-cn/blog/news/index.xml" rel="self" type="application/rss+xml"/><item><title>Blog: Dubbo Java 3.1.4 正式发布</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2022/12/01/dubbo-java-3.1.4-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link><pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2022/12/01/dubbo-java-3.1.4-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid><description>
 &lt;p>Dubbo 3.1.4 版本是目前 Dubbo 3 的最新稳定版本，我们建议所有的用户都升级到最新的稳定版本。&lt;/p>
 &lt;h1 id="dubbo-314">Dubbo 3.1.4&lt;/h1>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/release/3-1-4.png" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/release/3-1-4.png" alt="image.png">&lt;/p>
 &lt;h3 id="新特性">新特性&lt;/h3>
 &lt;ul>
 &lt;li>Dubbo QoS 支持指定白名单 IP 列表访问所有命令&lt;/li>
@@ -44,8 +44,8 @@
 &lt;li>@ShenFeng312 在 PR #11102 提交了第一个贡献&lt;/li>
 &lt;/ul>
 &lt;h1 id="未来版本规划">未来版本规划&lt;/h1>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/release/release-roadmap.png" alt="image.png">&lt;/p>
-&lt;p>Dubbo 版本的发布规划以及在《&lt;a href="https://mp.weixin.qq.com/s?__biz=MzIwODYwNTA4MA==&amp;amp;mid=2247484424&amp;amp;idx=1&amp;amp;sn=2f5ff4846f7dafad325f78fd8cf4d1fc&amp;amp;chksm=9701deffa07657e9a46eb97bb859770b4856599566b992724013a848a730f394702938e72404&amp;amp;token=1547029975&amp;amp;lang=zh_CN#rd">聚焦稳定性，Dubbo 发版规划公布&lt;/a>》一文中正式发布，欢迎查看。&lt;/p></description></item><item><title>Blog: 聚焦稳定性，Dubbo Java 发版规划公布</title><link>https://dubbo.apache.org/zh-cn/blog/2022/10/22/%E8%81%9A%E7%84%A6%E7%A8%B3%E5%AE%9A%E6%80%A7dubbo-java-%E5%8F%91%E7%89%88%E8%A7%84%E5%88%92%E5%85%AC%E5%B8%83/</link><pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2022/10/22/%E8%81%9A%E7%84%A6%E7%A8%B3%E5%AE%9A%E6%80%A7dubbo-java-%E5%8F%91%E7%89%88%E8%A7%84%E5%88%92%E5%85%AC%E5%B8%83/</guid><description>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/release/release-roadmap.png" alt="image.png">&lt;/p>
+&lt;p>Dubbo 版本的发布规划以及在《&lt;a href="https://mp.weixin.qq.com/s?__biz=MzIwODYwNTA4MA==&amp;amp;mid=2247484424&amp;amp;idx=1&amp;amp;sn=2f5ff4846f7dafad325f78fd8cf4d1fc&amp;amp;chksm=9701deffa07657e9a46eb97bb859770b4856599566b992724013a848a730f394702938e72404&amp;amp;token=1547029975&amp;amp;lang=zh_CN#rd">聚焦稳定性，Dubbo 发版规划公布&lt;/a>》一文中正式发布，欢迎查看。&lt;/p></description></item><item><title>Blog: 聚焦稳定性，Dubbo Java 发版规划公布</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2022/10/22/%E8%81%9A%E7%84%A6%E7%A8%B3%E5%AE%9A%E6%80%A7dubbo-java-%E5%8F%91%E7%89%88%E8%A7%84%E5%88%92%E5%85%AC%E5%B8%83/</link><pubDate>Sat, 22 Oct 2022 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2022/10/22/%E8%81%9A%E7%84%A6%E7%A8%B3%E5%AE%9A%E6%80%A7dubbo-java-%E5%8F%91%E7%89%88%E8%A7%84%E5%88%92%E5%85%AC%E5%B8%83/</guid><description>
 &lt;h2 id="dubbo-简介">Dubbo 简介&lt;/h2>
 &lt;p>Apache Dubbo 是一款 RPC 服务开发框架，用于解决微服务架构下的服务治理与通信问题，官方提供了 Java、Golang 等多语言 SDK 实现。使用 Dubbo 开发的微服务原生具备相互之间的远程地址发现与通信能力， 利用 Dubbo 提供的丰富服务治理特性，可以实现诸如服务发现、负载均衡、流量调度等服务治理诉求。Dubbo 被设计为高度可扩展，用户可以方便的实现流量拦截、选址的各种定制逻辑。&lt;/p>
 &lt;h2 id="我应该如何选择版本">我应该如何选择版本？&lt;/h2>
@@ -65,7 +65,7 @@
 &lt;p>新功能合入在每个版本中会持续 &lt;strong>6&lt;/strong> 个月，稳定性维护在每个版本中会持续 &lt;strong>12&lt;/strong> 个月，安全维护在每个版本中会持续 &lt;strong>18&lt;/strong> 个月。&lt;/p>
 &lt;p>因此，从整体迭代规划来看，每 6 个月 Dubbo 会开始一个新的版本迭代，与之同时的，也会有一个版本宣布生命周期结束（EOL）。&lt;/p>
 &lt;h2 id="逐版本维护规划">逐版本维护规划&lt;/h2>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/release/release-roadmap.png" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/release/release-roadmap.png" alt="image.png">&lt;/p>
 &lt;p>上图为具体到每个版本在每个时间点的维护状态图。&lt;/p>
 &lt;p>对于 Dubbo 2.7 以及 3.0 版本，目前已经进入了安全维护阶段，将在 2023 年 3 月宣布版本维护周期结束。&lt;/p>
 &lt;p>对于 Dubbo 3.1 版本，目前已经是稳定性维护阶段，如前一小节所述，目前只会继续合入和稳定性修改的修改。处于稳定性维护阶段的版本也是社区推荐生产使用的最新版本。稳定性维护工作将持续到 2023 年 3 月，在此之后会有持续 6 个月的安全维护阶段，最终在 2023 年 9 月结束其版本的生命周期。&lt;/p>
@@ -77,7 +77,7 @@
 &lt;p>目前，阿里巴巴集团已经基于 Dubbo 3.0 的稳定版本完美支撑了整个核心电商今年双十一的所有调用，现在也正在升级到 Dubbo 3.1 这个最新的稳定版本上来。我们欢迎更多的用户一起升级到 Dubbo 3.1 版本上，在升级过程中可以参考官网给出的升级指南，遇到任何问题也可以通过 issue、微信群、钉钉群及时反馈社区，我们将尽全力协助。&lt;/p>
 &lt;h2 id="更多">更多&lt;/h2>
 &lt;p>在版本规划的方向上，除了本次发布的迭代线路图，Dubbo 还将通过一系列的机制保障用户的使用体验是连续的、稳定的。在大版本升级方面，Dubbo 将建设&lt;strong>完善的版本升级指南&lt;/strong>，如 Dubbo 3.1 版本升级到 Dubbo 3.2 版本中的重大修改点，让用户在升级的时候能够清晰的了解其中的风险点，更好的规划升级节奏。&lt;/p>
-&lt;p>此外，对于目前人在大范围使用的 Dubbo 2.7 版本，在近期 Dubbo 社区也将推出&lt;strong>针对 Dubbo 2.7 版本的升级的指南与工具&lt;/strong>，通过工程化的方式让所有的 Dubbo 2.7 用户都可以提前查出所有的版本差异点，平滑升级到 Dubbo 3 上来。&lt;/p></description></item><item><title>Blog: Dubbo Java 3.0.2 发版公告</title><link>https://dubbo.apache.org/zh-cn/blog/2021/07/18/dubbo-java-3.0.2-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</link><pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2021/07/18/dubbo-java-3.0.2-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</guid><description>
+&lt;p>此外，对于目前人在大范围使用的 Dubbo 2.7 版本，在近期 Dubbo 社区也将推出&lt;strong>针对 Dubbo 2.7 版本的升级的指南与工具&lt;/strong>，通过工程化的方式让所有的 Dubbo 2.7 用户都可以提前查出所有的版本差异点，平滑升级到 Dubbo 3 上来。&lt;/p></description></item><item><title>Blog: Dubbo Java 3.0.2 发版公告</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/07/18/dubbo-java-3.0.2-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</link><pubDate>Sun, 18 Jul 2021 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/07/18/dubbo-java-3.0.2-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</guid><description>
 &lt;h2 id="新特性">新特性&lt;/h2>
 &lt;ul>
 &lt;li>支持通过 @DubboService 注解暴露泛化服务&lt;/li>
@@ -202,9 +202,9 @@
 &lt;li>nacos client: 2.0.0 -&amp;gt; 2.0.2&lt;/li>
 &lt;li>swagger: 1.5.19 -&amp;gt; 1.5.24&lt;/li>
 &lt;li>hessian_lite: 3.2.8 -&amp;gt; 3.2.11&lt;/li>
-&lt;/ul></description></item><item><title>Blog: Dubbo Java 3.1.3 正式发布</title><link>https://dubbo.apache.org/zh-cn/blog/2022/07/18/dubbo-java-3.1.3-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link><pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2022/07/18/dubbo-java-3.1.3-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid><description>
+&lt;/ul></description></item><item><title>Blog: Dubbo Java 3.1.3 正式发布</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2022/07/18/dubbo-java-3.1.3-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link><pubDate>Mon, 18 Jul 2022 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2022/07/18/dubbo-java-3.1.3-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid><description>
 &lt;h2 id="dubbo-313">Dubbo 3.1.3&lt;/h2>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/release/3-1-3.png" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/release/3-1-3.png" alt="image.png">&lt;/p>
 &lt;h3 id="修改内容">修改内容&lt;/h3>
 &lt;ul>
 &lt;li>修复本地调用的过程中 Filter 顺序异常的问题&lt;/li>
@@ -232,10 +232,10 @@
 &lt;li>&lt;a href="https://github.com/weixsun">@weixsun&lt;/a> 在 &lt;a href="https://github.com/apache/dubbo/pull/10941">#10941&lt;/a> 中提交了第一个贡献&lt;/li>
 &lt;/ul>
 &lt;h2 id="未来的版本规划">未来的版本规划&lt;/h2>
-&lt;p>3.0、3.1、3.2 有什么区别？未来会怎么发展？发版周期是怎么样的？更多的版本迭代规划也将在近期推出，欢迎关注 Apache Dubbo 官方公众号获取最新的信息。&lt;/p></description></item><item><title>Blog: Dubbo Java 3.2.0-beta.3 正式发布</title><link>https://dubbo.apache.org/zh-cn/blog/2022/12/18/dubbo-java-3.2.0-beta.3-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link><pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2022/12/18/dubbo-java-3.2.0-beta.3-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid><description>
+&lt;p>3.0、3.1、3.2 有什么区别？未来会怎么发展？发版周期是怎么样的？更多的版本迭代规划也将在近期推出，欢迎关注 Apache Dubbo 官方公众号获取最新的信息。&lt;/p></description></item><item><title>Blog: Dubbo Java 3.2.0-beta.3 正式发布</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2022/12/18/dubbo-java-3.2.0-beta.3-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link><pubDate>Sun, 18 Dec 2022 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2022/12/18/dubbo-java-3.2.0-beta.3-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid><description>
 &lt;p>Dubbo 3.2.0-beta.3 版本是目前 Dubbo 3 的最新特性版本，包括了如 Spring Boot 3、JDK 17、服务粒度的线程池隔离等新特性的支持，欢迎大家尝鲜使用。&lt;/p>
 &lt;h1 id="dubbo-320-beta3">Dubbo 3.2.0-beta.3&lt;/h1>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/release/3-2-0-beta-3.png" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/release/3-2-0-beta-3.png" alt="image.png">&lt;/p>
 &lt;p>&lt;strong>注：Dubbo 3.2.0-beta.3 的代码基础和 Dubbo 3.1.4 完全一致，因此在 Dubbo 3.1.4 中包括的所有修改内容，在 Dubbo 3.2.0-beta.3 中也同样存在，后续说明中对于重复的内容讲不再赘述。&lt;/strong>&lt;/p>
 &lt;h3 id="新特性">新特性&lt;/h3>
 &lt;ul>
@@ -274,10 +274,10 @@
 &lt;li>@XDanwar 在 PR #11063 提交了第一个贡献&lt;/li>
 &lt;/ul>
 &lt;h1 id="未来版本规划">未来版本规划&lt;/h1>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/release/release-roadmap.png" alt="image.png">&lt;/p>
-&lt;p>Dubbo 版本的发布规划以及在《&lt;a href="https://mp.weixin.qq.com/s?__biz=MzIwODYwNTA4MA==&amp;amp;mid=2247484424&amp;amp;idx=1&amp;amp;sn=2f5ff4846f7dafad325f78fd8cf4d1fc&amp;amp;chksm=9701deffa07657e9a46eb97bb859770b4856599566b992724013a848a730f394702938e72404&amp;amp;token=1547029975&amp;amp;lang=zh_CN#rd">聚焦稳定性，Dubbo 发版规划公布&lt;/a>》一文中正式发布，欢迎查看。&lt;/p></description></item><item><title>Blog: Dubbo 3.2.0-beta.2 正式发布</title><link>https://dubbo.apache.org/zh-cn/blog/2022/11/18/dubbo-3.2.0-beta.2-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link><pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2022/11/18/dubbo-3.2.0-beta.2-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid><description>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/release/release-roadmap.png" alt="image.png">&lt;/p>
+&lt;p>Dubbo 版本的发布规划以及在《&lt;a href="https://mp.weixin.qq.com/s?__biz=MzIwODYwNTA4MA==&amp;amp;mid=2247484424&amp;amp;idx=1&amp;amp;sn=2f5ff4846f7dafad325f78fd8cf4d1fc&amp;amp;chksm=9701deffa07657e9a46eb97bb859770b4856599566b992724013a848a730f394702938e72404&amp;amp;token=1547029975&amp;amp;lang=zh_CN#rd">聚焦稳定性，Dubbo 发版规划公布&lt;/a>》一文中正式发布，欢迎查看。&lt;/p></description></item><item><title>Blog: Dubbo 3.2.0-beta.2 正式发布</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2022/11/18/dubbo-3.2.0-beta.2-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link><pubDate>Fri, 18 Nov 2022 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2022/11/18/dubbo-3.2.0-beta.2-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid><description>
 &lt;h2 id="dubbo-320-beta2">Dubbo 3.2.0-beta.2&lt;/h2>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/release/3-2-0-beta-2.png" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/release/3-2-0-beta-2.png" alt="image.png">&lt;/p>
 &lt;h3 id="修改内容">修改内容&lt;/h3>
 &lt;ul>
 &lt;li>切换到在用户线程序列化，提升协议性能&lt;/li>
@@ -302,7 +302,7 @@
 &lt;li>&lt;a href="https://github.com/weixsun">@weixsun&lt;/a> 在 &lt;a href="https://github.com/apache/dubbo/pull/10941">#10941&lt;/a> 中提交了第一个贡献&lt;/li>
 &lt;/ul>
 &lt;h2 id="未来的版本规划">未来的版本规划&lt;/h2>
-&lt;p>3.0、3.1、3.2 有什么区别？未来会怎么发展？发版周期是怎么样的？更多的版本迭代规划也将在近期推出，欢迎关注 Apache Dubbo 官方公众号获取最新的信息。&lt;/p></description></item><item><title>Blog: Dubbo Java 2.7.14 发版公告</title><link>https://dubbo.apache.org/zh-cn/blog/2020/05/18/dubbo-java-2.7.14-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</link><pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2020/05/18/dubbo-java-2.7.14-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</guid><description>
+&lt;p>3.0、3.1、3.2 有什么区别？未来会怎么发展？发版周期是怎么样的？更多的版本迭代规划也将在近期推出，欢迎关注 Apache Dubbo 官方公众号获取最新的信息。&lt;/p></description></item><item><title>Blog: Dubbo Java 2.7.14 发版公告</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2020/05/18/dubbo-java-2.7.14-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</link><pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2020/05/18/dubbo-java-2.7.14-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</guid><description>
 &lt;h2 id="变动项">变动项&lt;/h2>
 &lt;ul>
 &lt;li>为 ServiceDiscovery 增加动态配置中心的覆盖规则。（#8389）&lt;/li>
@@ -329,7 +329,7 @@
 &lt;li>commons_io: 2.6 -&amp;gt; 2.7&lt;/li>
 &lt;li>curator: 5.0.0 -&amp;gt; 5.1.0&lt;/li>
 &lt;li>hessian_lite: 3.2.8 -&amp;gt; 3.2.11&lt;/li>
-&lt;/ul></description></item><item><title>Blog: Dubbo Go 1.5.1</title><link>https://dubbo.apache.org/zh-cn/blog/1/01/01/dubbo-go-1.5.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/1/01/01/dubbo-go-1.5.1/</guid><description>
+&lt;/ul></description></item><item><title>Blog: Dubbo Go 1.5.1</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/1/01/01/dubbo-go-1.5.1/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/1/01/01/dubbo-go-1.5.1/</guid><description>
 &lt;p>近期我们发布了 dubbo-go v1.5.1，虽然是 v1.5 的一个子版本，但相比于 v1.5.0， 社区还是投入了很大人力添加了如下重大改进。&lt;/p>
 &lt;h2 id="1-应用维度注册模型">1 应用维度注册模型&lt;/h2>
 &lt;p>在新模型 release 后，我们发现 Provider 每个 URL 发布元数据都会注册 ServiceInstance，影响性能需要优化。&lt;/p>
@@ -362,7 +362,7 @@
 &lt;p>标签路由通过将某一个或多个服务的提供者划分到同一个分组，约束流量只在指定分组中流转，从而实现流量隔离的目的，可以作为蓝绿发布、灰度发布等场景的能力基础。&lt;/p>
 &lt;p>标签主要是指对 Provider 端应用实例的分组，目前有两种方式可以完成实例分组，分别是&lt;code>动态规则打标&lt;/code>和&lt;code>静态规则打标&lt;/code>，其中动态规则相较于静态规则优先级更高，而当两种规则同时存在且出现冲突时，将以动态规则为准。&lt;/p>
 &lt;h4 id="511-动态规则打标">5.1.1 动态规则打标&lt;/h4>
-&lt;p>可随时在&lt;a href="https://dubbo.apache.org/zh-cn/docsv2.7/user/examples/routing-rule/">服务治理控制台&lt;/a>下发标签归组规则&lt;/p>
+&lt;p>可随时在&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docsv2.7/user/examples/routing-rule/">服务治理控制台&lt;/a>下发标签归组规则&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-yaml" data-lang="yaml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75"># governance-tagrouter-provider应用增加了两个标签分组tag1和tag2&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75"># tag1包含一个实例 127.0.0.1:20880&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75"># tag2包含一个实例 127.0.0.1:20881&lt;/span>
@@ -472,7 +472,7 @@
 &lt;p>&lt;a href="https://github.com/apache/dubbo-go/projects/10">https://github.com/apache/dubbo-go/projects/10&lt;/a>&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Blog: Dubbo Go Hessian2 v1.7.0</title><link>https://dubbo.apache.org/zh-cn/blog/1/01/01/dubbo-go-hessian2-v1.7.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/1/01/01/dubbo-go-hessian2-v1.7.0/</guid><description>
+&lt;/div></description></item><item><title>Blog: Dubbo Go Hessian2 v1.7.0</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/1/01/01/dubbo-go-hessian2-v1.7.0/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/1/01/01/dubbo-go-hessian2-v1.7.0/</guid><description>
 &lt;p>Dubbo-go-hessian2 v1.7.0已发布，详见 &lt;a href="https://github.com/apache/dubbo-go-hessian2/releases/tag/v1.7.0">https://github.com/apache/dubbo-go-hessian2/releases/tag/v1.7.0&lt;/a>， 以下对这次更新内容进行详细整理。&lt;/p>
 &lt;p>另外v1.6.3 将 attachment 类型由 map[string]stiring 改为map[string]interface{} 导致版本不兼容问题，这部分已还原，后续的计划是将dubbo协议的request/response对象整体迁移到dubbogo项目中进行迭代修改， hessian2中将不再改动到request/response对象。&lt;/p>
 &lt;h2 id="1-new-features">1. New Features&lt;/h2>
@@ -637,7 +637,7 @@
 &lt;p>v1.7.0 之前嵌套map无法正确解析，主要原因是对应的map对象被当做一个数据类型却未被自动加到类引用列表中，而嵌套map类信息是同一类型的引用，去类引用列表找，找不到就报错了。 解决这个问题的方法就是遇到map类对象，也将其加入到类引用列表中即可。 问题详细参考 &lt;a href="https://github.com/apache/dubbo-go-hessian2/issues/119">#119&lt;/a>.&lt;/p>
 &lt;h3 id="34-fix-fields-name-mismatch-in-duration-class-234httpsgithubcomapachedubbo-go-hessian2pull234">3.4 fix fields name mismatch in Duration class. &lt;a href="https://github.com/apache/dubbo-go-hessian2/pull/234">#234&lt;/a>&lt;/h3>
 &lt;p>这个 PR 解决了Duration对象中字段错误定义，原来是&amp;quot;second/nano&amp;quot;， 应该是&amp;quot;seconds/nanos&amp;quot;。&lt;/p>
-&lt;p>同时改善了测试验证数据。之前使用0作为int字段的测试数据，这是不准确的，因为int类型默认值就是0.&lt;/p></description></item><item><title>Blog: Dubbo 在 Proxyless Mesh 模式下的探索与改进</title><link>https://dubbo.apache.org/zh-cn/blog/2023/02/02/dubbo-%E5%9C%A8-proxyless-mesh-%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E6%8E%A2%E7%B4%A2%E4%B8%8E%E6%94%B9%E8%BF%9B/</link><pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2023/02/02/dubbo-%E5%9C%A8-proxyless-mesh-%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E6%8E%A2%E7%B4%A2%E4%B8%8E%E6%94%B9%E8%BF%9B/</guid><description>
+&lt;p>同时改善了测试验证数据。之前使用0作为int字段的测试数据，这是不准确的，因为int类型默认值就是0.&lt;/p></description></item><item><title>Blog: Dubbo 在 Proxyless Mesh 模式下的探索与改进</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2023/02/02/dubbo-%E5%9C%A8-proxyless-mesh-%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E6%8E%A2%E7%B4%A2%E4%B8%8E%E6%94%B9%E8%BF%9B/</link><pubDate>Thu, 02 Feb 2023 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2023/02/02/dubbo-%E5%9C%A8-proxyless-mesh-%E6%A8%A1%E5%BC%8F%E4%B8%8B%E7%9A%84%E6%8E%A2%E7%B4%A2%E4%B8%8E%E6%94%B9%E8%BF%9B/</guid><description>
 &lt;h2 id="一背景">一、背景&lt;/h2>
 &lt;p>随着 Docker 和 Kubernetes 的出现，一个庞大的单体应用可以被拆分成多个独立部署的微服务，并被打包运行于对应的容器中。不同应用之间相互通信，以共同完成某一功能模块。微服务架构与容器化部署带来的好处是显而易见的，它降低了服务间的耦合性，利于开发和维护，能更有效地利用计算资源。当然，微服务架构也存在相应的缺点：&lt;/p>
 &lt;ul>
@@ -646,7 +646,7 @@
 &lt;li>缺少一套统一解决方案。目前市场不存在一整套功能完善、无死角的微服务治理与解决方案。在实际生产环境往往还需要引入多个治理组件来完成像灰度发布、故障注入等功能。&lt;/li>
 &lt;/ul>
 &lt;p>为解决这些痛点，Service Mesh诞生了。以经典的 Sidecar 模式为例，它通过在业务 Pod 中注入 Sidecar 容器，对代理流量实施治理和管控，将框架的治理能力下层到 Sidecar 容器中，与业务系统解耦，从而轻松实现多语言、多协议的统一流量管控、监控等需求。通过剥离SDK能力并拆解为独立进程，从而解决了强依赖于SDK的问题，从而使开发人员可以更加专注于业务本身，实现了基础框架能力的下沉，如下图所示（源自dubbo官网）：
-&lt;img src="https://dubbo.apache.org/imgs/blog/2023/2/2/1.png" alt="image.png">&lt;/p>
+&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/2023/2/2/1.png" alt="image.png">&lt;/p>
 &lt;p>经典的 Sidecar Mesh 部署架构有很多优势，如减少SDK耦合、业务侵入小等，但增加了一层代理，也带来了一些额外的问题，比如:&lt;/p>
 &lt;ul>
 &lt;li>Sidecar 代理会损耗一部分性能，当网络结构层级比较复杂时尤其明显，对性能要求很高的业务造成了一定的困扰。&lt;/li>
@@ -655,7 +655,7 @@
 &lt;/ul>
 &lt;p>为解决这些痛点，Proxyless Service Mesh 模式诞生了。传统服务网格通过代理的方式拦截所有的业务网络流量，代理需要感知到控制平面下发的配置资源，从而按照要求控制网络流量的走向。以istio为例，Proxyless 模式是指应用直接与负责控制平面的 istiod 进程通信，istiod 进程通过监听并获取 Kubernetes 的资源，例如 Service、Endpoint 等，并将这些资源统一通过 xDS 协议下发到不同的 RPC 框架，由 RPC 框架进行请求转发，从而实现服务发现和服务治理等能力。
 Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索的社区，这是由于相比于 Service Mesh，Proxyless 模式落地成本较低，对于中小企业来说是一个较好的选择。Dubbo 在 3.1 版本中通过对 xDS 协议进行解析，新增了对 Proxyless 的支持。xDS 是一类发现服务的总称，应用通过 xDS API 可以动态获取 Listener(监听器)、Route(路由)、Cluster(集群)、Endpoint(集群成员) 以及 Secret(证书)配置。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/2023/2/2/2.jpeg" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/2023/2/2/2.jpeg" alt="image.png">&lt;/p>
 &lt;p>通过 Proxyless 模式，Dubbo 与 Control Plane 直接建立通信，进而实现控制面对流量管控、服务治理、可观测性、安全等的统一管控，从而规避 Sidecar 模式带来的性能损耗与部署架构复杂性。&lt;/p>
 &lt;h2 id="二dubbo-xds-推送机制详解">二、Dubbo xDS 推送机制详解&lt;/h2>
 &lt;p>从整体上看，istio control plane 和 dubbo 的交互时序图如上。Dubbo 里 xDS 处理的主要逻辑在 PilotExchanger 和各个 DS (LDS、RDS、CDS、EDS) 的对应协议的具体实现里。PilotExchanger 统一负责串联逻辑，主要有三大逻辑：&lt;/p>
@@ -665,7 +665,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;li>调用不同 protocol 得 observeResource 方法监听资源变更。&lt;/li>
 &lt;/ul>
 &lt;p>例如对于 lds 和 rds，PilotExchanger 会调用 lds 的 getResource 方法与 istio 建立通信连接，发送数据并解析来自 istio 的响应，解析完成后的 resource 资源会作 为rds 调用 getResource 方法的入参，并由 rds 发送数据给 istio。当 lds 发生变更时，则由 lds 的 observeResource 方法去触发自身与 rds 的变更。上述关系对于 rds 和 eds 同样如此。现有交互如下，上述过程对应图里红线的流程：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/2023/2/2/3.jpeg" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/2023/2/2/3.jpeg" alt="image.png">&lt;/p>
 &lt;p>在第一次成功获取资源之后，各个DS会通过定时任务去不断发送请求给 istio，并解析响应结果和保持与 istio 之间的交互，进而实现控制面对流量管控、服务治理、可观测性方面的管控，其流程对应上图蓝线部分。&lt;/p>
 &lt;h2 id="三当前dubbo-proxyless实现存在的不足">三、当前Dubbo Proxyless实现存在的不足&lt;/h2>
 &lt;p>Dubbo Proxyless 模式经过验证之后，已经证明了其可靠性。现有 Dubbo proxyless 的实现方案存在以下问题：&lt;/p>
@@ -676,7 +676,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;li>目前由 istio 托管的 dubbo 应用在 istio 掉线后会抛出异常，断线后无法重新连接，只能重新部署应用，增加了运维和管理的复杂度。我们需增加断线重连的功能，等 istio 恢复正常后无需重新部署即可重连。&lt;/li>
 &lt;/ul>
 &lt;p>改造完成后的交互逻辑：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/2023/2/2/4.jpeg" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/2023/2/2/4.jpeg" alt="image.png">&lt;/p>
 &lt;h2 id="四xds-监听模式实现方案">四、Xds 监听模式实现方案&lt;/h2>
 &lt;h3 id="41-资源缓存池">4.1 资源缓存池&lt;/h3>
 &lt;p>目前 Dubbo 的资源类型有LDS，RDS，EDS。对于同一个进程，三种资源监听的所有资源都与 istio 对该进程所缓存的资源监听列表一一对应。因此针对这三种资源，我们应该设计分别对应的本地的资源缓存池，dubbo 尝试资源的时候先去缓存池查询，若有结果则直接返回；否则将本地缓存池的资源列表与想要发送的资源聚合后，发送给 istio 让其更新自身的监听列表。缓存池如下，其中 key 代表单个资源，T 为不同 DS 的返回结果：&lt;/p>
@@ -712,7 +712,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;li>getResource建立资源的监听器consumerObserveMap，定义一个consumer并把取到的数据同步到原来的线程，cache 收到来自istio的推送后会做两件事：将数据推送所有监听器和将数据发送给该资源的监听器。
 以上两种方案都能实现，但最大的区别就是用户调用onNext发送数据给istio的时候需不需要感知getResource 的存在。综上，最终选择方案2进行实现。具体实现逻辑是让dubbo与istio建立连接后，istio会推送自身监听到资源列表给dubbo，dubbo解析响应，并根据监听的不同app切分数据，并刷新本地缓存池的数据，并发送ACK响应给istio，大致流程如下：&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/2023/2/2/5.svg" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/2023/2/2/5.svg" alt="image.png">&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">public&lt;/span> &lt;span style="color:#268bd2">class&lt;/span> &lt;span style="color:#268bd2">ResponseObserver&lt;/span> &lt;span style="color:#268bd2">implements&lt;/span> XXX &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">...&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">public&lt;/span> &lt;span style="color:#dc322f">void&lt;/span> &lt;span style="color:#268bd2">onNext&lt;/span>&lt;span style="color:#719e07">(&lt;/span>DiscoveryResponse value&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
@@ -788,10 +788,10 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;p>&amp;hellip;&amp;hellip;
 但不得不承认，Proxyless Service Mesh确实有它自身的优势和广阔的市场前景。自dubbo3.1.0 release版本之后，dubbo已经实现了Proxyless Service Mesh能力，未来dubbo社区将深度联动业务，解决更多实际生产环境中的痛点，更好地完善service mesh能力。&lt;/p>
 &lt;/li>
-&lt;/ul></description></item><item><title>Blog: Dubbo 3.1.5、3.2.0-beta.4 正式发布</title><link>https://dubbo.apache.org/zh-cn/blog/2023/01/30/dubbo-3.1.53.2.0-beta.4-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link><pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2023/01/30/dubbo-3.1.53.2.0-beta.4-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid><description>
+&lt;/ul></description></item><item><title>Blog: Dubbo 3.1.5、3.2.0-beta.4 正式发布</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2023/01/30/dubbo-3.1.53.2.0-beta.4-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link><pubDate>Mon, 30 Jan 2023 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2023/01/30/dubbo-3.1.53.2.0-beta.4-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid><description>
 &lt;p>Dubbo 3.1.5 版本是目前 Dubbo 3 的最新稳定版本，我们建议所有的用户都升级到最新的稳定版本。Dubbo 3.2.0-beta.4 版本是目前 Dubbo 3 的最新特性版本，包括了如 Spring Boot 3、JDK 17、服务粒度的线程池隔离等新特性的支持，欢迎大家尝鲜使用。&lt;/p>
 &lt;h1 id="dubbo-315">Dubbo 3.1.5&lt;/h1>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/release/3-1-5.png" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/release/3-1-5.png" alt="image.png">&lt;/p>
 &lt;h3 id="新特性">新特性&lt;/h3>
 &lt;ul>
 &lt;li>Dubbo QoS 支持记录请求的记录，便于进行审计&lt;/li>
@@ -825,7 +825,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;li>修复 Triple 在反序列化时类加载器未切换的问题&lt;/li>
 &lt;/ul>
 &lt;h3 id="faq">FAQ&lt;/h3>
-&lt;p>本次发布中有 5 个提交涉及异常日志 FAQ 的完善。关于错误码机制请参考官网&lt;a href="https://dubbo.apache.org/zh-cn/docs3-v2/java-sdk/faq/intro/">错误码机制介绍&lt;/a>一文。&lt;/p>
+&lt;p>本次发布中有 5 个提交涉及异常日志 FAQ 的完善。关于错误码机制请参考官网&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docs3-v2/java-sdk/faq/intro/">错误码机制介绍&lt;/a>一文。&lt;/p>
 &lt;h3 id="代码优化">代码优化&lt;/h3>
 &lt;p>本次发布中有 4 个提交涉及代码质量的优化。&lt;/p>
 &lt;h3 id="依赖升级">依赖升级&lt;/h3>
@@ -840,7 +840,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;li>@xieshouyu 在 PR #11177 提交了第一个贡献&lt;/li>
 &lt;/ul>
 &lt;h1 id="dubbo-320-beta4">Dubbo 3.2.0-beta.4&lt;/h1>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/release/3-2-0-beta-4.png" alt="image.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/release/3-2-0-beta-4.png" alt="image.png">&lt;/p>
 &lt;p>&lt;strong>注：Dubbo 3.2.0-beta.4 的代码基础和 Dubbo 3.1.5 完全一致，因此在 Dubbo 3.1.5 中包括的所有修改内容，在 Dubbo 3.2.0-beta.4 中也同样存在，后续说明中对于重复的内容讲不再赘述。&lt;/strong>&lt;/p>
 &lt;h3 id="新特性-1">新特性&lt;/h3>
 &lt;ul>
@@ -902,8 +902,8 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;li>@mxsm 在 PR #11326 提交了第一个贡献&lt;/li>
 &lt;/ul>
 &lt;h1 id="未来版本规划">未来版本规划&lt;/h1>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/release/release-roadmap.png" alt="image.png">&lt;/p>
-&lt;p>Dubbo 版本的发布规划以及在《&lt;a href="https://mp.weixin.qq.com/s?__biz=MzIwODYwNTA4MA==&amp;amp;mid=2247484424&amp;amp;idx=1&amp;amp;sn=2f5ff4846f7dafad325f78fd8cf4d1fc&amp;amp;chksm=9701deffa07657e9a46eb97bb859770b4856599566b992724013a848a730f394702938e72404&amp;amp;token=1547029975&amp;amp;lang=zh_CN#rd">聚焦稳定性，Dubbo 发版规划公布&lt;/a>》一文中正式发布，欢迎查看。&lt;/p></description></item><item><title>Blog: Dubbo Java 3.0.2.1 发版公告</title><link>https://dubbo.apache.org/zh-cn/blog/2021/08/23/dubbo-java-3.0.2.1-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</link><pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2021/08/23/dubbo-java-3.0.2.1-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</guid><description>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/release/release-roadmap.png" alt="image.png">&lt;/p>
+&lt;p>Dubbo 版本的发布规划以及在《&lt;a href="https://mp.weixin.qq.com/s?__biz=MzIwODYwNTA4MA==&amp;amp;mid=2247484424&amp;amp;idx=1&amp;amp;sn=2f5ff4846f7dafad325f78fd8cf4d1fc&amp;amp;chksm=9701deffa07657e9a46eb97bb859770b4856599566b992724013a848a730f394702938e72404&amp;amp;token=1547029975&amp;amp;lang=zh_CN#rd">聚焦稳定性，Dubbo 发版规划公布&lt;/a>》一文中正式发布，欢迎查看。&lt;/p></description></item><item><title>Blog: Dubbo Java 3.0.2.1 发版公告</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/08/23/dubbo-java-3.0.2.1-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</link><pubDate>Mon, 23 Aug 2021 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/08/23/dubbo-java-3.0.2.1-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</guid><description>
 &lt;p>这是 3.0.2 的错误修正版本。
 除了以下更改外，与版本 3.0.2 完全相同。&lt;/p>
 &lt;h2 id="bug-修复">Bug 修复&lt;/h2>
@@ -911,7 +911,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;li>修复 nacos group 在消费者端不生效的问题 (#8533)&lt;/li>
 &lt;li>修复请求超时时序列化检查的 NPE (#8547)&lt;/li>
 &lt;li>兼容使用 dubbo-all 时未导入 farbic-io 包的问题 (#8546)&lt;/li>
-&lt;/ul></description></item><item><title>Blog: Dubbo Java 3.0.1 发版公告</title><link>https://dubbo.apache.org/zh-cn/blog/2021/07/02/dubbo-java-3.0.1-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</link><pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2021/07/02/dubbo-java-3.0.1-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</guid><description>
+&lt;/ul></description></item><item><title>Blog: Dubbo Java 3.0.1 发版公告</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/07/02/dubbo-java-3.0.1-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</link><pubDate>Fri, 02 Jul 2021 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/07/02/dubbo-java-3.0.1-%E5%8F%91%E7%89%88%E5%85%AC%E5%91%8A/</guid><description>
 &lt;h2 id="优化">优化&lt;/h2>
 &lt;ul>
 &lt;li>重构服务自省映射关系，支持地址迁移时直接配置上游应用名&lt;/li>
@@ -941,7 +941,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;a href="https://github.com/apache/dubbo/pull/8048">#8048&lt;/a>,
 &lt;a href="https://github.com/apache/dubbo/pull/8071">#8071&lt;/a>,
 &lt;a href="https://github.com/apache/dubbo/pull/8119">#8119&lt;/a>,
-&lt;a href="https://github.com/apache/dubbo/pull/8132">#8132&lt;/a>&lt;/p></description></item><item><title>Blog: Dubbo Go 1.5.0</title><link>https://dubbo.apache.org/zh-cn/blog/2021/01/14/dubbo-go-1.5.0/</link><pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2021/01/14/dubbo-go-1.5.0/</guid><description>
+&lt;a href="https://github.com/apache/dubbo/pull/8132">#8132&lt;/a>&lt;/p></description></item><item><title>Blog: Dubbo Go 1.5.0</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/01/14/dubbo-go-1.5.0/</link><pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/01/14/dubbo-go-1.5.0/</guid><description>
 &lt;h2 id="引语">引语&lt;/h2>
 &lt;p>计算机技术浪潮每 10 年都有一次技术颠覆，相关知识体系最迟每 5 年都会革新一次，大概每两年贬值一半，在应用服务通信框架领域亦然。凡是有长期生命的通信框架，大概有 5 年的成长期和 5 年的稳定成熟期。每个时代都有其匹配的应用通信框架，在 20 年前的 2G 时代，强跨语言跨平台而弱性能的 gRPC 是不会被采用的。&lt;/p>
 &lt;p>每个通信框架，不同的人从不同角度看出不同的结论：初学者看重易用易学，性能测评者注重性能，应用架构师考虑其维护成本，老板则考虑则综合成本。一个应用通信框架的性能固然重要，其稳定性和进化能力更重要，得到有效维护的框架可在长时间单位内降低其综合成本：学习成本、维护成本、升级成本和更换成本。&lt;/p>
@@ -983,16 +983,16 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;p>在 v1.5 版本之前，k8s 注册中心的实现是通过直接使用 &lt;a href="https://github.com/kubernetes/client-go">k8s client&lt;/a> 中Pod对象的 List&amp;amp;&amp;amp;Watch 接口。在本次迭代中引入了 k8s informer。这样做的原因在于两点，首先一定的程度上来讲 dubbo-go 的 k8s 注册中心也是一个 k8s controller，使用 informer 的模式更加 k8s native。更重要的是社区计划后续向 CRD+Operator 的模式演进，informer 模式是对后续的演进的探索。除了这个铺垫之外，本次迭代还对跨 namespace 的服务发现做了支持。再有就是为了减少对 kube-apiserver List&amp;amp;&amp;amp;Watch 的压力，对 provider 和 consumer 的行为进行了区分，provider 不再进行 Watch 而仅对 kube-apiserver 进行写操作。&lt;/p>
 &lt;h1 id="优化路由模型">优化路由模型&lt;/h1>
 &lt;p>在 1.5 版本之前，Router 模型中属性是包含：优先级与路由属性，Router Chain 只包含路由属性。从中能识别出其实 Router Chain 也是一种特殊 Router。1.5 版本之后，使 Router 更抽象，分离出其优先级属性，新增 Priority Router、Chain 继承 Router 使其变为特殊的 Router，使关系上看起来更加清晰。如下图：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/1.5/router.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/1.5/router.png" alt="">&lt;/p>
 &lt;h1 id="回顾与展望">回顾与展望&lt;/h1>
 &lt;p>Dubbo-go 处于一个比较稳定成熟的状态。目前新版本正处于往云原生方向的尝试，应用服务维度注册是首先推出的功能，这是一个和之前模型完全不一样的新注册模型。该版本是我们朝云原生迈进新一步的关键版本。除此之外，包含在该版本也有一些之前提到的优化。&lt;/p>
 &lt;p>下一个版本 v1.5.1，虽然仍是以兼容 Dubbo 2.7.x 为主要任务，但在分布式能力的增强上，也是我们关注的重点。&lt;/p>
 &lt;p>在&lt;strong>分布式事务&lt;/strong>方面，有一个重要的基于 Seata 扩展实现。通过增加过滤器，在服务端接收 xid 并结合 seata-golang&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup> 达到支持分布式事务的目的。 从而使 Dubbo-go 在分布式场景下，让用户有更多的选择，能适应更多的个性化场景。&lt;/p>
 &lt;p>与此同时，在&lt;strong>传输链路安全性&lt;/strong>上，TLS 安全传输链路是该版本重要功能之一。通过提供统一入口，未来能引入更多的与传输链路安全性相关的功能，适应用户不一样的使用场景。&lt;/p>
 &lt;p>&lt;strong>注册中心模型&lt;/strong>上，支持多注册中心集群负载均衡。业务部署假设是双注册中心（图 1 ），从原来双注册中心中所有 Provider 一起选址。优化成选址时的多了一层注册中心集群间的负载均衡（图 2 ）。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/1.5/multi-registry.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/1.5/multi-registry.png" alt="">&lt;/p>
 &lt;p>（图 1 ）&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/1.5/loadbalance.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/1.5/loadbalance.png" alt="">&lt;/p>
 &lt;p>（图 2 ）&lt;/p>
 &lt;p>以前的 dubbo-go RPC 层直接复用了 getty 框架 的 RPC[&lt;sup id="fnref:2">&lt;a href="#fn:2" class="footnote-ref" role="doc-noteref">2&lt;/a>&lt;/sup>(https://github.com/AlexStocks/getty/tree/feature/rpc)]，未能实现协议和应用通信地址的隔离。阿里中间件展图同学重构了 dubbo-go RPC 层，实现了连接复用：可以实现 consumer 与 provider 端的同一个 TCP 连接上进行多协议通信。相关 PR 业已合并，会在 dubbo-go v1.5.1 中发布。&lt;/p>
 &lt;p>目前下一个版本正在紧锣密鼓的开发中，具体规划及任务清单&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup> ，都已经在 Github 上体现。&lt;/p>
@@ -1009,7 +1009,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;p>&lt;a href="https://github.com/apache/dubbo-go/projects/8">https://github.com/apache/dubbo-go/projects/8&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Blog: Dubbo Go Hessian2 v1.6.0</title><link>https://dubbo.apache.org/zh-cn/blog/2021/01/14/dubbo-go-hessian2-v1.6.0/</link><pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2021/01/14/dubbo-go-hessian2-v1.6.0/</guid><description>
+&lt;/div></description></item><item><title>Blog: Dubbo Go Hessian2 v1.6.0</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/01/14/dubbo-go-hessian2-v1.6.0/</link><pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/01/14/dubbo-go-hessian2-v1.6.0/</guid><description>
 &lt;h2 id="1-增加缓存优化">1. 增加缓存优化&lt;/h2>
 &lt;p>dubbo-go-hessian2 在解析数据的数据大量使用到了 struct 的结构信息，这部分信息可以缓存起来反复利用，使得性能提升了一倍。优化过程记录可以详细阅读&lt;a href="https://mp.weixin.qq.com/s/ouVxldQAt0_4BET7srjJ6Q">《记一次对 dubbo-go-hessian2 的性能优化》&lt;/a>.&lt;/p>
 &lt;p>对应 pr &lt;a href="https://github.com/apache/dubbo-go-hessian2/pull/179">#179&lt;/a>，作者 &lt;a href="https://github.com/micln">micln&lt;/a>。&lt;/p>
@@ -1040,8 +1040,8 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> DogName &lt;span style="color:#dc322f">string&lt;/span> &lt;span style="color:#2aa198">`hessian:&amp;#34;-&amp;#34;`&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>同时，就像 json 编码中通过 immediately 可以在序列化中忽略该字段，同理，通过 hessian:&amp;quot;-&amp;quot; 用户也可以让冗余字段不参与 hessian 序列化。&lt;/p>
-&lt;p>对应pr &lt;a href="https://github.com/apache/dubbo-go-hessian2/pull/154">#154&lt;/a>，作者 &lt;a href="https://github.com/micln">micln&lt;/a>&lt;/p></description></item><item><title>Blog: 都已经十岁的 Apache Dubbo，还能再乘风破浪吗？</title><link>https://dubbo.apache.org/zh-cn/blog/2021/01/14/%E9%83%BD%E5%B7%B2%E7%BB%8F%E5%8D%81%E5%B2%81%E7%9A%84-apache-dubbo%E8%BF%98%E8%83%BD%E5%86%8D%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA%E5%90%97/</link><pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2021/01/14/%E9%83%BD%E5%B7%B2%E7%BB%8F%E5%8D%81%E5%B2%81%E7%9A%84-apache-dubbo%E8%BF%98%E8%83%BD%E5%86%8D%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA%E5%90%97/</guid><description>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/10years/dubbo-home.png" alt="">&lt;/p>
+&lt;p>对应pr &lt;a href="https://github.com/apache/dubbo-go-hessian2/pull/154">#154&lt;/a>，作者 &lt;a href="https://github.com/micln">micln&lt;/a>&lt;/p></description></item><item><title>Blog: 都已经十岁的 Apache Dubbo，还能再乘风破浪吗？</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/01/14/%E9%83%BD%E5%B7%B2%E7%BB%8F%E5%8D%81%E5%B2%81%E7%9A%84-apache-dubbo%E8%BF%98%E8%83%BD%E5%86%8D%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA%E5%90%97/</link><pubDate>Thu, 14 Jan 2021 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/01/14/%E9%83%BD%E5%B7%B2%E7%BB%8F%E5%8D%81%E5%B2%81%E7%9A%84-apache-dubbo%E8%BF%98%E8%83%BD%E5%86%8D%E4%B9%98%E9%A3%8E%E7%A0%B4%E6%B5%AA%E5%90%97/</guid><description>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/10years/dubbo-home.png" alt="">&lt;/p>
 &lt;p>纵观中国开源历史，你真的没法找到第二个像 Dubbo 一样自带争议和讨论热度的开源项目。&lt;/p>
 &lt;p>一方面，2011 年，它的开源填补了当时生产环境使用的 RPC 框架的空白，一发布就被广泛采用；另一方面，它经历了停止维护、重启维护后捐献给 Apache 基金会、接着又以顶级项目的身份毕业。&lt;/p>
 &lt;p>面对多疑的开发者，在云原生时代，Apache Dubbo 将如何延续当前光芒？&lt;/p>
@@ -1072,12 +1072,12 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;li>2.5.x 版本从 2019 年初开始已宣布 EOF，只做安全修复；而到了下半年已经完全停止了维护。&lt;/li>
 &lt;/ul>
 &lt;p>下面通过一个简要分层模块图，回顾过去一段时间 Dubbo 的技术架构演进，从编程模型、服务治理、传输协议、性能优化等角度切入：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/10years/dubbo-layer.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/10years/dubbo-layer.png" alt="">&lt;/p>
 &lt;p>以上很多功能都已被各大厂商落地，用于解决具体的业务问题。我们也期待，接下来这些厂商带来更多关于 Dubbo 实践经验的深度总结。&lt;/p>
 &lt;h3 id="dubbo-go-发展的第五年正与-dubbo-齐头并进">Dubbo-go 发展的第五年，正与 Dubbo 齐头并进&lt;/h3>
 &lt;p>除 Dubbo Java 之外，Dubbo 周边也发展出了很多优秀的子项目（子社区），其中包括 Dubbo-spring-boot-project、Dubbo-go 等，这里先着重介绍 Dubbo-go 子社区。&lt;/p>
 &lt;p>Dubbo-go 项目最早由于雨在 2016 年 5 月构建，同年 9 月发布并开源，如下时间轴图清晰记录了 Dubbo-go 的前世今生。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/10years/dubbo-go-events.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/10years/dubbo-go-events.png" alt="">&lt;/p>
 &lt;p>秉承 &amp;ldquo;bridge the gap between Java and Go&amp;rdquo; 天然使命的 Dubbo-go，已经进入第五个年头，也走出了自己独特的发展路径：&lt;/p>
 &lt;ul>
 &lt;li>当前的 v1.4.0 版本已对齐 2.6.x 版本，即将发布的版本将与 v2.7.x【对标 v2.7.5】对齐，而后将会发布对标 Dubbo 3.x 的 v1.6.0版本；&lt;/li>
@@ -1134,7 +1134,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;p>面向接口一直以来都是 Dubbo 框架的优势。一方面它的易用性，为开发者屏蔽了远程调用的存在；另一方面面向接口的地址发现、服务治理带来了更强大的能力，使得整个 Dubbo 治理体系非常强大与灵活。&lt;/p>
 &lt;p>既然面向接口有如此多的好处，那为什么我们还要探索面向应用的服务治理模式呢？&lt;/p>
 &lt;p>听起来似乎有些矛盾。其实到底是面向接口，还是面向应用，只是从不同的角度看 Dubbo。我们所聊的“面向接口 -&amp;gt; 面向应用”的改造，主要体现在服务注册、发现层面：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/10years/dubbo-triangle.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/10years/dubbo-triangle.png" alt="">&lt;/p>
 &lt;p>而我们说的面向应用的新模型，主要对第 2 点，即注册中心的数据组织转变为 “面向应用/实例” 粒度。这为我们解决两个问题：&lt;/p>
 &lt;ul>
 &lt;li>在服务发现层面与 Kubernetes Service 等微服务模型对齐；&lt;/li>
@@ -1169,14 +1169,14 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;/ul>
 &lt;p>新一代的 RPC 协议和应用级服务发现模型将会是这一部分的前置基础。&lt;/p>
 &lt;h1 id="总结与展望">总结与展望&lt;/h1>
-&lt;p>作为系列文章开篇，我们在这里对 Dubbo 过去一年的成绩做了简要的总结与回顾，包括 Dubbo 社区、产品迭代的发展。接下来我们会看到更多来自深度 Dubbo 用户的落地经验分享，Dubbo-go 子社区的发展故事等。更重要的，我们也对下一代云原生 Dubbo - Dubbo 3.0 做了展望，后续关于 Dubbo 3.0 Roadmap、方案设计与进展解析等也将在此系列中发布。&lt;/p></description></item><item><title>Blog: Dubbo Go 1.4.0</title><link>https://dubbo.apache.org/zh-cn/blog/2021/01/12/dubbo-go-1.4.0/</link><pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2021/01/12/dubbo-go-1.4.0/</guid><description>
+&lt;p>作为系列文章开篇，我们在这里对 Dubbo 过去一年的成绩做了简要的总结与回顾，包括 Dubbo 社区、产品迭代的发展。接下来我们会看到更多来自深度 Dubbo 用户的落地经验分享，Dubbo-go 子社区的发展故事等。更重要的，我们也对下一代云原生 Dubbo - Dubbo 3.0 做了展望，后续关于 Dubbo 3.0 Roadmap、方案设计与进展解析等也将在此系列中发布。&lt;/p></description></item><item><title>Blog: Dubbo Go 1.4.0</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/01/12/dubbo-go-1.4.0/</link><pubDate>Tue, 12 Jan 2021 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/01/12/dubbo-go-1.4.0/</guid><description>
 &lt;p>得益于社区活跃的支持，2020 年 3 月 25 日 我们发布了一个让人兴奋的版本——dubbo-go v1.4.0。除了继续支持已有的 Dubbo 的一些特性外， dubbo-go 开始了一些自己的创新尝试。&lt;/p>
 &lt;p>这个版本，最大的意义在于，做了一些支持云原生的准备工作。比如说，社区在探讨了很久的 k8s 落地之后，终于拿出来了使用 k8s 作为注册中心的解决方案。&lt;/p>
 &lt;p>其次一个比较大的改进是&amp;ndash;我们在可观测性上也迈出了重要的一步。在这之前，dubbo-go只提供了日志这么一个单一手段，内部的信息比较不透明，这个版本将有很大的改善。&lt;/p>
 &lt;p>最后一个令人心动的改进是，我们支持了 REST 协议。&lt;/p>
 &lt;h2 id="1-k8s-注册中心">1. K8s 注册中心&lt;/h2>
 &lt;p>dubbo-go 注册中心的本质为K/V型的数据存储。当前版本实现了以 Endpoint 为维度在 k8s API Server 进行服务注册和发现的方案【下文简称 Endpoint 方案】，架构图如下。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/1.4/k8s.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/1.4/k8s.png" alt="">&lt;/p>
 &lt;p>Endpoint 方案，首先将每个 dubbo-go 进程自身服务信息序列化后，通过 Kubernetes 提供的 Patch 的接口写入在自身 Pod 对象的 Annotation 中。其次，通过 Kubernetes 的 Watch 接口观察集群中本 Namespace 内带有某些固定lable [见上图] Pod 的Annotation 信息的更新，处理服务健康检查、服务上下线等情况并实时更新本地缓存。整体流程仅使用 Kubernetes 原生 API 完成将 Kubernetes 作为注册中心的功能特性。&lt;/p>
 &lt;p>这个方案非常简洁，不需要实现额外的第三方模块，也不需要对 Dubbo 业务作出改动，仅仅把 k8s 当做部署平台，依赖其容器管理能力，没有使用其 label selector 和 service 等服务治理特性。如果站在 k8s Operator 的角度来看，Operator 方案的优点即 Endpoint 方案的缺点，Endpoint 方案无法使用 k8s 的健康检查能力，亦没有使用 k8s service 的事件监听能力，每个 consumer 冗余监听一些不必要监听的事件，当 Endpoint 过多时会加大 API Server 的网络压力。&lt;/p>
 &lt;p>目前 dubbo-go 社区其实已经有了 operator 版本注册中心的技术方案， 后续版本【计划版本是 v1.6】的 dubbo-go 会给出其实现。相比当前实现，operator 方案开发和线上维护成本当然上升很多。二者如同硬币的两面，社区会让两种方式会共存，以满足不同 level 的使用者。&lt;/p>
@@ -1185,14 +1185,14 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;h2 id="2-tracing-和-metric">2. tracing 和 metric&lt;/h2>
 &lt;p>可观测性是微服务重要的一环，也是我们1.4版本着力支持的部分。在1.4版本中，我们主要在 tracing 和 metric 两个方向提供了支持。&lt;/p>
 &lt;p>为了支持 tracing 和 metric，关键的一点是支持context在整个调用过程中传递。为此我们解决了context跨端传递的问题。目前用户可以在接口中声明 context 并且设置值，dubbo-go 在底层完成 context 内容从 client 传递到 server 的任务。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/1.4/context.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/1.4/context.png" alt="">&lt;/p>
 &lt;p>在 metric 方面，dubbo-go 开始支持 Prometheus 采集数据了。目前支持 Prometheus中 的 Histogram 和 Summary。用户也可以通过扩展 Reporter 接口来自定义数据采集。&lt;/p>
 &lt;p>在 tracing 方面，目前 dubbo-go 的设计是采用 opentracing 作为统一的 API，在该 API 的基础上，通过在 client 和 server 之中传递 context，从而将整个链路串起来。用户可以采用任何支持 opentracing API 的监控框架来作为实现，例如 zipkin，jaeger 等。&lt;/p>
 &lt;h2 id="3-rest协议支持">3. rest协议支持&lt;/h2>
 &lt;p>Dubbo 生态的应用与其他生态的应用互联互通，一直是 dubbo-go 社区追求的目标。dubbo-go v1.3 版本已经实现了 dubbo-go 与 grpc 生态应用的互联互通，若想与其他生态如 Spring 生态互联互通，借助 rest 协议无疑是一个很好的技术手段。&lt;/p>
 &lt;p>Rest 协议是一个很强大并且社区呼声很高的特性，它能够有效解决 open API，前端通信，异构系统通信等问题。比如，如果你的公司里面有一些陈年代码是通过 http 接口来提供服务的，那么使用我们的 rest 协议就可以无缝集成了。&lt;/p>
 &lt;p>通过在 dubbo-go 中发布 RESTful 的接口的应用可以调用任意的 RESTful 的接口，也可以被任何客户端以 http 的形式调用，框架图如下：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/1.4/rest.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/1.4/rest.png" alt="">&lt;/p>
 &lt;p>在设计过程中，考虑到不同的公司内部使用的 web 框架并不相同，所以我们允许用户扩展自己 rest server （ web 框架在 dubbo-go的封装）的实现，当然，与 rest server 相关的，诸如 filter 等，都可以在自己的 rest server 实现内部扩展。&lt;/p>
 &lt;h2 id="4-路由功能增强">4. 路由功能增强&lt;/h2>
 &lt;p>路由规则在发起一次 RPC 调用前起到过滤目标服务器地址的作用，过滤后的地址列表，将作为消费端最终发起 RPC 调用的备选地址。v1.4 版本的 dubbo-go 实现了 Condition Router 和 Health Instance First Router，将在后面版本中陆续给出诸如 Tag Router 等剩余 Router 的实现。&lt;/p>
@@ -1229,12 +1229,12 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;p>目前，上述四个特性已被某 Go 版本的 sidecar 集成到其商业版本中提供商业服务。&lt;/p>
 &lt;h2 id="6-nacos-配置中心">6. Nacos 配置中心&lt;/h2>
 &lt;p>配置中心是现代微服务架构里面的核心组件，现在 dubbo-go 提供了对配置中心的支持。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/1.4/config-center.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/1.4/config-center.png" alt="">&lt;/p>
 &lt;p>Nacos 作为一个易于构建云原生应用的动态服务发现、配置管理和服务管理平台，在该版本终于作为配置中心而得到了支持。&lt;/p>
 &lt;p>参考范例&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>.&lt;/p>
 &lt;h2 id="7-接口级签名认证">7. 接口级签名认证&lt;/h2>
 &lt;p>Dubbo 鉴权认证是为了避免敏感接口被匿名用户调用而在 SDK 层面提供的额外保障。用户可以在接口级别进行定义是否允许匿名调用，并对调用方进行验签操作，对于验签不通过的消费端，禁止调用。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/1.4/acl.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/1.4/acl.png" alt="">&lt;/p>
 &lt;p>如上图，总体实现基于 AK/SK 机制，应用通过 HTTPS 通信，启动时向鉴权服务拉取，定期更新。且允许用户自定义获取 AK/SK 的源，在 RPC 层面保障安全性。&lt;/p>
 &lt;h2 id="8-回顾与展望">8. 回顾与展望&lt;/h2>
 &lt;p>目前 dubbo-go 已经到了一个比较稳定成熟的状态。在接下来的版本里面，我们将集中精力在云原生上。下一个版本，我们将首先实现应用维度的服务注册，这是一个和现有注册模型完全不同的新的注册模型。也是我们朝着云原生努力的一个关键版本。&lt;/p>
@@ -1257,48 +1257,48 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;p>&lt;a href="https://github.com/apache/dubbo-go/milestone/1">https://github.com/apache/dubbo-go/milestone/1&lt;/a>&amp;#160;&lt;a href="#fnref:4" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Blog: Dubbo Go 回顾与展望</title><link>https://dubbo.apache.org/zh-cn/blog/2021/01/11/dubbo-go-%E5%9B%9E%E9%A1%BE%E4%B8%8E%E5%B1%95%E6%9C%9B/</link><pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2021/01/11/dubbo-go-%E5%9B%9E%E9%A1%BE%E4%B8%8E%E5%B1%95%E6%9C%9B/</guid><description>
+&lt;/div></description></item><item><title>Blog: Dubbo Go 回顾与展望</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/01/11/dubbo-go-%E5%9B%9E%E9%A1%BE%E4%B8%8E%E5%B1%95%E6%9C%9B/</link><pubDate>Mon, 11 Jan 2021 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2021/01/11/dubbo-go-%E5%9B%9E%E9%A1%BE%E4%B8%8E%E5%B1%95%E6%9C%9B/</guid><description>
 &lt;p>Dubbo 是阿里于 2011 年开源的一款高性能 RPC 框架，在 Java 生态中具有不小的影响力。2019年5月21日，Dubbo 从 Apache 软件基金会毕业，成为 Apache 顶级项目。目前，毕业后的 Dubbo 项目的生态中已经正式官宣引入了 Go 语言，发布了 Dubbogo 项目。本文即是对 Dubbogo 这一项目的完整回顾与真实展望。由蚂蚁金服中间件技术专家于雨和携程基础中台研发部工程师方银城合作完成。&lt;/p>
 &lt;h2 id="一-dubbogo-整体框架">一 Dubbogo 整体框架&lt;/h2>
 &lt;p>先介绍一下 dubbogo 的缘起，先看下面这幅图：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p1.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p1.jpeg" alt="">&lt;/p>
 &lt;p>最右边的 service0 和 service1 是 Dubbo 的服务端，左边的 gateway 是网关，HTTP 请求从网关进来，必须转化成 Dubbo 的协议才能到后面的服务，所以中间加了一层proxy 完成相关功能。基本上每个 service 都需要一个 proxy 去转化协议和请求，所以这个时候 dubbogo 的项目需求就出来了。最初的实现就是以 Dubbo 的 Go 版本作为目标，实现与 Java 版本 Dubbo 的互调。&lt;/p>
 &lt;h3 id="dubbogo-目标">Dubbogo 目标&lt;/h3>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p2.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p2.jpeg" alt="">&lt;/p>
 &lt;p>然后这个图是 dubbogo 的现在达到的目标：用一份 Go 客户端的代码能够在没有任何代理和其他中间件的情况下直接调用其他语言端，主要是Java 服务端的服务和 Go 服务端的服务，而 Go 作为服务端的时候，Java 客户端也可以直接调用 Go 服务端的服务。&lt;/p>
 &lt;h3 id="dubbogo-发展历程">Dubbogo 发展历程&lt;/h3>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p3.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p3.jpeg" alt="">&lt;/p>
 &lt;p>下面介绍 dubbogo 的整个发展历程，在2016年8月份的时候是于雨构建了 dubbogo 项目，那个时候的 dubbogo 只支持通过 jsonrpc 2.0 协议 进行 HTTP 通信，到 2018 年2 月份支持 hessian2 协议进行 TCP 通信，到 2018 年 5 月项目被 dubbo 官方关注后开始从零重构，于雨 2018 年 8 月份初步重构出一个 0.1 版本。由于我们携程这边的一些需求，2019 年初我和我的同事何鑫铭也开始参与了 dubbogo 项目的重构，同时和于雨一起开始组建社区，在 2019 年 6 月份的时候 dubbogo1.0 版本上线，这个版本的重构是参照了 Dubbo 的整体设计，主体功能都在这个版本里面有呈现，同期该项目进入了 Apache 组织。今年 8 月份由社区同学望哥负责的 Dubbo-go-hessian2 的项目也进了 Apache 组织。到目前为止我们社区有些工作已经和 dubbo 齐头并进，例如对 grpc 和 k8s 的支持，相关代码正在 review 中，年底发布的 v1.3 版本会包含 grpc 支持。预计到2020年，也是明年的目标，希望项目能以全新姿态融入云原生时代。&lt;/p>
 &lt;h3 id="dubbogo-整体设计">Dubbogo 整体设计&lt;/h3>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p4.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p4.jpeg" alt="">&lt;/p>
 &lt;p>这个图大家是不是看着很熟悉，是 Dubbo 的整个分层设计图，但是少了 Dubbo 里面的很多东西，因为我们是借鉴了 Dubbo 的分层设计和易拓展性的思想，但是由于 Go 语言和 Java 语言的本质差别决定了我们项目设计不可能完全照搬它，有一些东西就给它简化了，特别是协议层这一块。比如说 Dubbo 里面 SPI 的拓展，在 Go 里面我们是借用了 Go 的非侵入式接口的方式去实现的，由于 Go 禁止 package 循环引用，所以 dubbogo 在代码的分包分层上面也是有严格的规定，这正好跟它的易拓展性的特性结合了起来。&lt;/p>
 &lt;p>关于代理部分，因为 Java 有动态代理，Go 的反射就没有 Java 的反射那么强大，所以我们这边代理的实现方式也跟它是不一样的。&lt;/p>
 &lt;h3 id="dubbogo-能力大图">Dubbogo 能力大图&lt;/h3>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p5.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p5.jpeg" alt="">&lt;/p>
 &lt;p>上面的图是我们当前 dubbogo 项目实现的能力大图，最上层是当前实现的一些注册中心有 zk、etcd、nacos、consul，现在与 k8s 关联的功能正在开发中。配置中心目前是支持 Apollo 和 zookeeper。左边是消费端，消费端这边实现的是有 cluster 的，策略上基本上实现了 dubbo 支持的所有策略。然后还有负载均衡策略，fillter 主要是有一个 tps 的限流还有泛化调用，这两个后面会讲到。编码层现在就是 jsonrpc 2.0 和 hessian2，protobuf v3 正在加紧 review 中。目前社区正在开发中的支持，包括 trace、grpc、k8s注册中心，以及对 restful 的支持。&lt;/p>
 &lt;h3 id="关键项目">关键项目&lt;/h3>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p6.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p6.jpeg" alt="">&lt;/p>
 &lt;p>目前 dubbogo 项目整体由 4 个组成部分。第一个是 getty，一个异步网络 IO 库，是实现 tcp 通信协议最坚实的基础；第二个是 dubbo-go-hessian2，这个是与当前 java hessian2 高度兼容的项目；第三个是 gost，是 dubbogo 的 基础库；最后是 dubbogo 的示例库，目前已经迁移到 &lt;a href="https://github.com/apache/dubbo-samples">https://github.com/apache/dubbo-samples&lt;/a>，和 Java 示例合并了。这些都是当前 dubbogo 主要的组成项目。&lt;/p>
 &lt;h2 id="二-协议实现">二 协议实现&lt;/h2>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p7.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p7.jpeg" alt="">&lt;/p>
 &lt;p>接下来讲一些具体的实现和部分的功能，上图是 dubbo-go-hessian2 实现，列出来是一些主要的功能列表，第一个是 Java 的 JDK Exceptions 的实现，里面实现了 40 多种的 Java JDK 主要的异常，可以与 Java 的 hessian2 版本互相解编码的支持，支持自动扩展自己实现 exceptions，或者是不常见的 Exceptions；第二个是支持字段名的联名，Go 可序列化的字段是大写字母开头，但是 Java 默认是小写开头的，所以有编码的字段名不一致的问题，这就有别名识别和支持自定义命名。&lt;/p>
 &lt;p>go-hessian2 还支持 Java 的 bigdecimal、Date、Time、基本类型的包装类型、Generic Invocation、Dubbo Attachements，甚至支持 emoji 表情。&lt;/p>
 &lt;p>go-hessian2 里面如果要解码和编码用户自定义类型，用户需要自己把它注册进去，前提是支持 go-hessian2 的 POJO interface，才能跟 JAVA 对应类互相解编码。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p8.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p8.jpeg" alt="">&lt;/p>
 &lt;p>上面是 go-hessian2 的类型对应表，需要特别点出的是 int，go 这边的 int 类型在不同字长系统下是有不同的大小，可能是 32 位也可能 64位的，而 Java 的 int 是 32 位的，所以我们以 go 语言的 int32 类型对应 Java int 类型。&lt;/p>
 &lt;p>刚才提到了 Java 的 Class 和 go struct 的对应。上图有一个 go-hessian2 的 POJO 接口定义，每个 Java class 对应到 go struct，则 struct 需要给出 Java ClassName。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p9.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p9.jpeg" alt="">&lt;/p>
 &lt;p>你也可以加 hessian 标签，解析的时候会把这个字段名用别名写进去，实现自定义 fieldName。默认情况下，go-hessian2 中会自动把 struct field 首字母变成小写作为其 fieldName。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p10.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p10.jpeg" alt="">&lt;/p>
 &lt;p>泛化引用，是 dubbogo 里面比较重要的功能。社区一位同学需要基于 dubbogo 实现网关，收集外部的请求，然后通过泛化引用的形式调用其他 Dubbo 服务，最后自己动手把它实现了。使用时，首先需要在项目里内置一个 GenericService 服务，调用Load，然后就像正常的调用服务一样直接调用，跟 Java 是类似的，Go 客户端可以不知道 Java 的接口定义和类定义，把方法名、参数类型、参数数组以一个 map 的形式传输到 Java 服务端，Java 服务端收到请求后进行识别，把它转换成 POJO 类。&lt;/p>
 &lt;p>以上是 go-hessian2 一些细节。上文讲到的泛化引用，是把网关作为整个内网 Dubbo 服务的公共消费端，使用的时候只需要知道请求的方法、参数类别，然后就能够调用 Dubbo 的服务。后面主要分享三部分内容：首先是网络引擎、底层网络库这块；其次是服务治理方面的内容，其中包含以 k8s 作为注册中心的一个初步的解决方案；第三部分是互联互通，主要是和 grpc 打通。最后给出一个展望，包含 dubbogo 社区明年的工作内容。&lt;/p>
 &lt;h2 id="三-网络引擎">三 网络引擎&lt;/h2>
 &lt;p>dubbogo 的网络引擎里面分为三层， 如下图所示：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p11.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p11.jpeg" alt="">&lt;/p>
 &lt;p>最底层 streaming 处理二进制流，第二层 codec层，进行协议的序列化和反序列化，第三层是 Eventlistener，提供应用使用接口。streaming 层能支持 websocket、TCP、UDP 三种网络通讯协议，这层具有一定的灵活性，今年年初上海有一个同学今年把 KCP 也加进去了，当时说要开源贡献出来，我还在期待中。codec 层可以适用不同协议，用户自定义即可。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p12.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p12.jpeg" alt="">&lt;/p>
 &lt;p>EventListener 对上层暴露了 4 个回调接口。第一个是 OnOpen，网络连接初建成功时被调用，应用层如果判定其为正常连接，则可以把连接 session 存储下来，如果用户判断当前连接过多则返回一个非空的 error，则这个连接会被 dubbogo 关闭。其次是 OnError 事件，当网络连接出错，就会回调到这个接口，在 dubbogo 关闭这个连接之前允许用户做相应处理，如把网络连接 session 从应用层的 session 池中删除。第三个是 OnCron，处理定时任务，如心跳，dubbogo 针对 websocket 协议在底层直接把心跳热任务处理了，针对 tcp 和 udp 协议需要用户在这个回调函数中自己实现。第四个接口是 OnMessage，用作处理一个完整的网络包。可以看到整个回调接口风格跟 websocket 的接口很像。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p13.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p13.jpeg" alt="">&lt;/p>
 &lt;h3 id="协程池">协程池&lt;/h3>
 &lt;p>dubbogo 的 goroutine pool 里有 worker channel 【数量为 M】和逻辑处理 goroutine 【数量为 N】和网络任务【网络包】三种角色，网络解包后把把包按照某种规则放入某个 worker pool，然后逻辑处理 goroutine 从 channel 中读取数据包并执行逻辑处理，其目的是是为了把网络 I/O 与逻辑处理分开。不同的 goroutine pool 设计中，有的 N 大小会变化，有的不变，分别可称之为可伸缩 goroutine pool 和不可伸缩 goroutine pool，可伸缩 goroutine pool 可以对机器资源的使用不可预计。dubbogo 采用了不可伸缩 goroutine pool，其考量是限定其网络资源使用的上限。&lt;/p>
 &lt;p>另外，dubbogo 的 goroutine pool 不考虑收包后的处理顺序。譬如，dubbogo 服务端收到了 A 和 B 两个网络包，dubbogo 有可能先处理网络包 B，后处理网络包 A。如果客户端的每次请求都是独立的，没有前后顺序关系，则带有不考虑网络包处理顺序是没有问题的。如果有强顺序要求，譬如上层用户关注 A 和 B 请求处理的前后顺序，则可以把 A 和 B 两个请求合并为一个请求，或者把 dubbogo 的 goroutine pool 特性关闭。&lt;/p>
@@ -1308,7 +1308,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;p>比较均衡的效果就是 M 和 N 都大于 1，dubbogo 的的 goroutine pool 模型中 M 和 N 的取值可以自行配置，其效果是每个 channel 被 N/M 个 goroutine 消费，这种模型类似于 kafka 的 consumer group，其优点是兼顾处理效率和锁压力平衡，可以做到总体层面的任务处理均衡。&lt;/p>
 &lt;h3 id="优化改进">优化改进&lt;/h3>
 &lt;p>优化改进主要从三个方面入手， 如下图所示：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p14.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p14.jpeg" alt="">&lt;/p>
 &lt;ol>
 &lt;li>内存池。goroutine pool 是管理对 CPU 资源的分配，内存池就是管理内存资源的分配。我个人反对纯粹为了炫技没有目的地写内存池，其实 Go 的内存管理这块目前优化的很好了。Go 语言初始版本的内存管理使用了谷歌自家的 tcmalloc 库，这个库把应用释放的内存自己先缓存住，待失效期后才释放，那这样造成的结果是什么呢？就是早期的 Go 程序的内存成本很高。假设程序一个 sidecar 程序的资源限制是内存2G，CPU 核数是 2 核，用这样一个内存管理库，内存用完不释放给操作系统，那么没人敢用这个项目，当然最新的 Go 内存管理器是经过完全重构的，虽然也区分不同大小 span 的内存在 P 级别和全局级别进行缓存，但是基本上不用考虑这种内存膨胀不可控的问题了。那么什么情况下使用内存池呢？你确定你的业务有一些对象是频繁的复用则可以尝试使用。 目前大部分内存池技术底层依赖的底座都是 sync.Pool，自己写一个也不难。而且 Go 1.13 之后的 sync.Pool 已经可以做到跨 GC span 不释放缓存对象，非常之好。&lt;/li>
 &lt;li>定时器。Go 语言早期定时器因为整体使用一把大锁的缘故效率极差，当然最新的就相当好了，通过每个 CPU 核下一个定时器的方法【类似于分片锁】分散了竞争压力，但是很多情况下还是有竞争压力，如果对时间精度要求不高个人建议在自己的应用中自己写一个简单的时间轮实现一个定时器，释放 CPU 压力。&lt;/li>
@@ -1321,26 +1321,26 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;h3 id="限流算法">限流算法&lt;/h3>
 &lt;p>限流算法首先需要考虑限流的对象，dubbogo 需要考虑 interface 和 method。其次是限流方法，首先需要考虑的是单机限流还是集群限流，单机限流算法很多，譬如常用的固定窗口算法和滑动窗口算法，以及更进一步的自适应限流。限流时一个重要问题就是限流参数是很难配的，譬如线上服务到底需要使用多少机器资源合理，限流窗口的时间窗口时长应该多长合适，其 qps 值设置多少合适呢？这都是 dubbogo 需要解决的问题。先进如谷歌的 BBR 算法，可以在当前的网络环境恶化前不断尝试改进相关参数，直到尝试出一段时间内的最佳参数。还有一些业务形态下的限流，如针对会员和非会员分别设计不同的限流链路。&lt;/p>
 &lt;p>Dubbo 的限流接口源码如下：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p15.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p15.png" alt="">&lt;/p>
 &lt;p>这个接口抽象是非常漂亮的，第一个是限流 url，第二个服务调用。下面是 Dubbo 的固定窗口限流源码：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p16.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p16.png" alt="">&lt;/p>
 &lt;p>上面的代码很明显，&amp;ldquo;private final&amp;rdquo; 决定了 Dubbo 使用者只能使用期给定的固定窗口限流限算法，无法扩展。&lt;/p>
 &lt;p>以下是 dubbogo 的限流接口：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p17.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p17.jpeg" alt="">&lt;/p>
 &lt;p>TpsLimiter 是限流对象，TpsLimitStrategy 是限流算法，RejectedExecutionHandle 是限流动作。&lt;/p>
 &lt;p>接下来是一个固定窗口算法实现：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p18.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p18.jpeg" alt="">&lt;/p>
 &lt;p>上图是 dubbogo 的固定窗口算法实现，其非线程安全，大家看一下代码就可以了，不推荐大家用。下图是 dubbogo 的滑动窗口算法实现：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p19.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p19.jpeg" alt="">&lt;/p>
 &lt;p>其基本原理是用一个队列存储一段时间内的请求，然后根据队列长度判定即可。&lt;/p>
 &lt;p>不管是固定窗口还是滑动窗口，其判定算法简单，麻烦的是其参数设置，如下图：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p20.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p20.png" alt="">&lt;/p>
 &lt;p>固定窗口时长精度很难控制。比如说限流一秒 QPS 值 1000，前 100 毫秒来了一千个请求，然后判定算法把请求放过了，而其后 900 毫秒 任何请求都无法处理。一般的处理方法是把时间粒度更精细一些，dubbogo 的时间窗口最小单位是一毫秒，则用户可以把时间窗口设定为 100 毫秒，总体来说一段时间内是很平稳的。下面这个图是我们社区的 commiter 邓明写完博客发出来，行业大佬微信评论如下：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p21.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p21.png" alt="">&lt;/p>
 &lt;p>图中第一个问题是 qps 和 tps 每个请求成本不同，这个问题怎么处理呢？个人觉得这是一个分级限流问题，在同一个服务下针对不同的请求做不同的分级处理。第二个问题 ”配置了 qps 1000，但是请求过来是10万你还是死“，这个就需要更上层的运维能力进行应对，譬如判定为恶意流量攻击就应该在网关层拦截掉，如果是服务能力不行就扩容。&lt;/p>
 &lt;p>针对分级限流，dubbogo 目前尚无法在同一个进程内完成，这需要 dubbogo 的配置中心更完善以后进行处理，用户可以通过搭建不同的服务链路处理之。譬如会员/非会员分级，同一个服务针对不同的会员等级搭建相应的链路，在网关层就判定一个 userID 是否是会员，然后发送不同的链路。&lt;/p>
 &lt;p>dubbogo 的单机熔断是基于 hystrix-go 实现的，其判定参数有最大并发请求数、超时时间、错误率；其次是保护窗口，是熔断时长，熔断多久后进行服务恢复；第三个是保护性动作，就是在保护时间窗口之内执行什么样的动作，具体实现用户自定义。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p22.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p22.jpeg" alt="">&lt;/p>
 &lt;h3 id="优雅退出">优雅退出&lt;/h3>
 &lt;p>优雅退出也是邓明同学的大作，可以在网络上搜到相关博客。实现优雅退出的步骤有：&lt;/p>
 &lt;ol>
@@ -1349,24 +1349,24 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;li>节点处理完所有接收到的请求并且返回响应后，释放作为服务端相关的组件和资源；&lt;/li>
 &lt;li>节点释放作为客户端的组件和资源。&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p23.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p23.jpeg" alt="">&lt;/p>
 &lt;p>所以每一步基本上都要给程序一定的时间进行等待，所以等的时间窗口是多少呢？dubbogo 默认每个步骤大概花2秒，总体一个时间窗口是10秒。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p24.png" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p24.png" alt="">&lt;/p>
 &lt;p>基本上在别的 RPC 框架里面，可能不太常见到这种处理。&lt;/p>
 &lt;h2 id="五-dubbogo-上云">五 Dubbogo 上云&lt;/h2>
 &lt;p>dubbogo 作为微服务框架如何适配 k8s，如何部署？dubbogo 本身是一个 RPC 框架，但是其又有了服务治理能力，这部分能力与 k8s 的部分能力有些重合，不可能为了适配 k8s 就彻底抛弃。目前 Dubbo 官方也没有很好的解决方案供我们参考，所以这里我们 dubbogo 先给出一个简单的常识性的实践方案。下面先分析下 dubbogo 的 interface/service 和 k8s service 两者直接的差别。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p25.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p25.jpeg" alt="">&lt;/p>
 &lt;p>k8s service 是许多具有相同服务能力 pod 资源的聚合，它自己的负载均衡算法以及健康检查等功能。而 Dubbo 里面的 interface/service 仅仅是服务 provider 集合，服务治理能力依赖 dubbo 的 directory、router 和 loadbalace 等额外的功能模块。并且Dubbo 服务区分 group/version，还有 provider、consumer 角色等等。Dubbo interface/service 无法与 k8s service 对标，Dubbo interface/service 和其整体服务治理能力才能对标成 k8s service。二者差异这么大，如何将 dubbo 集成到 k8s 中呢？&lt;/p>
 &lt;p>k8s 提供了 pod/endpoint/service 三层维度的资源。简单的做法，可以通过监听pod/endpoint/service 三层维度资源的事件，作出合理的处理以达到服务治理的目的。目前我们社区成员王翔提交了一个基于监听 pod 事件来实现服务治理的 pr，优点就是不需要引入额外组件，通过监听 k8s 中最细粒度资源 pod 的事件，通过 k8s apiserver 获取 pod 列表，只是通过 apiserver 使用 etcd 的服务注册和服务通知能力，其他继续使用 Dubbo 的服务治理能力。其优点是模型简单，不需要实现额外的模块，几乎不需要对 Dubbo 作出改动，缺点就是其实无法使用 k8s 自己的健康检查能力，需要自己监听很细粒度的 pod 事件来综合处理服务健康、服务上下线等情况，而且还存在没有使用 k8s service 的事件监听能力，每个 consumer 冗余监听一些不必要监听的事件，加大 apiserver 的网络压力。所以其实现目前来看可能还不是最优解，与 k8s 建议的operator 方式也有一定的背离。社区目前还在讨论新方案，寻求 k8s 最优解，大部分人倾向于采用 k8s 社区推荐的 operator 方案，但是其开发和线上维护成本就上升了。后面两种方式会共存，使用者见仁见智。&lt;/p>
 &lt;h2 id="六-互融互通">六 互融互通&lt;/h2>
 &lt;p>关于互融互通，Dubbo 明年有个三个重要目标，其中一个目标是与外面的微服务生态进行互联互通，比如说跟 grpc 互通。目前 dubbo 的 grpc 的解决方案已经开放出来，dubbogo 与 grpc 互通的开发工作也几近完成。&lt;/p>
 &lt;p>下面左边 dubbogo 的代码生成器工具根据 grpc 的 pb 服务定义文件自动生成的适配 dubbogo 的代码，右边是对应的使用示例。不同于 k8s service 的复杂性，grpc 整体仅仅具有 rpc 能力，没有服务治理能力，所以原始的 grpc 就可以很好的嵌入到 dubbogo 里面，grpc server 的 methodhandler 对我们 dubbogo 来说就是 dubbo invoker，grpc 的一些相关的接口直接跟我们的接口嵌套起来，两个生态就对接起来了。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-go/gochina/p26.jpeg" alt="">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-go/gochina/p26.jpeg" alt="">&lt;/p>
 &lt;h2 id="七-展望未来">七 展望未来&lt;/h2>
 &lt;p>最后就是展望未来，也就是明年的规划。&lt;/p>
 &lt;p>明年我们将会很快实现 dubbo router。社区在 8月份已经实现了 router 功能需要的底层的算法模块，但是当时配置中心下发相关的参数的能力还不是很强，所以没有最终完成。最近服务治理配置刚刚支持了 zookeeper 和 apollo，预计很快就可以将 router 的参数通过配置中心下发的形式支持掉。另外，还有 tracing，我们将会引入社区主流的 tracing 方案，以 opentracing 为标准，去集成 opentracing 开源生态的相关能力。第三个是 kubernetes operator，这个就是刚才说的 K8s 的服务调用，我们会基于 operator 的方案做一版新的基于 k8s 的注册中心实现。最后就是云原生生态的融入，即与 istio 的集成，dubbogo 将会成为 dubbo 在 service mesh 生态中的重要角色。&lt;/p>
 &lt;p>目前 dubbogo 项目，今年是能 run 起来，质量方面还有很多工作要做，功能基本上到明年可与 dubbo 2.7 补齐，目前已经基本够用。目前落地实践的是 3 个比较典型的公司，一个是携程，还有一个是涂鸦智能。&lt;/p>
-&lt;p>dubbogo 本身是一个 go 语言项目，也期待与其他 go 社区的指正或者需求，一起成长。&lt;/p></description></item><item><title>Blog: Dubbo Java 2.7.5 功能解析</title><link>https://dubbo.apache.org/zh-cn/blog/2020/05/18/dubbo-java-2.7.5-%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/</link><pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2020/05/18/dubbo-java-2.7.5-%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/</guid><description>
+&lt;p>dubbogo 本身是一个 go 语言项目，也期待与其他 go 社区的指正或者需求，一起成长。&lt;/p></description></item><item><title>Blog: Dubbo Java 2.7.5 功能解析</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2020/05/18/dubbo-java-2.7.5-%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/</link><pubDate>Mon, 18 May 2020 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2020/05/18/dubbo-java-2.7.5-%E5%8A%9F%E8%83%BD%E8%A7%A3%E6%9E%90/</guid><description>
 &lt;p>近日，备受瞩目的 Dubbo 2.7.5 版本正式发布，在 2.7.5 版本中，Dubbo 引入了很多新的特性、对现有的很多功能做了增强、同时在性能上也有了非常大的提升，这个版本无论对 Dubbo 社区亦或是开发者来说，都将是一个里程碑式的版本。&lt;/p>
 &lt;ul>
 &lt;li>应用粒度服务注册【beta】&lt;/li>
@@ -1382,10 +1382,10 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;p>首先，从服务发现上，新版本突破以往基于接口粒度的模型，引入了全新的基于应用粒度的服务发现机制 - 服务自省，虽然该机制当前仍处于 beta 阶段，但对于 Dubbo 向整个微服务云原生体系靠齐，都打下了非常好的基础；得益于紧凑的协议设计和代码实现上的优化，Dubbo 一直以来都具有较好的性能表现，在 2.7.5 版本中，性能上有了进一步的提升，根据来自官方维护团队的压测，新版本在调用链路上性能提升达到 30%；云原生微服务时代，多语言需求变得越来越普遍，协议的通用性和穿透性对于构建打通前后端的整套微服务体系也变得非常关键，Dubbo 通过实现 gRPC 协议实现了对 HTTP/2 协议的支持，同时增加了与 Protobuf 的结合。&lt;/p>
 &lt;h2 id="1--应用粒度服务注册beta">1. 应用粒度服务注册【beta】&lt;/h2>
 &lt;p>从 Java 实现版本的角度来说，Dubbo 是一个面向接口代理的服务开发框架，服务定义、服务发布以及服务引用都是基于接口，服务治理层面包括服务发现、各种规则定义也都是基于接口定义的，基于接口可以说是 Dubbo 的一大优势，比如向开发者屏蔽了远程调用细节、治理粒度更精细等。但基于接口的服务定义同时也存在一些问题，如服务，与业界通用的微服务体系等。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/servicediscovery-old.png" alt="servicediscovery-old.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/servicediscovery-old.png" alt="servicediscovery-old.png">&lt;/p>
 &lt;p>针对以上问题，2.7.5 版本引入了一种新的服务定义/治理机制：&lt;strong>服务自省&lt;/strong>，简单来说这是一种基于应用粒度的服务治理方案。一个实例只向注册中心注册一条记录，彻底解决服务推送性能瓶颈，同时由于这样的模型与主流微服务体系如 SpringCloud、K8S 等天然是对等的，因此为 Dubbo 解决和此类异构体系间的互联互通清除了障碍。有兴趣进一步了解 Dubbo 服务自省机制如何解决异构微服务体系互联互通问题的，可具体参考我们之前的文章解析《Dubbo 如何成为联通异构微服务体系的最佳服务开发框架》。&lt;/p>
 &lt;p>以下是服务自省机制的基本工作原理图。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/servicediscovery-new.png" alt="servicediscovery-new.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/servicediscovery-new.png" alt="servicediscovery-new.png">&lt;/p>
 &lt;p>要了解更多关于服务自省工作原理的细节，请参与官方文档及后续文章。&lt;/p>
 &lt;p>服务自省与当前已有的机制之间可以说是互补的关系，Dubbo 框架会继续保持接口粒度的服务治理的优势，实现接口和应用两个粒度互为补充的局面，兼顾性能、灵活性和通用性，力争使 Dubbo 成为微服务开发的最佳框架。&lt;/p>
 &lt;h2 id="2-http2-grpc-协议支持">2. HTTP/2 (gRPC) 协议支持&lt;/h2>
@@ -1439,7 +1439,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;p>&lt;a href="https://github.com/apache/dubbo/issues/2013">https://github.com/apache/dubbo/issues/2013&lt;/a>&lt;/p>
 &lt;p>改进后的消费端线程池模型，通过复用业务端被阻塞的线程，很好的解决了这个问题。&lt;/p>
 &lt;p>&lt;strong>老的线程池模型&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/consumer-threadpool0.png" alt="消费端线程池.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/consumer-threadpool0.png" alt="消费端线程池.png">&lt;/p>
 &lt;p>我们重点关注 Consumer 部分：&lt;/p>
 &lt;ol>
 &lt;li>业务线程发出请求，拿到一个 Future 实例。&lt;/li>
@@ -1448,7 +1448,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;li>业务线程拿到结果直接返回&lt;/li>
 &lt;/ol>
 &lt;p>&lt;strong>2.7.5 版本引入的线程池模型&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/consumer-threadpool1.png" alt="消费端线程池新.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/consumer-threadpool1.png" alt="消费端线程池新.png">&lt;/p>
 &lt;ol>
 &lt;li>业务线程发出请求，拿到一个 Future 实例。&lt;/li>
 &lt;li>在调用 future.get() 之前，先调用 ThreadlessExecutor.wait()，wait 会使业务线程在一个阻塞队列上等待，直到队列中被加入元素。&lt;/li>
@@ -1526,7 +1526,7 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>bootstrap&lt;span style="color:#719e07">.&lt;/span>start&lt;span style="color:#719e07">();&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7-多注册中心集群负载均衡">7. 多注册中心集群负载均衡&lt;/h2>
 &lt;p>对于多注册中心订阅的场景，选址时的多了一层注册中心集群间的负载均衡：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/cluster-lb.png" alt="cluster-lb.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/cluster-lb.png" alt="cluster-lb.png">&lt;/p>
 &lt;p>在 Cluster Invoker 这一级，我们支持的选址策略有（2.7.5+ 版本，具体使用请参见文档）：&lt;/p>
 &lt;ul>
 &lt;li>
@@ -1578,17 +1578,17 @@ Dubbo 社区是国内最早开始对 Proxyless Service Mesh 模式进行探索�
 &lt;li>对于企业用户关心的微服务解决方案场景，会持续推进框架的演进，包括当前正在开发的配置、服务鉴权机制、熔断等功能。后续还会尝试联合社区推动周边配套设施如网关、治理平台 Admin 等的建设，非常期待社区能踊跃参与到此部分的建设中。&lt;/li>
 &lt;li>性能优化上。主要从两个方面着手，一是调用链路的持续优化，同时继续探索新的更通用的 RPC 协议；另一方面是在服务治理推送机制上的优化，以进一步提高 Dubbo 在大规模服务地址推送场景下的表现。&lt;/li>
 &lt;li>云原生方向。接下来的版本将重点探索，1. 如何更好的支持 Dubbo 在 Kubernetes 上的部署和服务治理；2. 对于混合部署的场景，如传统 VM 和 K8S 体系混合部署、SDK Dubbo 与 Mesh 混合部署的场景，如何提供更好的支持以实现混部场景的长期共存或迁移。&lt;/li>
-&lt;/ul></description></item><item><title>Blog: 从 2019 到 2020，Apache Dubbo 年度回顾与总结</title><link>https://dubbo.apache.org/zh-cn/blog/2020/05/11/%E4%BB%8E-2019-%E5%88%B0-2020apache-dubbo-%E5%B9%B4%E5%BA%A6%E5%9B%9E%E9%A1%BE%E4%B8%8E%E6%80%BB%E7%BB%93/</link><pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2020/05/11/%E4%BB%8E-2019-%E5%88%B0-2020apache-dubbo-%E5%B9%B4%E5%BA%A6%E5%9B%9E%E9%A1%BE%E4%B8%8E%E6%80%BB%E7%BB%93/</guid><description>
+&lt;/ul></description></item><item><title>Blog: 从 2019 到 2020，Apache Dubbo 年度回顾与总结</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2020/05/11/%E4%BB%8E-2019-%E5%88%B0-2020apache-dubbo-%E5%B9%B4%E5%BA%A6%E5%9B%9E%E9%A1%BE%E4%B8%8E%E6%80%BB%E7%BB%93/</link><pubDate>Mon, 11 May 2020 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2020/05/11/%E4%BB%8E-2019-%E5%88%B0-2020apache-dubbo-%E5%B9%B4%E5%BA%A6%E5%9B%9E%E9%A1%BE%E4%B8%8E%E6%80%BB%E7%BB%93/</guid><description>
 &lt;p>非常感谢大家对 Dubbo 社区的关注，通过这篇文章我们将：总结过去一年 Dubbo 社区取得的成绩，包括社区和框架演进两个方面；展望未来 Dubbo 社区和框架的新的规划（roadmap）。社区建设是推动 Dubbo 健康持续发展的一个非常重要的环节，我们需要与社区保持良性的互动、有活跃的贡献者、有积极的富有建设性的讨论，而整个 Dubbo 社区过去一年在这方面都做的不错；在框架演进上，我们主要发布了 2.7.0 - 2.7.5 共 6 个特性版本，功能层面涵盖编程模型、协议、服务治理、性能优化等多个方面；除了已经发布的功能外，我们在 Dubbo 3.0 协议、服务自省和云原生等方向上也做了深入的探索，对这些方向的支持将是 Dubbo 接下来的重要工作方向，希望能通过这篇文章将其中更详细的思考和计划同步给大家。&lt;/p>
 &lt;h2 id="社区回顾">社区回顾&lt;/h2>
 &lt;p>回顾 Dubbo 社区过去一年的发展，其中一个重要的节点就是 2019 年 5 月从 Apache 孵化毕业。成为第二个由 Alibaba 捐献后从 Apache 毕业的项目，我有幸参与到了从重启开源、进入 Apache 孵化到毕业的整个过程，社区在此过程中做了大量的工作，包括邮件列表建设、代码规范检查、文档和代码国际化、issue/pr 处理等，这些一方面是 Apache 社区要求的工作，同时也为推动 Dubbo 的发展起到了正面的作用。&lt;/p>
 &lt;p>在从 Apache 毕业之后，Dubbo 相关的项目也进行了迁移，都迁移到了 &lt;a href="https://github.com/apache?utf8=%E2%9C%93&amp;amp;q=dubbo&amp;amp;type=&amp;amp;language=">Apache&lt;/a> 组织之下：&lt;/p>
 &lt;p>Dubbo 社区的项目总共有 24 个之多，维护如此多的项目，并不是单纯靠几个活跃的开发者就能做到的，而是靠整个社区努力的结果。我总结了过去一年提名的所有 Committer/PMC，总过有 27 人获得提名（23 名 committer、4 名 PMC），通过下方的饼状图可以看出，只有不到 20% 的贡献者是来自于 Alibaba，而 80% 以上是来自各个不同组织的开发者或爱好者。这样的 Committer 分布，是加入 Apache 带给 Dubbo 社区的一个最重要的变化之一：Dubbo 项目是属于整个社区的，反映的是不同组织不同开发者的共同诉求，它的发展不是由一个公司控制或决定的，而是由社区共同讨论后决定的。如果你对参与到 Dubbo 社区感兴趣，都可以参与到 Dubbo 发展的讨论、决策和 coding 中来，也非常期待各位能成为下一个 Committer。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/community-distribution.png" alt="community distribution">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/community-distribution.png" alt="community distribution">&lt;/p>
 &lt;p>过去一年 Dubbo 社区组织了超过 10 场的线下 meetup 活动，覆盖了国内基本所有的开发者聚集的城市，与广大 Dubbo 开发者和使用者保持了密切交流。通过这些线下或线上的直播活动，分享了超过 100 个 topic 的演讲，深度讲解了 Dubbo 社区最新动态、功能模块开发和近期规划等。并且在所有的这些主题演讲中，绝大多数都是通过社区采集的方式，最终由 Dubbo 的深度企业分享的实践主题，其中典型的代表包括携程、工商银行、考拉、信用算力等。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/community-meetup.png" alt="community meetup">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/community-meetup.png" alt="community meetup">&lt;/p>
 &lt;p>从 Github 上来看，Dubbo 在过去一年也受到了非常高的关注度，一个重要的里程碑是 Star 数突破 3w，相比重启开源时增长了近 5 倍；贡献者由最初的几十个增长到现在的 282 个，而这其中有六七十个已经被提名为 committer，不论是贡献者数量还是 committer 比例都得到很大的提升；另一个数据是发布的版本，总共发布了 64 个版本，大家如果要了解每个版本的具体信息，也可以从这里点进去查看。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/community-github.png" alt="community github">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/community-github.png" alt="community github">&lt;/p>
 &lt;p>当前社区维护的大版本主要有 3 个，分别是 2.5.x 2.6.x 和 2.7.x。&lt;/p>
 &lt;p>其中，2.7.x 是我们的主要开发版本，在过去的一年共发布了 6 个版本（2.7.0 - 2.7.5），每个版本都带来了一些值得关注的特性或功能升级，涵盖从编程模型、服务治理、性能到协议的多个方面的增强。&lt;/p>
 &lt;p>2.6.x 版本则定位为 bugfix 版本，过去一年共发布了 3 个版本，主要以修复问题和安全漏洞为主，并没有增加什么新 feature，因此这一系列的版本在稳定性上是得到保证的。&lt;/p>
@@ -1674,9 +1674,9 @@ Dubbo Java 版本的典型服务定义如下：&lt;/p>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>以上示例都是基于 Java Interface 来描述 Dubbo 服务的，如果要和多语言异构的微服务实现互调，则服务又需要用相应语言的方式重新定义一遍，无法实现跨语言的服务复用；另外跨语言的序列化也是需要注意的一个问题。&lt;/p>
 &lt;p>为此 2.7.5 版本引入了对 IDL + Protobuf 的支持，以解决跨语言的服务定义问题，具体可参见示例：&lt;/p>
 &lt;p>&lt;a href="https://github.com/apache/dubbo-samples/tree/master/3-extensions/serialization/dubbo-samples-protobuf">dubbo-samples-protobuf&lt;/a>&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/service-idl.png" alt="service idl">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/service-idl.png" alt="service idl">&lt;/p>
 &lt;p>对 Reactive-style API 的支持则和上面 CompletableFuture 有些类似，允许用户定义 RxJava、Reactor API 的服务接口&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/idl-dubbo-compiler.png" alt="idl dubbo compiler">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/idl-dubbo-compiler.png" alt="idl dubbo compiler">&lt;/p>
 &lt;p>但是需要注意的一定是，由于外围的 Reactive API 需要有底层传输协议的支持才有意义，因此，目前 Reactive API 只能在使用 gRPC 协议时才有意义，具体请参见示例以及下面关于 ”&lt;a href="https://github.com/apache/dubbo-samples/tree/master/3-extensions/protocol/dubbo-samples-grpc/dubbo-samples-rxjava">Dubbo 对 gRPC 的支持&lt;/a>” 一节的讲解。&lt;/p>
 &lt;h3 id="性能优化">性能优化&lt;/h3>
 &lt;p>2.7 版本在性能优化方面也做了很多的工作，对 Dubbo 业务系统的吞吐量、调用链路响应速度、服务治理链路性能等都有明显提升。&lt;/p>
@@ -1687,12 +1687,12 @@ Dubbo Java 版本的典型服务定义如下：&lt;/p>
 &lt;p>全异步化改造，很关键的一点是 Filter 链路的异步化，之前的 Filter 只有一个同步的 invoke 方法，现在为了支持异步回调，增加了 Listener 回调监听器，从而可以实现对异步调用结果的监听与拦截。&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/filter.png" alt="filter">&lt;/p>
-&lt;p>关于消费端线程模型的优化，对于网关类应用，需要消费大量服务的应用，都会在系统稳定性和性能表现上有很大提升，其优化后的总体工作原理图所下所示，具体解析可以参见之前发布的文章：&lt;a href="https://dubbo.apache.org/zh-cn/docsv2.7/user/examples/consumer-threadpool/">《消费端线程池模型》&lt;/a>&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/filter.png" alt="filter">&lt;/p>
+&lt;p>关于消费端线程模型的优化，对于网关类应用，需要消费大量服务的应用，都会在系统稳定性和性能表现上有很大提升，其优化后的总体工作原理图所下所示，具体解析可以参见之前发布的文章：&lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docsv2.7/user/examples/consumer-threadpool/">《消费端线程池模型》&lt;/a>&lt;/p>
 &lt;p>老线程模型工作原理：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/consumer-threadpool0.png" alt="consumer threadpool">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/consumer-threadpool0.png" alt="consumer threadpool">&lt;/p>
 &lt;p>新线程模型工作原理：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/consumer-threadpool1.png" alt="consumer threadpool new">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/consumer-threadpool1.png" alt="consumer threadpool new">&lt;/p>
 &lt;ol start="2">
 &lt;li>
 &lt;p>RPC 调用链路&lt;/p>
@@ -1720,11 +1720,11 @@ Dubbo Java 版本的典型服务定义如下：&lt;/p>
 &lt;li>元数据中心、配置中心&lt;/li>
 &lt;/ul>
 &lt;p>我们针对这三部分逐步展开讲解。以下是 2.7 版本路由规则的几个例子。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/route-app.png" alt="route app">&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/route-service.png" alt="route service">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/route-app.png" alt="route app">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/route-service.png" alt="route service">&lt;/p>
 &lt;p>其中，最明显的一个变化是路由规则都以 YAML 进行了重写，并且后续所有的路由规则都计划以 YAML 为基本描述语言；相比于之前路由规则直接存储于注册中心，在 2.7 版本中增加了配置中心后，新版本的路由规则默认将存储在于独立的配置中心，配置格式推送机制都得到了优化；另外，2.7 版本中还增加了应用粒度的路由规则，方便从整个应用的角度去设置流量规则。&lt;/p>
 &lt;p>新增加的跨注册中心的路由机制，可以实现调用流量在多个注册中心间的负载均衡，对于需要做异地容灾、同机房优先或者注册中心迁移的场景比较有用处。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/cluster-lb.png" alt="cluster load balance">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/cluster-lb.png" alt="cluster load balance">&lt;/p>
 &lt;p>当前支持的注册中心集群负载均衡策略有：&lt;/p>
 &lt;ul>
 &lt;li>同区域优先&lt;/li>
@@ -1734,7 +1734,7 @@ Dubbo Java 版本的典型服务定义如下：&lt;/p>
 &lt;/ul>
 &lt;p>元数据中心存储了 Dubbo 服务方法定义的描述，目前主要的用途是服务测试，将来也可用作服务 API 管理、网关参数映射等。&lt;/p>
 &lt;p>新增的配置中心主要有两个用途：存储/推送配置规则、应用配置托管，接下来着重讲解应用配置托管相关功能，看其对 Dubbo 的开发与运维配置的影响。Dubbo 当前支持 JVM 动态参数、配置中心、API、本地配置文件等几种配置源，他们之间按照优先级从高到低的顺序实现配置覆盖，如下图所示：&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/config.png" alt="config">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/config.png" alt="config">&lt;/p>
 &lt;p>配置中心相当于是共享版本的 &lt;code>dubbo.properties&lt;/code> 的远程托管，其中，key 值有特定的命名规范：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-properties" data-lang="properties">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#586e75"># 应⽤用级别&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>dubbo.{config-type}[.{config-id}].{config-item} &lt;span style="color:#2aa198">{config-item-value}&lt;/span>
@@ -1747,7 +1747,7 @@ Dubbo Java 版本的典型服务定义如下：&lt;/p>
 &lt;p>2.7 版本在 RPC 协议层和序列化层进行了扩展，RPC 协议层增加了对 gRPC 协议的支持，序列化层增加了对 Protobuf 协议的支持。&lt;/p>
 &lt;p>支持 gRPC 其中一个重要原因是其基于 HTTP/2 协议构建，HTTP/2 协议作为 HTTP 标准协议，在各个层次的网络设备及网关代理上都得到了很好的支持，因此具有更好的穿透性和通用性。通过支持 gRPC 协议，对于期望使用 HTTP/2 的 Dubbo 用户提供了一种传输协议选择。&lt;/p>
 &lt;p>gRPC 在 HTTP/2 上构建了 Stream 的 RPC 语义，支持 Request - Response、Stream - Response、Request - Stream、Bi-Stream 等多种语义，能满足不同的业务调用场景。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/service-idl2.png" alt="service idl2">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/service-idl2.png" alt="service idl2">&lt;/p>
 &lt;p>在 Dubbo 的设计中，所有的 RPC 协议都处于一个平等的地位，无论是自有的 Dubbo 协议，还是扩展的其他三方协议如 Thrift、Hessian、gRPC 等，得益于这样的设计，我们可以扩展任何新协议支持。关于如何扩展 RPC 协议及其应用场景，请参见之前发布的&lt;a href="https://mp.weixin.qq.com/s/-fvDeGlCLjz0n60naZJnQg">《使用 Dubbo 连接异构微服务体系》&lt;/a>文章。&lt;/p>
 &lt;p>Protobuf 序列化协议支持更多的是考虑其在跨语言、安全性和性能方面。&lt;/p>
 &lt;h2 id="roadmap">Roadmap&lt;/h2>
@@ -1765,7 +1765,7 @@ Dubbo Java 版本的典型服务定义如下：&lt;/p>
 &lt;p>非常感谢社区的活跃开发者，现就职于爱奇艺的 &lt;a href="https://github.com/CodingSinger">CodingSinger&lt;/a>，其是鉴权模块的发起者和主要开发贡献者。&lt;/p>
 &lt;h3 id="协议---30">协议 - 3.0&lt;/h3>
 &lt;p>以下是 Dubbo 2.0 协议，我们之前已经在多个场合做过详细的讲解&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/grpc/dubbo-ptotocol.png" alt="Dubbo Protocol 2.0">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/grpc/dubbo-ptotocol.png" alt="Dubbo Protocol 2.0">&lt;/p>
 &lt;p>Dubbo 2.0 协议在云原生、mesh 等场景下暴露出一些问题，如：&lt;/p>
 &lt;ul>
 &lt;li>协议缺少扩展性&lt;/li>
@@ -1802,7 +1802,7 @@ Reactive Stream 引入 RPC，带来更丰富的通信语义和 API 编程模型�
 &lt;li>引入独立的元数据服务完成 RPC 接口同步工作&lt;/li>
 &lt;/ul>
 &lt;p>以下是应用粒度服务注册（服务自省）的基本工作原理，请持续关注后续对这部分的具体解析和开发进展。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/servicediscovery-new.png" alt="service discovery new">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/servicediscovery-new.png" alt="service discovery new">&lt;/p>
 &lt;h3 id="云原生">云原生&lt;/h3>
 &lt;p>云原生带来了底层基础设施，应用开发、部署和运维等全方位的变化：&lt;/p>
 &lt;p>&lt;strong>基础设施&lt;/strong>&lt;/p>
@@ -1826,7 +1826,7 @@ Reactive Stream 引入 RPC，带来更丰富的通信语义和 API 编程模型�
 &lt;p>&lt;strong>生命周期：&lt;/strong> Dubbo 与 Kubernetes 调度机制绑定，保持服务生命周期与 Pod 容器等生命周期的自动对齐
 &lt;strong>治理规则：&lt;/strong> 服务治理规则在规则体、规则格式方面进行优化，如规则体以 YAML 描述、取消过滤规则对 IP 的直接依赖，定义规则特有的 CRD 资源等。
 &lt;strong>服务发现：&lt;/strong> 支持 K8S Native Service 的服务发现，包括 DNS、API-Server，支持 xDS 的服务发现
-&lt;strong>Mesh 架构协作：&lt;/strong> 构建下一代的基于 HTTP/2 的通信协议，支持 xDS 的标准化的数据下发&lt;/p></description></item><item><title>Blog: 遇见Dubbo</title><link>https://dubbo.apache.org/zh-cn/blog/2019/01/26/%E9%81%87%E8%A7%81dubbo/</link><pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2019/01/26/%E9%81%87%E8%A7%81dubbo/</guid><description>
+&lt;strong>Mesh 架构协作：&lt;/strong> 构建下一代的基于 HTTP/2 的通信协议，支持 xDS 的标准化的数据下发&lt;/p></description></item><item><title>Blog: 遇见Dubbo</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2019/01/26/%E9%81%87%E8%A7%81dubbo/</link><pubDate>Sat, 26 Jan 2019 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2019/01/26/%E9%81%87%E8%A7%81dubbo/</guid><description>
 &lt;p>我是一个有Dubbo情节的程序员。&lt;/p>
 &lt;p>Dubbo以不同方式，陪伴了我时间不长的整个代码生涯。不久前，通过社区投票，我被选举为&lt;code>Committer&lt;/code>。当时我在朋友圈发了一句话，也是贯穿我从开始使用Dubbo、研究Dubbo、贡献Dubbo到最后成为&lt;code>Committer&lt;/code>的全过程，一直为我提供内心无与伦比愉悦的源泉：成长这种事，能看见脚印特别幸福。&lt;/p>
 &lt;p>今天来个回忆杀，把我和Dubbo的那些事拿出来说说。&lt;/p>
@@ -1861,7 +1861,7 @@ Reactive Stream 引入 RPC，带来更丰富的通信语义和 API 编程模型�
 &lt;p>可以看到，Apache Way就是在整个开发过程中，不断地与社区交互，最大发挥社区的功能，汲取众人之力，这才是所谓&lt;strong>社区&lt;/strong>以及所谓&lt;strong>开源&lt;/strong>的含义。&lt;/p>
 &lt;h2 id="结尾">结尾&lt;/h2>
 &lt;p>Dubbo目前还在孵化阶段，整个Dubbo社区还不完善，我们也在跟着Dubbo一起成长，我们非常希望更多的Dubbo爱好者深度参与到Dubbo中，为你的代码生涯树一个里程碑。&lt;/p>
-&lt;p>相信过程，收获结果；天道酬勤，功不唐捐！&lt;/p></description></item><item><title>Blog: 第五届Dubbo开发者沙龙在杭州成功举办</title><link>https://dubbo.apache.org/zh-cn/blog/2018/12/10/%E7%AC%AC%E4%BA%94%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E6%9D%AD%E5%B7%9E%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</link><pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2018/12/10/%E7%AC%AC%E4%BA%94%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E6%9D%AD%E5%B7%9E%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</guid><description>
+&lt;p>相信过程，收获结果；天道酬勤，功不唐捐！&lt;/p></description></item><item><title>Blog: 第五届Dubbo开发者沙龙在杭州成功举办</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/12/10/%E7%AC%AC%E4%BA%94%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E6%9D%AD%E5%B7%9E%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</link><pubDate>Mon, 10 Dec 2018 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/12/10/%E7%AC%AC%E4%BA%94%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E6%9D%AD%E5%B7%9E%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</guid><description>
 &lt;p>第五届Dubbo开发者沙龙在杭州成功举办，&lt;/p>
 &lt;p>分享嘉宾&lt;/p>
 &lt;ul>
@@ -1871,7 +1871,7 @@ Reactive Stream 引入 RPC，带来更丰富的通信语义和 API 编程模型�
 &lt;li>小马哥: Dubbo+Nacos服务治理重新实现 &lt;a href="https://github.com/dubbo/awesome-dubbo/blob/master/slides/meetup/201812%40hangzhou/nacos-support-in-dubbo.pdf">slides&lt;/a>&lt;/li>
 &lt;li>赵奕豪: Sentinel:分布式服务的流量防卫兵 &lt;a href="https://github.com/dubbo/awesome-dubbo/blob/master/slides/meetup/201812%40hangzhou/sentinel-support-for-dubbo.pdf">slides&lt;/a>&lt;/li>
 &lt;li>陈志轩: 当Dubbo遇上Arthas:排查问题的实践 &lt;a href="https://github.com/dubbo/awesome-dubbo/blob/master/slides/meetup/201812%40hangzhou/troubleshooting-dubbo-with-arthas.pdf">slides&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Blog: 如何准备Apache Release</title><link>https://dubbo.apache.org/zh-cn/blog/2018/09/02/%E5%A6%82%E4%BD%95%E5%87%86%E5%A4%87apache-release/</link><pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2018/09/02/%E5%A6%82%E4%BD%95%E5%87%86%E5%A4%87apache-release/</guid><description>
+&lt;/ul></description></item><item><title>Blog: 如何准备Apache Release</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/09/02/%E5%A6%82%E4%BD%95%E5%87%86%E5%A4%87apache-release/</link><pubDate>Sun, 02 Sep 2018 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/09/02/%E5%A6%82%E4%BD%95%E5%87%86%E5%A4%87apache-release/</guid><description>
 &lt;h2 id="理解apache发布的内容和流程">理解Apache发布的内容和流程&lt;/h2>
 &lt;p>总的来说，Source Release是Apache关注的重点，也是发布的必须内容；而Binary Release是可选项，Dubbo可以选择是否发布二进制包到Apache仓库或者发布到Maven中央仓库。&lt;/p>
 &lt;p>请参考以下链接，找到更多关于ASF的发布指南:&lt;/p>
@@ -2208,7 +2208,7 @@ https://dist.apache.org/repos/dist/dev/dubbo/${release_version}/
 &lt;li>删除&lt;a href="https://dist.apache.org/repos/dist/release/dubbo">release&lt;/a>目录下上一个版本的发布包，这些包会被自动保存在&lt;a href="https://archive.apache.org/dist/incubator/dubbo">这里&lt;/a>&lt;/li>
 &lt;li>发布GitHub上的&lt;a href="https://github.com/apache/dubbo/releases">release notes&lt;/a>&lt;/li>
 &lt;li>修改GitHub的Readme文件，将版本号更新到最新发布的版本&lt;/li>
-&lt;li>在官网下载&lt;a href="https://dubbo.apache.org/en/blog/2020/05/18/past-releases/">页面&lt;/a>上添加最新版本的下载链接。最新的下载链接应该类似&lt;code>https://www.apache.org/dyn/closer.cgi?path=incubator/dubbo/$VERSION/apache-dubbo-$VERSION-source-release.zip&lt;/code>. 同时更新以前版本的下载链接，改为类似&lt;code>https://archive.apache.org/dist/dubbo/$VERSION/apache-dubbo-$VERSION-bin-release.zip&lt;/code>. 具体可以参考过往的&lt;a href="https://dubbo.apache.org/en/blog/2020/05/18/past-releases/">下载链接&lt;/a>&lt;/li>
+&lt;li>在官网下载&lt;a href="http://static.dubbo.apache.org:8080/en/blog/2020/05/18/past-releases/">页面&lt;/a>上添加最新版本的下载链接。最新的下载链接应该类似&lt;code>https://www.apache.org/dyn/closer.cgi?path=incubator/dubbo/$VERSION/apache-dubbo-$VERSION-source-release.zip&lt;/code>. 同时更新以前版本的下载链接，改为类似&lt;code>https://archive.apache.org/dist/dubbo/$VERSION/apache-dubbo-$VERSION-bin-release.zip&lt;/code>. 具体可以参考过往的&lt;a href="http://static.dubbo.apache.org:8080/en/blog/2020/05/18/past-releases/">下载链接&lt;/a>&lt;/li>
 &lt;li>合并&lt;code>${release-version}-release&lt;/code>分支到对应的主干分支， 然后删除相应的release分支，例如: &lt;code>git push origin --delete 2.7.0-release&lt;/code>&lt;/li>
 &lt;li>发邮件到 &lt;code>dev@dubbo.apache.org&lt;/code> 和 &lt;code>general@incubator.apache.org&lt;/code>
 宣布release邮件模板：&lt;/li>
@@ -2251,8 +2251,8 @@ https://dist.apache.org/repos/dist/dev/dubbo/${release_version}/
 &lt;h4 id="gpg-signing-failed-inappropriate-ioctl-for-device">gpg: signing failed: Inappropriate ioctl for device&lt;/h4>
 &lt;p>If you&amp;rsquo;ve encoutered this error, try the following commands:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>export GPG_TTY=$(tty)
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Blog: 第四届Dubbo开发者沙龙于8月26日在成都举行</title><link>https://dubbo.apache.org/zh-cn/blog/2018/08/26/%E7%AC%AC%E5%9B%9B%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E4%BA%8E8%E6%9C%8826%E6%97%A5%E5%9C%A8%E6%88%90%E9%83%BD%E4%B8%BE%E8%A1%8C/</link><pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2018/08/26/%E7%AC%AC%E5%9B%9B%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E4%BA%8E8%E6%9C%8826%E6%97%A5%E5%9C%A8%E6%88%90%E9%83%BD%E4%B8%BE%E8%A1%8C/</guid><description>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/meetup-chengdu/all-hands.webp" alt="img">&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Blog: 第四届Dubbo开发者沙龙于8月26日在成都举行</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/08/26/%E7%AC%AC%E5%9B%9B%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E4%BA%8E8%E6%9C%8826%E6%97%A5%E5%9C%A8%E6%88%90%E9%83%BD%E4%B8%BE%E8%A1%8C/</link><pubDate>Sun, 26 Aug 2018 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/08/26/%E7%AC%AC%E5%9B%9B%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E4%BA%8E8%E6%9C%8826%E6%97%A5%E5%9C%A8%E6%88%90%E9%83%BD%E4%B8%BE%E8%A1%8C/</guid><description>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/meetup-chengdu/all-hands.webp" alt="img">&lt;/p>
 &lt;h2 id="用户深度沟通交流">用户深度沟通交流&lt;/h2>
 &lt;p>8.26上午10:00-12:00，邀请到货车帮，云图金控，前BBD，飞鱼星四家公司开源爱好者及重度用户参与面对面交流；据参与者反馈，解答了对Dubbo的诸多疑惑，特别是如何参与贡献社区，以及捐献代码所带来的价值点。希望后面可以更加深入参与Dubbo社区及活动中。&lt;/p>
 &lt;h2 id="meetup活动信息">meetup活动信息&lt;/h2>
@@ -2260,14 +2260,14 @@ https://dist.apache.org/repos/dist/dev/dubbo/${release_version}/
 &lt;h2 id="报名信息">报名信息&lt;/h2>
 &lt;p>Aliware Open Source•成都站-Apache Dubbo开发者沙龙于8月26日(周日)在成都高新区天府五街200号菁蓉国际广场8号楼2楼会议厅举办，技术GG们的思想盛宴，干货与福利一个都不会少。&lt;/p>
 &lt;p>报名链接：http://www.huodongxing.com/event/7453091088400&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dubbo-chengdu-meetup-img.jpg" alt="img">&lt;/p></description></item><item><title>Blog: 第三届Dubbo开发者沙龙在深圳成功举办</title><link>https://dubbo.apache.org/zh-cn/blog/2018/07/30/%E7%AC%AC%E4%B8%89%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E6%B7%B1%E5%9C%B3%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</link><pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2018/07/30/%E7%AC%AC%E4%B8%89%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E6%B7%B1%E5%9C%B3%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</guid><description>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dubbo-chengdu-meetup-img.jpg" alt="img">&lt;/p></description></item><item><title>Blog: 第三届Dubbo开发者沙龙在深圳成功举办</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/07/30/%E7%AC%AC%E4%B8%89%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E6%B7%B1%E5%9C%B3%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</link><pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/07/30/%E7%AC%AC%E4%B8%89%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E6%B7%B1%E5%9C%B3%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</guid><description>
 &lt;p>第三届Dubbo开发者沙龙在深圳成功举办，超过2000位开发者报名，现场参与人数700+，通过阿里云天池、云栖社区、大咖说引导线上直播观看次数17000+&lt;/p>
 &lt;p>分享嘉宾&lt;/p>
 &lt;ul>
 &lt;li>陈志轩: Dubbo开源现状和2.7规划&lt;/li>
 &lt;li>康彬: 乐信集团的微服务化之路&lt;/li>
 &lt;li>林佳梁: Sentinel——企业用户的全方位流量哨兵&lt;/li>
-&lt;/ul></description></item><item><title>Blog: 第二届Dubbo开发者沙龙在上海成功举办</title><link>https://dubbo.apache.org/zh-cn/blog/2018/06/23/%E7%AC%AC%E4%BA%8C%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E4%B8%8A%E6%B5%B7%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</link><pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2018/06/23/%E7%AC%AC%E4%BA%8C%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E4%B8%8A%E6%B5%B7%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</guid><description>
+&lt;/ul></description></item><item><title>Blog: 第二届Dubbo开发者沙龙在上海成功举办</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/06/23/%E7%AC%AC%E4%BA%8C%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E4%B8%8A%E6%B5%B7%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</link><pubDate>Sat, 23 Jun 2018 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/06/23/%E7%AC%AC%E4%BA%8C%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E4%B8%8A%E6%B5%B7%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</guid><description>
 &lt;p>第二届Dubbo开发者沙龙在上海成功举办，超过700位开发者报名，现场参与人数300+，通过阿里云天池、云栖社区、大咖说引导线上直播观看次数10000+&lt;/p>
 &lt;p>分享嘉宾及PPT:&lt;/p>
 &lt;ul>
@@ -2275,7 +2275,7 @@ https://dist.apache.org/repos/dist/dev/dubbo/${release_version}/
 &lt;li>小马哥: Dubbo Cloud Native 之路的实践与思考 (中文) &lt;a href="https://github.com/dubbo/awesome-dubbo/blob/master/slides/meetup/201806%40Shanghai/dubbo-cloud-native-practices-and-thoughts.pdf">slides&lt;/a>&lt;/li>
 &lt;li>郭平: Nacos - 贡献Dubbo生态，阿里巴巴注册中心和配置中心开源计划 (中文) &lt;a href="https://github.com/dubbo/awesome-dubbo/blob/master/slides/meetup/201806%40Shanghai/nacos-open-source-initiative.pdf">slides&lt;/a>&lt;/li>
 &lt;li>潘志伟: Dubbo在互金行业的应用场景 (中文) &lt;a href="https://github.com/dubbo/awesome-dubbo/blob/master/slides/meetup/201806%40Shanghai/dubbo-practices-on-internet-finance-industries.pdf">slides&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Blog: 首届Dubbo开发者沙龙在北京成功举办</title><link>https://dubbo.apache.org/zh-cn/blog/2018/05/12/%E9%A6%96%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E5%8C%97%E4%BA%AC%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</link><pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2018/05/12/%E9%A6%96%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E5%8C%97%E4%BA%AC%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</guid><description>
+&lt;/ul></description></item><item><title>Blog: 首届Dubbo开发者沙龙在北京成功举办</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/05/12/%E9%A6%96%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E5%8C%97%E4%BA%AC%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</link><pubDate>Sat, 12 May 2018 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/05/12/%E9%A6%96%E5%B1%8Adubbo%E5%BC%80%E5%8F%91%E8%80%85%E6%B2%99%E9%BE%99%E5%9C%A8%E5%8C%97%E4%BA%AC%E6%88%90%E5%8A%9F%E4%B8%BE%E5%8A%9E/</guid><description>
 &lt;p>首届Dubbo开发者沙龙在北京成功举办, 超过400位开发者参加。这是一个很好的开始！&lt;/p>
 &lt;p>分享嘉宾及主体如下：&lt;/p>
 &lt;ul>
@@ -2283,9 +2283,9 @@ https://dist.apache.org/repos/dist/dev/dubbo/${release_version}/
 &lt;li>刘军: 第四届阿里中间件性能挑战赛 &lt;a href="https://github.com/dubbo/awesome-dubbo/raw/master/slides/meetup/201805%40Beijing/introduction-to-4th-aliware-performance-challenge.pdf">PDF&lt;/a>&lt;/li>
 &lt;li>陈志轩: 通过 Dubbo 和 Spring-boot 快速构建微服务 &lt;a href="https://github.com/dubbo/awesome-dubbo/raw/master/slides/meetup/201805%40Beijing/quickly-building-microservice-with-dubbo-and-springboot.pdf">PDF&lt;/a>&lt;/li>
 &lt;li>王欣: Dubbo 和微店的服务化实践历程分享 &lt;a href="https://github.com/dubbo/awesome-dubbo/raw/master/slides/meetup/201805%40Beijing/dubbo-and-weidian's-practice-on-microservice-architecture.pdf">PDF&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Blog: ApacheCon NA 大会议程公布</title><link>https://dubbo.apache.org/zh-cn/blog/2018/05/02/apachecon-na-%E5%A4%A7%E4%BC%9A%E8%AE%AE%E7%A8%8B%E5%85%AC%E5%B8%83/</link><pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2018/05/02/apachecon-na-%E5%A4%A7%E4%BC%9A%E8%AE%AE%E7%A8%8B%E5%85%AC%E5%B8%83/</guid><description>
-&lt;p>罗毅/刘军将在蒙特利尔举办的 ApacheCon 大会上进行题为&amp;quot;Introducing Apache Dubbo(Incubating): What is Dubbo and How it Works&amp;quot;的演讲。请点击&lt;a href="https://apachecon.dukecon.org/acna/2018/#/scheduledEvent/b8db9dc580d85853f">此处&lt;/a>查看大会议程，并在&lt;a href="https://www.eventbrite.com/e/apachecon-north-america-2018-registration-43200327342">此处&lt;/a>中进行注册。&lt;/p></description></item><item><title>Blog: 谷歌编程之夏会议上2018个项目被宣布</title><link>https://dubbo.apache.org/zh-cn/blog/2018/04/25/%E8%B0%B7%E6%AD%8C%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%8F%E4%BC%9A%E8%AE%AE%E4%B8%8A2018%E4%B8%AA%E9%A1%B9%E7%9B%AE%E8%A2%AB%E5%AE%A3%E5%B8%83/</link><pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2018/04/25/%E8%B0%B7%E6%AD%8C%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%8F%E4%BC%9A%E8%AE%AE%E4%B8%8A2018%E4%B8%AA%E9%A1%B9%E7%9B%AE%E8%A2%AB%E5%AE%A3%E5%B8%83/</guid><description>
-&lt;p>谷歌编程之夏会议上2018个项目被宣布, Raghu Reddy 的项目&amp;quot;Apache Dubbo 扩展串行协议支持&amp;quot; 被&lt;a href="https://summerofcode.withgoogle.com/projects/#4747840161579008">接受&lt;/a>! 祝贺他!&lt;/p></description></item><item><title>Blog: 在DockerHub发布Dubbo Admin镜像</title><link>https://dubbo.apache.org/zh-cn/blog/2018/04/23/%E5%9C%A8dockerhub%E5%8F%91%E5%B8%83dubbo-admin%E9%95%9C%E5%83%8F/</link><pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2018/04/23/%E5%9C%A8dockerhub%E5%8F%91%E5%B8%83dubbo-admin%E9%95%9C%E5%83%8F/</guid><description>
+&lt;/ul></description></item><item><title>Blog: ApacheCon NA 大会议程公布</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/05/02/apachecon-na-%E5%A4%A7%E4%BC%9A%E8%AE%AE%E7%A8%8B%E5%85%AC%E5%B8%83/</link><pubDate>Wed, 02 May 2018 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/05/02/apachecon-na-%E5%A4%A7%E4%BC%9A%E8%AE%AE%E7%A8%8B%E5%85%AC%E5%B8%83/</guid><description>
+&lt;p>罗毅/刘军将在蒙特利尔举办的 ApacheCon 大会上进行题为&amp;quot;Introducing Apache Dubbo(Incubating): What is Dubbo and How it Works&amp;quot;的演讲。请点击&lt;a href="https://apachecon.dukecon.org/acna/2018/#/scheduledEvent/b8db9dc580d85853f">此处&lt;/a>查看大会议程，并在&lt;a href="https://www.eventbrite.com/e/apachecon-north-america-2018-registration-43200327342">此处&lt;/a>中进行注册。&lt;/p></description></item><item><title>Blog: 谷歌编程之夏会议上2018个项目被宣布</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/04/25/%E8%B0%B7%E6%AD%8C%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%8F%E4%BC%9A%E8%AE%AE%E4%B8%8A2018%E4%B8%AA%E9%A1%B9%E7%9B%AE%E8%A2%AB%E5%AE%A3%E5%B8%83/</link><pubDate>Wed, 25 Apr 2018 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/04/25/%E8%B0%B7%E6%AD%8C%E7%BC%96%E7%A8%8B%E4%B9%8B%E5%A4%8F%E4%BC%9A%E8%AE%AE%E4%B8%8A2018%E4%B8%AA%E9%A1%B9%E7%9B%AE%E8%A2%AB%E5%AE%A3%E5%B8%83/</guid><description>
+&lt;p>谷歌编程之夏会议上2018个项目被宣布, Raghu Reddy 的项目&amp;quot;Apache Dubbo 扩展串行协议支持&amp;quot; 被&lt;a href="https://summerofcode.withgoogle.com/projects/#4747840161579008">接受&lt;/a>! 祝贺他!&lt;/p></description></item><item><title>Blog: 在DockerHub发布Dubbo Admin镜像</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/04/23/%E5%9C%A8dockerhub%E5%8F%91%E5%B8%83dubbo-admin%E9%95%9C%E5%83%8F/</link><pubDate>Mon, 23 Apr 2018 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/04/23/%E5%9C%A8dockerhub%E5%8F%91%E5%B8%83dubbo-admin%E9%95%9C%E5%83%8F/</guid><description>
 &lt;p>Dubbo Admin是Dubbo的服务治理中心，提供了大量日常运维所需的服务治理、配置管理等功能。&lt;/p>
 &lt;p>Dubbo Admin同时包含了前端代码和后端代码，如果用户需要自己下载源码并编译打包，需要花费一定时间。
 特别是对于一些希望快速调研和试用Dubbo Admin的用户，这种流程的体验并不是很好。&lt;/p>
@@ -2304,7 +2304,7 @@ Docker官方维护了一个公共仓库DockerHub，该仓库还有很多国内�
 后者明显操作性和便捷性要好很多，目前Dubbo Admin的镜像也是这样构建发布的。&lt;/p>
 &lt;p>当Dubbo Admin有新版本发布以后，需要在项目的docker目录新增一个Dockerfile文件，可以参考目前0.1.0版本的Dockerfile&lt;sup id="fnref:3">&lt;a href="#fn:3" class="footnote-ref" role="doc-noteref">3&lt;/a>&lt;/sup>，其中的配置根据具体的版本可能有细微差别，但是大致上是一致的。&lt;/p>
 &lt;p>在添加了Dockerfile之后，进入DockerHub对应的管理界面新增Build Rules&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/dockerhub-build-rules.png" alt="dockerhub-build-rules.png">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/dockerhub-build-rules.png" alt="dockerhub-build-rules.png">&lt;/p>
 &lt;p>根据实际情况填写即可。这里需要注意两点：&lt;/p>
 &lt;ul>
 &lt;li>latest 版本要和最新的版本配置一致&lt;/li>
@@ -2328,9 +2328,9 @@ Docker官方维护了一个公共仓库DockerHub，该仓库还有很多国内�
 &lt;p>&lt;a href="https://github.com/apache/dubbo-admin/blob/develop/docker/0.1.0/Dockerfile">https://github.com/apache/dubbo-admin/blob/develop/docker/0.1.0/Dockerfile&lt;/a>&amp;#160;&lt;a href="#fnref:3" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
 &lt;/li>
 &lt;/ol>
-&lt;/div></description></item><item><title>Blog: Dubbo路线图在QCon Beijing 2018上公布</title><link>https://dubbo.apache.org/zh-cn/blog/2018/04/22/dubbo%E8%B7%AF%E7%BA%BF%E5%9B%BE%E5%9C%A8qcon-beijing-2018%E4%B8%8A%E5%85%AC%E5%B8%83/</link><pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2018/04/22/dubbo%E8%B7%AF%E7%BA%BF%E5%9B%BE%E5%9C%A8qcon-beijing-2018%E4%B8%8A%E5%85%AC%E5%B8%83/</guid><description>
-&lt;p>罗毅在Qcon Beijing 2018上进行了Dubbo开源现状及未来规划的主题演讲。详细内容请查看&lt;a href="https://github.com/dubbo/awesome-dubbo/raw/master/slides/qcon2018/dubbo-present-and-future.pdf">幻灯片&lt;/a>。&lt;/p></description></item><item><title>Blog: 如何参与贡献Dubbo社区</title><link>https://dubbo.apache.org/zh-cn/blog/2018/03/11/%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AEdubbo%E7%A4%BE%E5%8C%BA/</link><pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/blog/2018/03/11/%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AEdubbo%E7%A4%BE%E5%8C%BA/</guid><description>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/involve-dubbo/head.jpg" alt="img">&lt;/p>
+&lt;/div></description></item><item><title>Blog: Dubbo路线图在QCon Beijing 2018上公布</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/04/22/dubbo%E8%B7%AF%E7%BA%BF%E5%9B%BE%E5%9C%A8qcon-beijing-2018%E4%B8%8A%E5%85%AC%E5%B8%83/</link><pubDate>Sun, 22 Apr 2018 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/04/22/dubbo%E8%B7%AF%E7%BA%BF%E5%9B%BE%E5%9C%A8qcon-beijing-2018%E4%B8%8A%E5%85%AC%E5%B8%83/</guid><description>
+&lt;p>罗毅在Qcon Beijing 2018上进行了Dubbo开源现状及未来规划的主题演讲。详细内容请查看&lt;a href="https://github.com/dubbo/awesome-dubbo/raw/master/slides/qcon2018/dubbo-present-and-future.pdf">幻灯片&lt;/a>。&lt;/p></description></item><item><title>Blog: 如何参与贡献Dubbo社区</title><link>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/03/11/%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AEdubbo%E7%A4%BE%E5%8C%BA/</link><pubDate>Sun, 11 Mar 2018 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/blog/2018/03/11/%E5%A6%82%E4%BD%95%E5%8F%82%E4%B8%8E%E8%B4%A1%E7%8C%AEdubbo%E7%A4%BE%E5%8C%BA/</guid><description>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/involve-dubbo/head.jpg" alt="img">&lt;/p>
 &lt;h2 id="前言">前言&lt;/h2>
 &lt;p>本文首次分享是在Apache Dubbo成都meetup上，这个话题是第一次在meetup上讲，不是我们没有更好的话题，相反，我们认为这个话题非常重要，甚至建议这个话题以后每次meetup都要讲。&lt;/p>
 &lt;p>Dubbo的发展历史大家应该并不陌生了，这里我还是简单回顾一下。Dubbo于2011年在github开源，后面几年由于一些原因停止了维护，直接去年7月份阿里重启维护，并于2018年2月16日捐献给Apache。&lt;/p>
@@ -2342,12 +2342,12 @@ Docker官方维护了一个公共仓库DockerHub，该仓库还有很多国内�
 &lt;p>最早NCSA HTTPd服务器是一个叫Rob McCool的人开发的，但是后来慢慢失去了兴趣，导致这个功能强大又好用的服务器没人维护；于是一些爱好者和用户就自发开始维护起来，并不断改善功能、发布版本；为了更好进行沟通，一哥们就创建了一个邮件组，并把维护工作高效组织起来，且自称是&lt;code>Apache组织&lt;/code>，并把这个软件叫&lt;code>Apache 服务器&lt;/code>。&lt;/p>
 &lt;p>这也是为什么Apache的所有的项目到今天为止依然以邮件列表作为沟通的主要方式。&lt;/p>
 &lt;p>关于Apache的命名来源，从北美当地的一支叫&lt;code>Apache&lt;/code>的印第安部落名称而来，这支部落以高超的军事素养和超人的忍耐力著称，19世纪后半期对侵占他们领土的入侵者进行了反抗；为了对这支部落表示敬仰，就取了这个名字；但这里还流传着一个小故事，说是在NCSA HTTPd基础上，大家都通过打补丁不断在修改这个软件，被戏称为&lt;code>A Patchy Server&lt;/code>，和&lt;code>Apache Server&lt;/code>读音很像。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/involve-dubbo/apache-history.png" alt="img">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/involve-dubbo/apache-history.png" alt="img">&lt;/p>
 &lt;p>随着后来商业需求扩大，围绕Apache HTTP服务器的项目越来越多，后来越来越多的项目启动，也有很多外部组织捐献项目；为了让这些外部项目能顺利进入到Apache基金会，2002年创建了Incubator（孵化）项目。可以看到，经过10多年的发展，到2010年，75个顶级项目，30个孵化项目，每天2697封讨论邮件；2018年这个数据进一步增长，194个顶级项目，54个孵化项目，3255个committers；其中中国人主导的项目，有RocketMQ，WeeX，ECharts，Skywalking等。&lt;/p>
 &lt;p>Dubbo正在成为Apache顶级项目的路上——Apache孵化项目中。&lt;/p>
 &lt;p>回顾一下Apache这些历史和数据，我们不难发现几个关键词：兴趣、参与、邮件；这些就是我们后面要重点介绍的&lt;code>The Apache Way&lt;/code>。&lt;/p>
 &lt;h2 id="asf组织架构">ASF组织架构&lt;/h2>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/involve-dubbo/apache-org.png" alt="img">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/involve-dubbo/apache-org.png" alt="img">&lt;/p>
 &lt;p>我们知道每个组织都有它自己的架构，ASF同样也不例外；那Apache的组织架构是什么样的呢？它有什么独特的地方吗？这里特别要强调的是Project Management Committees，即 PMC，每个项目从孵化阶段开始就会有PMC，主要负责保证开源项目的社区活动都能运转良好，这里运转的机制就是&lt;code>The Apache Way&lt;/code>。&lt;/p>
 &lt;p>图中，Board就是负责整个基金会符合章程的运作。Board我们一般很少能接触到，接触更多的是PMC以及下面的这几层。&lt;/p>
 &lt;p>参与Apache项目社区活动的人，一般分为以下几类：&lt;/p>
@@ -2369,7 +2369,7 @@ Docker官方维护了一个公共仓库DockerHub，该仓库还有很多国内�
 &lt;p>本文的目的就是告诉大家，从User到Contributor没有大家想像的那么难，从Contributor到Committer也不是不可能；只要大家拥有一颗开源的心，找到自己感兴趣的项目，并持续投入，付出肯定会有回报。&lt;/p>
 &lt;h2 id="the-apache-way">The Apache Way&lt;/h2>
 &lt;p>就像你加入一家公司需要了解这家公司的文化一样，参与Apache开源项目之前，同样我们需要需要了解ASF的文化，这个文化就称为&lt;code>The Apache Way&lt;/code>。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/involve-dubbo/apache-way.png" alt="img">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/involve-dubbo/apache-way.png" alt="img">&lt;/p>
 &lt;p>这里想特别强调以下几点：&lt;/p>
 &lt;ul>
 &lt;li>社区胜于代码：把项目构建出来这不是开源，去构建社区才是真正的开源；对社区而言，一切都是围绕代码而生，无代码则社区不复存在；在代码之上，则是如何做事、如何待人、如何决策的理念体现；一个健康的社区远比优秀的代码重要——如果代码奇烂无比，社区可以重写，但社区有了毛病，代码最终也会付之东流；&lt;/li>
@@ -2377,14 +2377,14 @@ Docker官方维护了一个公共仓库DockerHub，该仓库还有很多国内�
 &lt;li>任人唯贤：&lt;code>Those that have proven they can do, get to do more.&lt;/code> 特别强调一点，贡献绝不仅仅是代码，贡献可以是很多方面，接下来我们结合Dubbo来讲，大家如何参与并贡献；&lt;/li>
 &lt;/ul>
 &lt;h2 id="参与dubbo社区">参与Dubbo社区&lt;/h2>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/involve-dubbo/dubbo-community.png" alt="img">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/involve-dubbo/dubbo-community.png" alt="img">&lt;/p>
 &lt;p>要参与Dubbo社区，就要先大概了解一下目前社区的工作方式。总结一句话就是4个角色、3个途径以及2个代码组；&lt;/p>
 &lt;ol>
 &lt;li>4个角色前面也提到过了，分别是User、Contributor、Committer、PMC；这里特别要强调用的是，角色之间不是孤立的，比如提功能建议的也可以是Committer或Contributor等；PMC有投票权，但其他人一样也可以投票，这本身就是一种参与、一种贡献；&lt;/li>
 &lt;li>3个途径，分别是Dubbo官网、github、dev邮件列表；目前比较活跃的是github issue/PR；我们鼓励按&lt;code>The Apache Way&lt;/code>的方式，使用邮件列表交流，让导师看到我们的贡献；&lt;/li>
 &lt;li>2个代码组，一个是 &lt;code>github.com/apache/dubbo*&lt;/code> ，这里是dubbo孵化的项目，目前主要包含dubbo-rpc、dubbo-spring-boot-start、dubbo-ops三个部分；另外一个就是 &lt;code>github.com/dubbo&lt;/code>，这个是dubbo作为微服务解决方案的所有相关的生态部分，包括dubbo-rpc的扩展、dubbo与其他产品集成、dubbo多语言客户端实现以及一些工具和套件等；&lt;/li>
 &lt;/ol>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/involve-dubbo/dubbo-project.png" alt="img">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/involve-dubbo/dubbo-project.png" alt="img">&lt;/p>
 &lt;p>所以，对于想参与Dubbo社区、想为Dubbo这个微服务解决方案自己一份力量的人来说，以下就是你们现在就可以开始做的：&lt;/p>
 &lt;ol>
 &lt;li>开发邮件组可以订阅起来，可以参考这里：https://github.com/apache/dubbo/wiki/Mailing-list-subscription-guide&lt;/li>
@@ -2399,7 +2399,7 @@ Docker官方维护了一个公共仓库DockerHub，该仓库还有很多国内�
 &lt;/ol>
 &lt;h2 id="加入apache孵化">加入Apache孵化&lt;/h2>
 &lt;p>如果大家有好的项目希望捐献给Apache，这个流程可以参考一下；&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/involve-dubbo/get-into-apache.png" alt="img">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/involve-dubbo/get-into-apache.png" alt="img">&lt;/p>
 &lt;p>进入 Apache 分为三个阶段，准备阶段、孵化阶段和毕业阶段。准备阶段需要做的事情要找到愿意帮助孵化的导师，向Apache 提交进入孵化的申请，经过导师们讨论并投票，如果通过的话就可以进入孵化。孵化阶段分为两大环节，第一个环节是公司和个人签署协议向Apache 移交代码和知识产权，之后就是在导师的指导下按照Apache的规范做版本迭代、社区运营、发展更多的Committer；如果最终通过了成熟度评估，就可以顺利毕业成为Apache的顶级项目。&lt;/p>
 &lt;h2 id="结语">结语&lt;/h2>
 &lt;p>希望越来越多的公司团队和个人能够贡献到国际化的开源社区里去，一起打造我们中国的开源品牌！也希望大家都能愉快去贡献，罗马非一日建成，但付出一定会有回报。&lt;/p>

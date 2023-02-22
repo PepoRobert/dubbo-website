@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 全局事务</title><link>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/transaction/</link><description>Recent content in 全局事务 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dubbo.apache.org/zh-cn/overview/what/ecosystem/transaction/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview: Seata</title><link>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/transaction/seata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/transaction/seata/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 全局事务</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/transaction/</link><description>Recent content in 全局事务 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/transaction/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview: Seata</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/transaction/seata/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/transaction/seata/</guid><description>
 &lt;h2 id="案例">案例&lt;/h2>
 &lt;p>用户采购商品业务，整个业务包含3个微服务:&lt;/p>
 &lt;ul>
@@ -7,7 +7,7 @@
 &lt;li>账户服务: 用户账户金额扣减。&lt;/li>
 &lt;/ul>
 &lt;h3 id="业务结构图">业务结构图&lt;/h3>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/fescar/fescar-1.png" alt="Architecture">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/fescar/fescar-1.png" alt="Architecture">&lt;/p>
 &lt;h3 id="storageservice">StorageService&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">public&lt;/span> &lt;span style="color:#268bd2">interface&lt;/span> &lt;span style="color:#268bd2">StorageService&lt;/span> &lt;span style="color:#719e07">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#586e75">/**
@@ -67,7 +67,7 @@
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#719e07">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="seata-分布式事务解决方案">Seata 分布式事务解决方案&lt;/h2>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/fescar/fescar-2.png" alt="undefined">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/fescar/fescar-2.png" alt="undefined">&lt;/p>
 &lt;p>此处仅仅需要一行注解 &lt;code>@GlobalTransactional&lt;/code> 写在业务发起方的方法上:&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-java" data-lang="java">&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">@GlobalTransactional&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">public&lt;/span> &lt;span style="color:#dc322f">void&lt;/span> &lt;span style="color:#268bd2">purchase&lt;/span>&lt;span style="color:#719e07">(&lt;/span>String userId&lt;span style="color:#719e07">,&lt;/span> String commodityCode&lt;span style="color:#719e07">,&lt;/span> &lt;span style="color:#dc322f">int&lt;/span> orderCount&lt;span style="color:#719e07">)&lt;/span> &lt;span style="color:#719e07">{&lt;/span>

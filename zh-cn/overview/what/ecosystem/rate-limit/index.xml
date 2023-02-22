@@ -1,9 +1,9 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 限流降级</title><link>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/rate-limit/</link><description>Recent content in 限流降级 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://dubbo.apache.org/zh-cn/overview/what/ecosystem/rate-limit/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview: Sentinel</title><link>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/rate-limit/sentinel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/rate-limit/sentinel/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Apache Dubbo – 限流降级</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/rate-limit/</link><description>Recent content in 限流降级 on Apache Dubbo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/rate-limit/index.xml" rel="self" type="application/rss+xml"/><item><title>Overview: Sentinel</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/rate-limit/sentinel/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/rate-limit/sentinel/</guid><description>
 &lt;p>在复杂的生产环境下可能部署着成千上万的 Dubbo 服务实例，流量持续不断地进入，服务之间进行相互调用。但是分布式系统中可能会因流量激增、系统负载过高、网络延迟等一系列问题，导致某些服务不可用，如果不进行相应的控制可能导致级联故障，影响服务的可用性，因此如何对流量进行合理的控制，成为保障服务稳定性的关键。&lt;/p>
 &lt;p>&lt;a href="https://github.com/alibaba/Sentinel">Sentinel&lt;/a> 是阿里中间件团队开源的，面向分布式服务架构的轻量级流量控制产品，主要以流量为切入点，从&lt;strong>流量控制&lt;/strong>、&lt;strong>熔断降级&lt;/strong>、&lt;strong>系统负载保护&lt;/strong>等多个维度来帮助用户保护服务的稳定性。本文将基于 Dubbo，看看 Sentinel 是如何进行流量控制的，并且提供 Dubbo 整合 Sentinel 的最佳实践。&lt;/p>
 &lt;h2 id="快速接入-sentinel">快速接入 Sentinel&lt;/h2>
 &lt;p>Sentinel 意为&lt;strong>哨兵&lt;/strong>，这个命名形象的诠释了 Sentinel 在分布式系统中的工作角色和重要性。以 Sentinel 在 Dubbo 生态系统中的作用为例，Dubbo 的核心模块包括注册中心、服务提供方、服务消费方（服务调用方）和监控四个模块。Sentinel 通过对服务提供方和服务消费方的限流来进一步提升服务的可用性。接下来我们看看 Sentinel 对服务提供方和服务消费方限流的技术实现方式。&lt;/p>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/architecture.png" alt="Dubbo Arch">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/architecture.png" alt="Dubbo Arch">&lt;/p>
 &lt;p>Sentinel 提供了与 Dubbo 适配的模块 – &lt;a href="https://github.com/dubbo/dubbo-sentinel-support">Sentinel Dubbo Adapter&lt;/a>，包括针对服务提供方的过滤器和服务消费方的过滤器（Filter）。使用时我们只需引入以下模块（以 Maven 为例）：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-xml" data-lang="xml">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#268bd2">&amp;lt;dependency&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#268bd2">&amp;lt;groupId&amp;gt;&lt;/span>com.alibaba.csp&lt;span style="color:#268bd2">&amp;lt;/groupId&amp;gt;&lt;/span>
@@ -33,7 +33,7 @@
 &lt;ul>
 &lt;li>&lt;strong>单台设备监控&lt;/strong>：当在机器列表中看到您的机器，就代表着已经成功接入控制台，可以查看单台设备的设备名称、IP地址、端口号、健康状态和心跳时间等信息。&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/2018/07/27/sentinel/machinediscover.png" alt="Discovery">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/2018/07/27/sentinel/machinediscover.png" alt="Discovery">&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>链路监控&lt;/strong>：簇点链路实时的去拉取指定客户端资源的运行情况，它提供了两种展示模式，一种用书状结构展示资源的调用链路；另外一种则不区分调用链路展示资源的运行情况。通过链路监控，可以查看到每个资源的流控和降级的历史状态。&lt;/li>
 &lt;/ul>
@@ -46,19 +46,19 @@
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align:center">&lt;img src="https://dubbo.apache.org/imgs/blog/2018/07/27/sentinel/resourceTree.png" alt="resourceTree">&lt;/td>
-&lt;td style="text-align:left">&lt;img src="https://dubbo.apache.org/imgs/blog/2018/07/27/sentinel/sentine_dashboard.gif" alt="cluster">&lt;/td>
+&lt;td style="text-align:center">&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/2018/07/27/sentinel/resourceTree.png" alt="resourceTree">&lt;/td>
+&lt;td style="text-align:left">&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/2018/07/27/sentinel/sentine_dashboard.gif" alt="cluster">&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;ul>
 &lt;li>&lt;strong>聚合监控&lt;/strong>：同一个服务下的所有机器的簇点信息会被汇总，实现实时监控，精确度达秒级。&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/sentinel-dashboard-metrics.png" alt="秒级实时监控">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/sentinel-dashboard-metrics.png" alt="秒级实时监控">&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>规则配置&lt;/strong>：可以查看已有的限流、降级和系统保护规则，并实时地进行配置。&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="https://dubbo.apache.org/imgs/blog/sentinel-dashboard-view-rules.png" alt="规则配置">&lt;/p>
+&lt;p>&lt;img src="http://static.dubbo.apache.org:8080/imgs/blog/sentinel-dashboard-view-rules.png" alt="规则配置">&lt;/p>
 &lt;h2 id="sentinel-基于-dubbo-的最佳实践">Sentinel 基于 Dubbo 的最佳实践&lt;/h2>
 &lt;blockquote>
 &lt;p>具体 Demo 代码请见 &lt;a href="https://github.com/alibaba/Sentinel/tree/master/sentinel-demo/sentinel-demo-dubbo">sentinel-demo-dubbo&lt;/a>。&lt;/p>
@@ -89,7 +89,7 @@
 &lt;h4 id="服务降级">服务降级&lt;/h4>
 &lt;p>当服务依赖于多个下游服务，而某个下游服务调用非常慢时，会严重影响当前服务的调用。这里我们可以利用 Sentinel 熔断降级的功能，为调用端配置基于平均 RT 的&lt;a href="https://github.com/alibaba/Sentinel/wiki/%E7%86%94%E6%96%AD%E9%99%8D%E7%BA%A7">降级规则&lt;/a>。这样当调用链路中某个服务调用的平均 RT 升高，在一定的次数内超过配置的 RT 阈值，Sentinel 就会对此调用资源进行降级操作，接下来的调用都会立刻拒绝，直到过了一段设定的时间后才恢复，从而保护服务不被调用端短板所影响。同时可以配合 fallback 功能使用，在被降级的时候提供相应的处理逻辑。&lt;/p>
 &lt;h3 id="fallback">Fallback&lt;/h3>
-&lt;p>从 0.1.1 版本开始，Sentinel Dubbo Adapter 还支持配置全局的 fallback 函数，可以在 Dubbo 服务被限流/降级/负载保护的时候进行相应的 fallback 处理。用户只需要实现自定义的 &lt;a href="https://github.com/alibaba/Sentinel/blob/master/sentinel-adapter/sentinel-dubbo-adapter/src/main/java/com/alibaba/csp/sentinel/adapter/dubbo/fallback/DubboFallback.java">&lt;code>DubboFallback&lt;/code>&lt;/a> 接口，并通过 &lt;code>DubboFallbackRegistry&lt;/code> 注册即可。默认情况会直接将 &lt;code>BlockException&lt;/code> 包装后抛出。同时，我们还可以配合 &lt;a href="https://dubbo.apache.org/zh-cn/docsv2.7/user/examples/local-mock/">Dubbo 的 fallback 机制&lt;/a> 来为降级的服务提供替代的实现。&lt;/p>
+&lt;p>从 0.1.1 版本开始，Sentinel Dubbo Adapter 还支持配置全局的 fallback 函数，可以在 Dubbo 服务被限流/降级/负载保护的时候进行相应的 fallback 处理。用户只需要实现自定义的 &lt;a href="https://github.com/alibaba/Sentinel/blob/master/sentinel-adapter/sentinel-dubbo-adapter/src/main/java/com/alibaba/csp/sentinel/adapter/dubbo/fallback/DubboFallback.java">&lt;code>DubboFallback&lt;/code>&lt;/a> 接口，并通过 &lt;code>DubboFallbackRegistry&lt;/code> 注册即可。默认情况会直接将 &lt;code>BlockException&lt;/code> 包装后抛出。同时，我们还可以配合 &lt;a href="http://static.dubbo.apache.org:8080/zh-cn/docsv2.7/user/examples/local-mock/">Dubbo 的 fallback 机制&lt;/a> 来为降级的服务提供替代的实现。&lt;/p>
 &lt;h2 id="sentinel-与-hystrix-的比较">Sentinel 与 Hystrix 的比较&lt;/h2>
 &lt;p>目前业界常用的熔断降级/隔离的库是 Netflix 的 &lt;a href="https://github.com/Netflix/Hystrix">Hystrix&lt;/a>，那么 Sentinel 与 Hystrix 有什么异同呢？Hystrix 的关注点在于以 &lt;em>隔离&lt;/em> 和 &lt;em>熔断&lt;/em> 为主的容错机制，而 Sentinel 的侧重点在于多样化的流量控制、熔断降级、系统负载保护、实时监控和控制台，可以看到解决的问题还是有比较大的不同的。&lt;/p>
 &lt;p>Hystrix 采用命令模式封装资源调用逻辑，并且资源的定义与隔离规则是强依赖的，即在创建 HystrixCommand 的时候就要指定隔离规则（因其执行模型依赖于隔离模式）。Sentinel 的设计更为简单，不关注资源是如何执行的，资源的定义与规则的配置相分离。用户可以先定义好资源，然后在需要的时候配置规则即可。Sentinel 的原则非常简单：根据对应资源配置的规则来为资源执行相应的限流/降级/负载保护策略，若规则未配置则仅进行统计。从 0.1.1 版本开始，Sentinel 还引入了&lt;a href="https://github.com/alibaba/Sentinel/wiki/%E6%B3%A8%E8%A7%A3%E6%94%AF%E6%8C%81">注解支持&lt;/a>，可以更方便地定义资源。&lt;/p>
@@ -97,7 +97,7 @@
 &lt;p>Hystrix 熔断降级功能采用熔断器模式，在某个服务失败比率高时自动进行熔断。Sentinel 的熔断降级功能更为通用，支持平均响应时间与失败比率两个指标。Sentinel 还提供各种调用链路关系和流量控制效果支持，同时还可以根据系统负载去实时地调整流量来保护系统，应用场景更为丰富。同时，Sentinel 还提供了实时的监控 API 和控制台，可以方便用户快速了解目前系统的状态，对服务的稳定性了如指掌。&lt;/p>
 &lt;p>更详细的对比请参见 &lt;a href="https://github.com/alibaba/Sentinel/wiki/Sentinel-%E4%B8%8E-Hystrix-%E7%9A%84%E5%AF%B9%E6%AF%94">Sentinel 与 Hystrix 的对比&lt;/a>。&lt;/p>
 &lt;h2 id="总结">总结&lt;/h2>
-&lt;p>以上介绍的只是 Sentinel 的一个最简单的场景 —— 限流。Sentinel 还可以处理更复杂的各种情况，比如超时熔断、冷启动、请求匀速等。可以参考 &lt;a href="https://github.com/alibaba/Sentinel/wiki/%E4%B8%BB%E9%A1%B5">Sentinel 文档&lt;/a>，更多的场景等待你去挖掘！&lt;/p></description></item><item><title>Overview: Hystrix</title><link>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/rate-limit/hystrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/rate-limit/hystrix/</guid><description>
+&lt;p>以上介绍的只是 Sentinel 的一个最简单的场景 —— 限流。Sentinel 还可以处理更复杂的各种情况，比如超时熔断、冷启动、请求匀速等。可以参考 &lt;a href="https://github.com/alibaba/Sentinel/wiki/%E4%B8%BB%E9%A1%B5">Sentinel 文档&lt;/a>，更多的场景等待你去挖掘！&lt;/p></description></item><item><title>Overview: Hystrix</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/rate-limit/hystrix/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/rate-limit/hystrix/</guid><description>
 &lt;h2 id="背景">背景&lt;/h2>
 &lt;p>Hystrix 旨在通过控制那些访问远程系统、服务和第三方库的节点，从而对延迟和故障提供更强大的容错能力。Hystrix具备拥有回退机制和断路器功能的线程和信号隔离，请求缓存和请求打包，以及监控和配置等功能。&lt;/p>
 &lt;p>Dubbo是Alibaba开源的，目前国内最流行的java rpc框架。&lt;/p>
@@ -246,4 +246,4 @@
 &lt;li>&lt;a href="https://github.com/apache/dubbo">https://github.com/apache/dubbo&lt;/a>&lt;/li>
 &lt;li>&lt;a href="http://start.dubbo.io/">http://start.dubbo.io/&lt;/a>&lt;/li>
 &lt;li>&lt;a href="https://cloud.spring.io/spring-cloud-netflix/single/spring-cloud-netflix.html#_circuit_breaker_hystrix_clients">https://cloud.spring.io/spring-cloud-netflix/single/spring-cloud-netflix.html#_circuit_breaker_hystrix_clients&lt;/a>&lt;/li>
-&lt;/ul></description></item><item><title>Overview: Polaris</title><link>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/rate-limit/polaris/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://dubbo.apache.org/zh-cn/overview/what/ecosystem/rate-limit/polaris/</guid><description/></item></channel></rss>
+&lt;/ul></description></item><item><title>Overview: Polaris</title><link>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/rate-limit/polaris/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>http://static.dubbo.apache.org:8080/zh-cn/overview/what/ecosystem/rate-limit/polaris/</guid><description/></item></channel></rss>
